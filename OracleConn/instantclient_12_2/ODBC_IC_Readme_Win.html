@@ -1,0 +1,591 @@
+<!DOCTYPE html PUBLIC "-//w3c//dtd html 4.0 transitional//en">
+<html xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns="http://www.w3.org/TR/REC-html40">
+ 
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=iso-8859-1">
+<meta name=ProgId content=Word.Document>
+<meta name=Generator content="Microsoft Word 9">
+<meta name=Originator content="Microsoft Word 9">
+<link rel=File-List href="./ODBC_IC_Readme_Win_files/filelist.xml">
+<title>ODBC Instant Client for Windows Readme</title>
+<!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author>user</o:Author>
+  <o:Template>Normal</o:Template>
+  <o:LastAuthor>user</o:LastAuthor>
+  <o:Revision>9</o:Revision>
+  <o:TotalTime>14</o:TotalTime>
+  <o:Created>2007-09-03T04:24:00Z</o:Created>
+  <o:LastSaved>2009-05-21T10:59:00Z</o:LastSaved>
+  <o:Pages>2</o:Pages>
+  <o:Words>484</o:Words>
+  <o:Characters>2761</o:Characters>
+  <o:Company>none</o:Company>
+  <o:Lines>23</o:Lines>
+  <o:Paragraphs>5</o:Paragraphs>
+  <o:CharactersWithSpaces>3390</o:CharactersWithSpaces>
+  <o:Version>9.6926</o:Version>
+ </o:DocumentProperties>
+</xml><![endif]-->
+<style>
+<!--
+ /* Font Definitions */
+@font-face
+	{font-family:Helvetica;
+	panose-1:2 11 6 4 2 2 2 2 2 4;
+	mso-font-charset:0;
+	mso-generic-font-family:swiss;
+	mso-font-pitch:variable;
+	mso-font-signature:536902279 -2147483648 8 0 511 0;}
+@font-face
+	{font-family:Wingdings;
+	panose-1:5 0 0 0 0 0 0 0 0 0;
+	mso-font-charset:2;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:0 268435456 0 0 -2147483648 0;}
+ /* Style Definitions */
+p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-parent:"";
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+a:link, span.MsoHyperlink
+	{color:blue;
+	text-decoration:underline;
+	text-underline:single;}
+a:visited, span.MsoHyperlinkFollowed
+	{color:blue;
+	text-decoration:underline;
+	text-underline:single;}
+p
+	{margin-right:0in;
+	mso-margin-top-alt:auto;
+	mso-margin-bottom-alt:auto;
+	margin-left:0in;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+@page Section1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.25in 1.0in 1.25in;
+	mso-header-margin:.5in;
+	mso-footer-margin:.5in;
+	mso-paper-source:0;}
+div.Section1
+	{page:Section1;}
+ /* List Definitions */
+@list l0
+	{mso-list-id:83382377;
+	mso-list-type:hybrid;
+	mso-list-template-ids:395876016 1151876940 -1442810644 -296829174 1708927264 760264958 1779602132 1424681866 -828339166 -1790648308;}
+@list l0:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l0:level2
+	{mso-level-number-format:bullet;
+	mso-level-text:o;
+	mso-level-tab-stop:1.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:"Courier New";
+	mso-bidi-font-family:"Times New Roman";}
+@list l1
+	{mso-list-id:312025511;
+	mso-list-type:hybrid;
+	mso-list-template-ids:1952364344 1863342778 -82440512 1400955944 -1792119002 -1630231986 595606668 754870658 -135090316 1723870812;}
+@list l1:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l1:level2
+	{mso-level-number-format:bullet;
+	mso-level-text:o;
+	mso-level-tab-stop:1.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:"Courier New";
+	mso-bidi-font-family:"Times New Roman";}
+@list l1:level3
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:1.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Wingdings;}
+@list l1:level4
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:2.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Wingdings;}
+@list l2
+	{mso-list-id:368651067;
+	mso-list-type:hybrid;
+	mso-list-template-ids:1215082304 -1161908942 -746167782 -656758136 -1490141202 -344450216 1353465028 -1906279292 1908197316 1323084734;}
+@list l2:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l2:level2
+	{mso-level-number-format:bullet;
+	mso-level-text:o;
+	mso-level-tab-stop:1.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:"Courier New";
+	mso-bidi-font-family:"Times New Roman";}
+@list l2:level3
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:1.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Wingdings;}
+@list l3
+	{mso-list-id:488718347;
+	mso-list-type:hybrid;
+	mso-list-template-ids:1607771288 -562924054 489301938 1571865824 1391235422 1029761898 -677629880 -1463258090 -662688656 485518916;}
+@list l3:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l3:level2
+	{mso-level-number-format:bullet;
+	mso-level-text:o;
+	mso-level-tab-stop:1.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:"Courier New";
+	mso-bidi-font-family:"Times New Roman";}
+@list l3:level3
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:1.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Wingdings;}
+@list l4
+	{mso-list-id:1054432650;
+	mso-list-type:hybrid;
+	mso-list-template-ids:-1713714246 1105230176 -394112356 -2001317692 -1028778098 -369588490 -29720386 -2001953208 -1348161036 1837806886;}
+@list l4:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l4:level2
+	{mso-level-number-format:bullet;
+	mso-level-text:o;
+	mso-level-tab-stop:1.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:"Courier New";
+	mso-bidi-font-family:"Times New Roman";}
+@list l5
+	{mso-list-id:1257787873;
+	mso-list-type:hybrid;
+	mso-list-template-ids:-353478100 -1637074436 30308676 -1848856120 -363577230 -1097842522 -1964100350 -222512598 1634614164 -87527588;}
+@list l5:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l6
+	{mso-list-id:1433936493;
+	mso-list-type:hybrid;
+	mso-list-template-ids:-1140935858 1683648470 -88205670 -2078797080 -1351560622 1281394666 -1085522152 -527932602 126758978 -953387794;}
+@list l6:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l7
+	{mso-list-id:1506093804;
+	mso-list-type:hybrid;
+	mso-list-template-ids:-1286720568 -3115860 1683935158 974034522 -1540424942 1905663832 -1097932354 -698602000 -593696668 -561854518;}
+@list l7:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l8
+	{mso-list-id:1624996224;
+	mso-list-type:hybrid;
+	mso-list-template-ids:233441068 2015896090 -1638467906 1996770132 1019668954 -201930322 -1449761900 -2055832940 291654486 -1487471710;}
+@list l8:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l8:level2
+	{mso-level-number-format:bullet;
+	mso-level-text:o;
+	mso-level-tab-stop:1.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:"Courier New";
+	mso-bidi-font-family:"Times New Roman";}
+@list l9
+	{mso-list-id:1770586430;
+	mso-list-type:hybrid;
+	mso-list-template-ids:-1333890596 -1494320260 -881304874 816852202 1610094054 1989598128 1833185044 -1668144946 -161153454 1119122118;}
+@list l9:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l9:level2
+	{mso-level-number-format:bullet;
+	mso-level-text:o;
+	mso-level-tab-stop:1.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:"Courier New";
+	mso-bidi-font-family:"Times New Roman";}
+ol
+	{margin-bottom:0in;}
+ul
+	{margin-bottom:0in;}
+-->
+</style>
+<meta name=author content="Arun K.Desai">
+</head>
+
+<body lang=EN-US link=blue vlink=blue style='tab-interval:.5in'>
+
+<div class=Section1>
+
+<table border=0 cellspacing=0 cellpadding=0 width="100%" style='width:100.0%;
+ mso-cellspacing:0in;mso-padding-alt:0in 0in 0in 0in' summary=layout>
+ <tr>
+  <td colspan=2 style='padding:0in 0in 0in 0in'>
+  <p class=MsoNormal align=center style='text-align:center'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='padding:0in 0in 0in 0in'>
+  <p class=MsoNormal><b><span style='font-family:Helvetica'>Oracle
+  ODBC Instant Client for Windows Readme</span></b> <br>
+  <b><span style='font-family:Helvetica'>Release 12.1</span></b><br>
+  <b><span style='font-family:Helvetica'>December, 2012</span></b></p>
+  <p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+  </td>
+  <td width=144 valign=bottom style='width:1.5in;padding:0in 0in 0in 0in'>
+  <p class=MsoNormal align=right style='text-align:right'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+  <div align=right>
+  <table border=0 cellspacing=0 cellpadding=0 width="100%" style='width:100.0%;
+   mso-cellspacing:0in;mso-padding-alt:0in 0in 0in 0in' summary=layout>
+   <tr>
+    <td style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal align=center style='text-align:center'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+    </td>
+   </tr>
+  </table>
+  </div>
+  <p class=MsoNormal align=right style='text-align:right'><o:p></o:p></p>
+  </td>
+ </tr>
+</table>
+
+<h2><span style='font-family:Arial;color:#330099'>1 ODBC Instant Client for Windows</span></h2>
+
+<p class=MsoNormal>ODBC Instant Client offers all the functionality of the Oracle
+12c ODBC driver, except Oracle Services for Microsoft Transaction Server,
+without the need for a traditional ORACLE_HOME installation.</p>
+
+<p class=MsoNormal>See <i>Oracle Call Interface </i>Programmer's<i> Guide</i>
+for information on OCI Instant Client. </p>
+
+<h3><span style='font-family:Arial;color:#330099'>1.1 Installing ODBC Instant Client</span></h3>
+
+<ul type=disc>
+ <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+     mso-list:l4 level1 lfo3;tab-stops:list .5in'>Download the Basic Instant
+     Client and ODBC Instant Client packages from the <a
+     href="http://www.oracle.com/technetwork/database/features/instant-client/index-097480.html">Oracle Technology Network Instant Client page</a>. The two packages must be
+     unzipped into same directory. For example,&nbsp;<i>C:\Oracle\instantclient_12_1</i>.</li>
+ <ul type=circle>
+  <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
+      auto;mso-list:l4 level2 lfo3;tab-stops:list 1.0in'>Basic Instant Client
+      is a prerequisite for installing the ODBC Instant Client.</li>
+ </ul>
+</ul>
+
+<ul type=disc>
+ <ul type=circle>
+  <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
+      auto;mso-list:l0 level2 lfo6;tab-stops:list 1.0in'>ODBC Instant Client
+      package has the following file/DLLs<br style='mso-special-character:line-break'>
+      <![if !supportLineBreakNewLine]><br style='mso-special-character:line-break'>
+      <![endif]></li>
+ </ul>
+</ul>
+
+<table border=1 cellpadding=0 width="100%" style='width:100.12%;mso-cellspacing:
+ 1.5pt;margin-left:-.4pt;mso-padding-alt:1.5pt 1.5pt 1.5pt 1.5pt'>
+ <tr>
+  <td valign=top style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><b>File name</b></p>
+  </td>
+  <td valign=top style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><b>Description</b></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal>sqora32.dll&nbsp;</p>
+  </td>
+  <td valign=top style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal>Driver DLL&nbsp;</p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal>sqoras32.dll</p>
+  </td>
+  <td valign=top style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal>Driver setup DLL</p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal>sqresus.dll</p>
+  </td>
+  <td valign=top style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal>Resource DLL</p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal>sqresja.dll</p>
+  </td>
+  <td valign=top style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal>Japanese resource DLL</p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal>ODBC_IC_Readme_Win.html</p>
+  </td>
+  <td valign=top style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal>ODBC Instant Client for Windows readme (this file)</p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal>sqora.htm</p>
+  </td>
+  <td valign=top style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal>Help file</p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal>odbc_install.exe</p>
+  </td>
+  <td valign=top style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal>ODBC Instant Client install script</p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal>odbc_uninstall.exe</p>
+  </td>
+  <td valign=top style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal>ODBC Instant Client un-install script.</p>
+  </td>
+ </tr>
+</table>
+
+<ul type=disc>
+ <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+     mso-list:l6 level1 lfo9;tab-stops:list .5in'>Make sure Basic Instant
+     Client is deployed before running the ODBC install script.</li>
+</ul>
+
+<ul type=disc>
+ <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+     mso-list:l2 level1 lfo12;tab-stops:list .5in'>Unzip the ODBC Instant
+     Client package, then execute the odbc_install script.</li>
+ <ul type=circle>
+  <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
+      auto;mso-list:l2 level2 lfo12;tab-stops:list 1.0in'>By default
+      English(US) DLLs, files will be installed.</li>
+  <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
+      auto;mso-list:l2 level2 lfo12;tab-stops:list 1.0in'>To install the
+      Japanese version ODBC Driver, mention the JA option with install script.</li>
+  <ul type=square>
+   <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
+       auto;mso-list:l2 level3 lfo12;tab-stops:list 1.5in'><i>C:\Oracle\instantclient_12_1&gt;</i>
+       odbc_install JA</li>
+  </ul>
+  <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
+      auto;mso-list:l2 level2 lfo12;tab-stops:list 1.0in'>The ODBC install
+      script will check for&nbsp;<i>oci.dll, oraociei11.dll, orannzsbb11.dll</i>
+      at present directory.&nbsp; If any of these DLLs are missing, installation
+      will fail.</li>
+  <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
+      auto;mso-list:l2 level2 lfo12;tab-stops:list 1.0in'>Oracle Instant Client
+      directory (present directory) name will be part of the driver name in
+      registry.</li>
+  <ul type=square>
+   <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
+       auto;mso-list:l2 level3 lfo12;tab-stops:list 1.5in'>Driver name will be
+       &quot;Oracle in instantclient_12_1&quot;.</li>
+  </ul>
+ </ul>
+</ul>
+
+<ul type=disc>
+ <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+     mso-list:l3 level1 lfo15;tab-stops:list .5in'>&nbsp;After the installation
+     the environment needs to be configured in the following way.</li>
+ <ul type=circle>
+  <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
+      auto;mso-list:l3 level2 lfo15;tab-stops:list 1.0in'>Add the directory to
+      the PATH system environment variable.</li>
+  <ul type=square>
+   <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
+       auto;mso-list:l3 level3 lfo15;tab-stops:list 1.5in'>Otherwise ODBC
+       manager will be not able to load/find the driver.</li>
+  </ul>
+ </ul>
+</ul>
+
+<ul type=disc>
+ <ul type=circle>
+  <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
+      auto;mso-list:l8 level2 lfo18;tab-stops:list 1.0in'>Define the TNS_ADMIN
+      environment variable to point the .ora files directory for OCI.</li>
+ </ul>
+</ul>
+
+<ul type=disc>
+ <ul type=circle>
+  <ul type=square>
+   <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
+       auto;mso-list:l1 level3 lfo21;tab-stops:list 1.5in'>This must be set
+       for OCI to resolve the TNS name.</li>
+   <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
+       auto;mso-list:l1 level3 lfo21;tab-stops:list 1.5in'>If TNS_ADMIN is not
+       set, OCI will examine an operating system dependent set of directories
+       to find <i>tnsnames.ora</i>. This search path includes looking in the
+       directory %ORACLE_HOME%/<i>network/admin/tnsnames.ora</i>. This is the
+       only reason to set the ORACLE_HOME environment variable for Oracle
+       Instant Client. If ORACLE_HOME is set when running Instant Client
+       applications, it must be set to a directory where Instant Client exists
+       (in this case&nbsp;<i>C:\Oracle\instantclient_12_1).</i>
+       If ORACLE_HOME is not set, then looks in current directory for
+       tnsnames.ora.</li>
+  </ul>
+  <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
+      auto;mso-list:l1 level2 lfo21;tab-stops:list 1.0in'>Set any Oracle
+      globalization variables required for your locale. See the <i>Oracle
+      Database Globalization Support Guide</i> for more information.</li>
+  <ul type=square>
+   <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
+       auto;mso-list:l1 level3 lfo21;tab-stops:list 1.5in'>For example on
+       Windows to set NLS_LANG:</li>
+   <ul type=square>
+    <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
+        auto;mso-list:l1 level4 lfo21;tab-stops:list 2.0in'>set
+        NLS_LANG=JAPANESE_JAPAN.JA16EUC&nbsp; </li>
+   </ul>
+  </ul>
+ </ul>
+</ul>
+
+<h3><span style='font-family:Arial;color:#330099'>1.2 Uninstalling ODBC Instant
+Client</span></h3>
+
+<p class=MsoNormal>Do the following steps to un-install: </p>
+
+<ul type=disc>
+ <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+     mso-list:l9 level1 lfo24;tab-stops:list .5in'>Run the odbc_uninstall
+     script</li>
+ <ul type=circle>
+  <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
+      auto;mso-list:l9 level2 lfo24;tab-stops:list 1.0in'>It will delete the
+      Driver entry in registry.</li>
+  <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
+      auto;mso-list:l9 level2 lfo24;tab-stops:list 1.0in'>It will delete the
+      installed Oracle ODBC Driver files.</li>
+ </ul>
+</ul>
+
+<ul type=disc>
+ <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+     mso-list:l5 level1 lfo27;tab-stops:list .5in'>&nbsp;Reset any environment
+     variables such as PATH and TNS_ADMIN.</li>
+</ul>
+
+<h3><span style='font-family:Arial;color:#330099'>1.3 Bugs Fixed</span></h3>
+
+<ul type=disc>
+ <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+     mso-list:l7 level1 lfo30;tab-stops:list .5in'>Please refer to ODBC Release
+     Notes.<br style='mso-special-character:line-break'>
+     <![if !supportLineBreakNewLine]><br style='mso-special-character:line-break'>
+     <![endif]></li>
+</ul>
+
+</div>
+
+</body>
+
+</html>
