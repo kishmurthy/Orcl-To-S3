@@ -16,18 +16,17 @@ import os
 import sys
 import numpy as np
 
-class ORAConnect:
-    __ora_server = None
-    __ora_user = None
-    __ora_password = None
-    __ora_schema = None
-    
+class ORAConnect:    
     def __init__(self, **para):
         __ora_server = para['server']
-        __ora_user =  para['user']
+        __ora_user =  para['username']
         __ora_password = para['password']
+        __ora_port = para['port']
+        __ora_sid = para['sid']
+        __ora_schema = para['schema']
         try:
             sys.path.append(sys.path[0]+'\\OracleConn\\instantclient_12_2')
+            __ora_server = __ora_server+':'+__ora_port+'/'+__ora_sid
             self.ora_conn = ora.connect(__ora_user, __ora_password, __ora_server, encoding='UTF-8')
         except ora.Error as e:
             sys.stdout.write('OraConnect error : ', str(e))

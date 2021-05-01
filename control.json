@@ -1,0 +1,29 @@
+{
+	"logger":{
+		"log_location":"",
+		"transfer":"transfer.log",
+		"oracle":"",
+		"aws":""
+		
+	},
+	
+	"oracle":{
+		"server":"localhost",
+		"sid":"xe",
+		"port":"1521",
+		"username":"hr",
+		"password":"080522",
+		"schema":"hr"
+	},
+	
+	"file":{
+		"file_location":"",
+		"delimiter":"",
+		"chunksize":""
+	},
+	
+	"aws_s3":{
+		"access_key":"AKIARVFIS5JYQXCEIU5D",
+		"secret_key":"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"
+	}
+}
