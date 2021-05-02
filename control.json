@@ -20,10 +20,5 @@
 		"file_location":"",
 		"delimiter":"",
 		"chunksize":""
-	},
-	
-	"aws_s3":{
-		"access_key":"AKIARVFIS5JYQXCEIU5D",
-		"secret_key":"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"
 	}
 }
