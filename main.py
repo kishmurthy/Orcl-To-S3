@@ -14,11 +14,12 @@
 
 from OracleConn.OraConnect import ORAConnect
 from AwsS3Conn.S3Connect import S3Connect
-import os 
+from datetime import datetime
+import os
+import sys
 import json as js
 import requests as req
-import logging 
-
+import logging
 
 
 class Data_Transfer:
@@ -50,13 +51,14 @@ class Data_Transfer:
                 self.logger.info("Connected to the Internet")
          
         except (req.ConnectionError, req.Timeout) as e:
-            self.logger.error('No internet connection.')
+            self.logger.error("#"*10,'No internet connection.')
+            sys.exit()
         except FileNotFoundError as e:
-            self.logger.error('Josn file not found')
+            self.logger.error("#"*10,'Josn file not found')
         except Exception as e :
-            self.logger.error('Error in caller ' +str(e))
+            self.logger.error("#"*10,'Error in Data_Transfer init' +str(e))
     
-    def orcl_caller(self):
+    def orcl_init(self):
         try:
             #creating oracle object 
             self.ora_obj = ORAConnect(server=self.oracle_spec['server'],
@@ -66,20 +68,26 @@ class Data_Transfer:
                 sid=self.oracle_spec['sid'],
                 schema=self.oracle_spec['schema'])
         except Exception as e :
-            self.logger.error('Error in orcl_caller method ' +str(e))
+            self.logger.error("#"*10,'Error in orcl_init method ' +str(e))
 
-    def aws_s3_caller(self):
+    def aws_s3_init(self):
         try:
             #creating aws s3 connection object            
-            self.s3_obj = S3Connect(access_key=self.asw_s3_spec['access_key'], secret_key=self.asw_s3_spec['secret_key'], region=self.asw_s3_spec['region'])
+            self.s3_obj = S3Connect(access_key=self.asw_s3_spec['access_key'],
+                                    secret_key=self.asw_s3_spec['secret_key'],
+                                    region=self.asw_s3_spec['region'])
+            #creating aws-s3 bucket
+            self.bucket_name = self.asw_s3_spec['bucket_name_prefix']+'-'+datetime.now().strftime("%Y-%m-%d").lower().strip()
+            self.s3_obj.create_s3_bucket(self.bucket_name)
+            
         except Exception as e :
-            self.logger.error('Error in aws_s3_caller method ' +str(e))
+            self.logger.error("#"*10,'Error in aws_s3_init method ' +str(e))
         
     
+def main():
+    o=Data_Transfer('D:\\Orcl-To-S3\\control.json')
+    o.orcl_init()
+    o.aws_s3_init()
 
-
-
-#Data_Transfer('D:\\Orcl-To-S3\\control.json').orcl_caller()
-Data_Transfer('D:\\Orcl-To-S3\\control.json').aws_s3_caller()
-
-
+if __name__ == '__main__':
+    main()

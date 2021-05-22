@@ -30,20 +30,23 @@ class S3Connect:
                                             aws_access_key_id = access_key,
                                             aws_secret_access_key = secret_key,
                                             region_name = region)
-                self.logger.info("Aws S3 connected")
+                self.logger.info("Connected to the AWS S3")
             else:
-                self.logger.error("Please check access_key, secret_key and region details")
+                self.logger.error("#"*10,"Please check access_key, secret_key and region details")
         except ClientError as e :
-            self.logger.error("Aws S3 Connection error : "+str(e))
+            self.logger.error("#"*10,"Aws S3 Connection error : "+str(e))
 
 
     def create_s3_bucket(self, bucket_name):
         try:
             self.bucket_name=bucket_name
             location = {'LocationConstraint': self.region}
-            self.s3_conn.create_bucket(Bucket=self.bucket_name,CreateBucketConfiguration=location)
+            if self.s3_conn.create_bucket(Bucket=self.bucket_name,CreateBucketConfiguration=location):
+                self.logger.info("AWS %s bucket has been created in region %s",self.bucket_name,self.region)
+            else:
+                raise
         except ClientError as e :
-            print(str(e) +'logg')
+            self.logger.error("#"*10,str(e))
 
     def file_transfer(self, bucket_name='orcl-stg', file_name='D:\\EMP.csv', object_name=None):
         try:
@@ -55,7 +58,7 @@ class S3Connect:
                 object_name = "EMP.csv"
                 self.s3_conn.upload_file(file_name, bucket_name, object_name)     
         except ClientError as e:
-            logging.error(str(e))
+            self.logging.error("#"*10,str(e))
 
 
 #S3Connect().file_transfer()
