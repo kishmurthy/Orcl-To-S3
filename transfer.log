@@ -1,5 +1,36 @@
-2021-05-02 04:44:23  __main__  DEBUG : Transfer service started
-2021-05-02 04:47:25  __main__  DEBUG : Transfer service started
-2021-05-02 04:47:38  __main__  DEBUG : Transfer service started
-2021-05-02 04:49:38  __main__  DEBUG : Transfer service started
-2021-05-02 04:52:09  __main__  DEBUG : Transfer service started
+2021-05-23 01:52:43  __main__  INFO : Data Transfer service started
+2021-05-23 01:52:43  urllib3.connectionpool  DEBUG : Starting new HTTP connection (1): www.google.com:80
+2021-05-23 01:52:43  urllib3.connectionpool  DEBUG : http://www.google.com:80 "GET / HTTP/1.1" 200 6145
+2021-05-23 01:52:43  __main__  INFO : Connected to the Internet
+2021-05-23 01:52:43  OracleConn.OraConnect  INFO : Oracle service started
+2021-05-23 02:03:43  __main__  INFO : Data Transfer service started
+2021-05-23 02:03:43  urllib3.connectionpool  DEBUG : Starting new HTTP connection (1): www.google.com:80
+2021-05-23 02:03:44  urllib3.connectionpool  DEBUG : http://www.google.com:80 "GET / HTTP/1.1" 200 6142
+2021-05-23 02:03:44  __main__  INFO : Connected to the Internet
+2021-05-23 02:03:44  __main__  ERROR : Error in aws_s3_caller method 'access_key'
+2021-05-23 02:04:49  __main__  INFO : Data Transfer service started
+2021-05-23 02:04:49  urllib3.connectionpool  DEBUG : Starting new HTTP connection (1): www.google.com:80
+2021-05-23 02:04:49  urllib3.connectionpool  DEBUG : http://www.google.com:80 "GET / HTTP/1.1" 200 6117
+2021-05-23 02:04:49  __main__  INFO : Connected to the Internet
+2021-05-23 02:04:49  AwsS3Conn.S3Connect  INFO : Aws S3 Calls
+2021-05-23 02:04:49  botocore.hooks  DEBUG : Changing event name from creating-client-class.iot-data to creating-client-class.iot-data-plane
+2021-05-23 02:04:49  botocore.hooks  DEBUG : Changing event name from before-call.apigateway to before-call.api-gateway
+2021-05-23 02:04:49  botocore.hooks  DEBUG : Changing event name from request-created.machinelearning.Predict to request-created.machine-learning.Predict
+2021-05-23 02:04:49  botocore.hooks  DEBUG : Changing event name from before-parameter-build.autoscaling.CreateLaunchConfiguration to before-parameter-build.auto-scaling.CreateLaunchConfiguration
+2021-05-23 02:04:49  botocore.hooks  DEBUG : Changing event name from before-parameter-build.route53 to before-parameter-build.route-53
+2021-05-23 02:04:49  botocore.hooks  DEBUG : Changing event name from request-created.cloudsearchdomain.Search to request-created.cloudsearch-domain.Search
+2021-05-23 02:04:49  botocore.hooks  DEBUG : Changing event name from docs.*.autoscaling.CreateLaunchConfiguration.complete-section to docs.*.auto-scaling.CreateLaunchConfiguration.complete-section
+2021-05-23 02:04:49  botocore.hooks  DEBUG : Changing event name from before-parameter-build.logs.CreateExportTask to before-parameter-build.cloudwatch-logs.CreateExportTask
+2021-05-23 02:04:49  botocore.hooks  DEBUG : Changing event name from docs.*.logs.CreateExportTask.complete-section to docs.*.cloudwatch-logs.CreateExportTask.complete-section
+2021-05-23 02:04:49  botocore.hooks  DEBUG : Changing event name from before-parameter-build.cloudsearchdomain.Search to before-parameter-build.cloudsearch-domain.Search
+2021-05-23 02:04:49  botocore.hooks  DEBUG : Changing event name from docs.*.cloudsearchdomain.Search.complete-section to docs.*.cloudsearch-domain.Search.complete-section
+2021-05-23 02:04:49  botocore.loaders  DEBUG : Loading JSON file: C:\Users\Airflow\AppData\Local\Programs\Python\Python37\lib\site-packages\botocore\data\endpoints.json
+2021-05-23 02:04:50  botocore.hooks  DEBUG : Event choose-service-name: calling handler <function handle_service_name_alias at 0x000000000BCE3318>
+2021-05-23 02:04:50  botocore.loaders  DEBUG : Loading JSON file: C:\Users\Airflow\AppData\Local\Programs\Python\Python37\lib\site-packages\botocore\data\s3\2006-03-01\service-2.json
+2021-05-23 02:04:50  botocore.hooks  DEBUG : Event creating-client-class.s3: calling handler <function add_generate_presigned_post at 0x000000000BD87DC8>
+2021-05-23 02:04:50  botocore.hooks  DEBUG : Event creating-client-class.s3: calling handler <function lazy_call.<locals>._handler at 0x0000000002F93048>
+2021-05-23 02:04:50  botocore.hooks  DEBUG : Event creating-client-class.s3: calling handler <function add_generate_presigned_url at 0x000000000BD87B88>
+2021-05-23 02:04:50  botocore.endpoint  DEBUG : Setting s3 timeout as (60, 60)
+2021-05-23 02:04:50  botocore.loaders  DEBUG : Loading JSON file: C:\Users\Airflow\AppData\Local\Programs\Python\Python37\lib\site-packages\botocore\data\_retry.json
+2021-05-23 02:04:50  botocore.client  DEBUG : Registering retry handlers for service: s3
+2021-05-23 02:04:50  AwsS3Conn.S3Connect  INFO : Aws S3 connected

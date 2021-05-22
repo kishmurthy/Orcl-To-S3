@@ -15,23 +15,26 @@ import pandas as pd
 import os
 import sys
 import numpy as np
+import logging
 
 class ORAConnect:    
-    def __init__(self, **para):
-        __ora_server = para['server']
-        __ora_user =  para['username']
-        __ora_password = para['password']
-        __ora_port = para['port']
-        __ora_sid = para['sid']
-        __ora_schema = para['schema']
+    def __init__(self,**para):
+        self.ora_server = para['server']
+        self.ora_user =  para['username']
+        self.ora_password = para['password']
+        self.ora_port = para['port']
+        self.ora_sid = para['sid']
+        self.ora_schema = para['schema']
+        self.logger = logging.getLogger(__name__)
+        self.logger.info("Oracle service started")
         try:
             sys.path.append(sys.path[0]+'\\OracleConn\\instantclient_12_2')
-            __ora_server = __ora_server+':'+__ora_port+'/'+__ora_sid
-            self.ora_conn = ora.connect(__ora_user, __ora_password, __ora_server, encoding='UTF-8')
+            self.ora_server = self.ora_server+':'+self.ora_port+'/'+self.ora_sid
+            self.ora_conn = ora.connect(self.ora_user, self.ora_password, self.ora_server, encoding='UTF-8')
         except ora.Error as e:
-            sys.stdout.write('OraConnect error : ', str(e))
+            self.logger.error('OraConnect error : ', str(e))
 
-    def SqlReader(self, sql_str):
+    def sql_reader(self, sql_str):
         try:
             #getting table name from sql query 
             tbl_name = sql_str.lower().partition('from')[2].upper().strip()
@@ -48,8 +51,10 @@ class ORAConnect:
                 raise 
         except Exception as e :
             self.ora_conn.close()
+
+
             
-    def SqlClose(self):
+    def sql_close(self):
         try:
             self.ora_conn.close()
         except ora.Error as e:
