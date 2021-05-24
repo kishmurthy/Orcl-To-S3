@@ -47,18 +47,17 @@ class ORAConnect:
                 self.tbl_df = self.tbl_df.replace(to_replace=np.nan, value='')
                 return self.tbl_df
             else:
-                sys.stdout.write('Table or view does not exists')
+                self.logger.error('Table or view does not exists')
                 raise 
         except Exception as e :
             self.ora_conn.close()
-
 
             
     def sql_close(self):
         try:
             self.ora_conn.close()
         except ora.Error as e:
-            sys.stdout.write('OraConnet Error : ', str(e))
+            self.logger.error('OraConnet Error : ', str(e))
 
 def main():
     #testing
