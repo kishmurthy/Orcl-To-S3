@@ -61,7 +61,7 @@ class ORAConnect:
 
 def main():
     #testing
-    obj=ORAConnect(user='hr', password='080522', server='localhost:1521/xe')
+    obj=ORAConnect(user='hr', password='', server='localhost:1521/xe')
     obj.SqlClose()
 
 if '__name__' == '__main()__':
