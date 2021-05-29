@@ -11,13 +11,14 @@
 ######################################################################
 
 import logging
-import os 
+import os
+import os.path
 import shutil
 import sys
 import pandas as pd 
 
 class FileZipper:
-    def __init__(self, stage_loc='D:\\Orcl-To-S3'):
+    def __init__(self, stage_loc=None):
         try:
             self.logger = logging.getLogger(__name__)
             if stage_loc!=None:
@@ -28,11 +29,12 @@ class FileZipper:
             self.logger.error("#"*10,str(e))
             print('error')
             
-    def create_dir(self, dir_name=None):
+    def create_dir(self,  par_path=None, dir_name=None):
         try:
-            self.bcuket_dir = dir_name
-            self.bucket_dir_path = os.path.join(self.stage_loc, self.bcuket_dir)
+            self.bucket_dir = dir_name
+            self.bucket_dir_path = os.path.join(par_path, self.bucket_dir)
             os.mkdir(self.bucket_dir_path)
+            self.logger.info(self.bucket_dir+' has been created ')
         except FileExistsError as e:
             self.logger.error("#"*10,str(e))
 
@@ -47,7 +49,7 @@ class FileZipper:
 
     def zipper(self,table_dir_path=None):
         try:
-            if os.path.is_dir(self.table_dir_path): 
+            if os.path.isdir(table_dir_path): 
                 self.table_dir_path = table_dir_path
                 shutil.make_archive(self.table_dir_path, 'zip',self.table_dir_path)
             else:
@@ -58,8 +60,8 @@ class FileZipper:
             self.logger.error("#"*10,str(e))
         
 
-o=FileZipper()
-o.create_dir('Orcl-data1')
-o.zipper('Orcl-data1')
+#o=FileZipper('D:\\')
+#o.create_dir('Orcl-data1')
+#o.zipper('D:\Orcl-To-S3\Orcl_to_S3_batch_2021-05-29\REGIONS')
 
 

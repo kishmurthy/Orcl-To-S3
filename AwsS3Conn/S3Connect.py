@@ -48,15 +48,14 @@ class S3Connect:
         except ClientError as e :
             self.logger.error("#"*10,str(e))
 
-    def file_transfer(self, bucket_name='orcl-stg', file_name='D:\\EMP.csv', object_name=None):
+    def file_transfer(self, file_name=None, object_name=None):
         try:
-            if self.s3_conn.head_bucket(Bucket=bucket_name) !=None:
-                print('Bucket is presnet')
+            if self.s3_conn.head_bucket(Bucket=self.bucket_name) !=None:
+                self.file_name = file_name
+                self.object_name = object_name
+                self.s3_conn.upload_file(self.file_name, self.bucket_name, self.object_name)     
             else:
-                raise 
-            if object_name is None:
-                object_name = "EMP.csv"
-                self.s3_conn.upload_file(file_name, bucket_name, object_name)     
+                raise
         except ClientError as e:
             self.logging.error("#"*10,str(e))
 

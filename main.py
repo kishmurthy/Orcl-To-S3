@@ -14,6 +14,7 @@
 
 from OracleConn.OraConnect import ORAConnect
 from AwsS3Conn.S3Connect import S3Connect
+from FileWriter.FileZipper import FileZipper
 from datetime import datetime
 import os
 import sys
@@ -82,12 +83,46 @@ class Data_Transfer:
             
         except Exception as e :
             self.logger.error("#"*10,'Error in aws_s3_init method ' +str(e))
-        
+
+    def file_loc_init(self):
+        try:
+            #setting file location object 
+            self.f_loc_obj= FileZipper(self.file_spec['file_location'])
+            self.logger.info("File location object has created at : "+self.f_loc_obj.stage_loc)
+            
+            #creating batch folder with date
+            self.f_loc_obj.create_dir(self.file_spec['file_location'],'Orcl_to_S3_batch_'+datetime.now().strftime("%Y-%m-%d"))
+            self.logger.info("Batch folder has created at : "+self.f_loc_obj.bucket_dir_path)
+
+        except Exception as e:
+            self.logger.error("#"*10,'Error in file_loc_init method ' +str(e))
+
+    def orcl_extract(self):
+        try:
+            #extracting data 
+            self.ora_obj.sql_tab_caller(self.oracle_spec['tables'],self.f_loc_obj)
+
+            #zipping table folders
+            for file, path in self.ora_obj.tbl_dir.items():
+                self.f_loc_obj.zipper(path)
+                
+
+            #transfer file to S3
+            for file, path in self.ora_obj.tbl_dir.items():
+                self.s3_obj.file_transfer(path+'.zip',file)
+            
+             
+        except Exception as e:
+            self.logger.error("#"*10,'Error in aws_s3_init method ' +str(e))
+            
     
 def main():
     o=Data_Transfer('D:\\Orcl-To-S3\\control.json')
     o.orcl_init()
+    o.file_loc_init()
     o.aws_s3_init()
-
+    o.orcl_extract()
+    
+    
 if __name__ == '__main__':
     main()
