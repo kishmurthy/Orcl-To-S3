@@ -27,7 +27,6 @@ class FileZipper:
                 raise Exception('Stage location not specified. Please check contol Josn file')
         except Exception as e:
             self.logger.error("#"*10,str(e))
-            print('error')
             
     def create_dir(self,  par_path=None, dir_name=None):
         try:
@@ -58,10 +57,15 @@ class FileZipper:
             self.logger.error("#"*10,str(e))        
         except shutil.Error as e :
             self.logger.error("#"*10,str(e))
-        
 
-#o=FileZipper('D:\\')
-#o.create_dir('Orcl-data1')
-#o.zipper('D:\Orcl-To-S3\Orcl_to_S3_batch_2021-05-29\REGIONS')
-
-
+    def clean_up(self):
+        try:
+            if os.path.isdir(table_dir_path): 
+                self.table_dir_path = table_dir_path
+                shutil.make_archive(self.table_dir_path, 'zip',self.table_dir_path)
+            else:
+                raise
+        except FileNotFoundError as e :
+            self.logger.error("#"*10,str(e))        
+        except shutil.Error as e :
+            self.logger.error("#"*10,str(e))
