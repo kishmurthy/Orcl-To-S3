@@ -1,14 +1,16 @@
-######################################################################
+###############################################################
+#   Date        :   15-05-2021
+#   Desc        :   This class use to call Oracle service, File zipper
+#                   and Aws S3 service 
+#   Use         :   To initiate service.
+#   Author      :   Vikas Datir
+#   Modified    :   01-06-2021
 #
 #
 #
 #
 #
-#
-#
-#
-#
-######################################################################
+###############################################################
 
 
 
@@ -28,7 +30,6 @@ class Data_Transfer:
         self.json_file = json_loc
         
         try:
-
             #reading json file 
             with open(self.json_file) as fptr:
                 self.json_spec =  js.load(fptr)
@@ -106,11 +107,9 @@ class Data_Transfer:
             for file, path in self.ora_obj.tbl_dir.items():
                 self.f_loc_obj.zipper(path)
                 
-
             #transfer file to S3
             for file, path in self.ora_obj.tbl_dir.items():
                 self.s3_obj.file_transfer(path+'.zip',file)
-            
              
         except Exception as e:
             self.logger.error("#"*10,'Error in aws_s3_init method ' +str(e))
@@ -119,10 +118,10 @@ class Data_Transfer:
 def main():
     o=Data_Transfer('D:\\Orcl-To-S3\\control.json')
     o.orcl_init()
-    o.file_loc_init()
     o.aws_s3_init()
+    o.file_loc_init()
     o.orcl_extract()
-    
-    
+
+
 if __name__ == '__main__':
     main()

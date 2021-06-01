@@ -94,7 +94,7 @@ class ORAConnect:
 
 def main():
     #testing
-    obj=ORAConnect(username='hr', password='080522', server='localhost', port='1521', sid='xe', schema='hr' )
+    obj=ORAConnect(username='hr', password='', server='localhost', port='1521', sid='xe', schema='hr' )
     obj.sql_tab_caller()
 
 

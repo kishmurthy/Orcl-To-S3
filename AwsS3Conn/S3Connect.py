@@ -1,9 +1,10 @@
 ###############################################################
 #   Date        :   15-05-2021
-#   Desc        :   This class use to connect was s3 service.
-#                   It has function to create buckets and 
+#   Desc        :   This class use to connect aws s3 service.
+#   Use         :   To create S3 bucket and transfer files from
+#                   local machine.
 #   Author      :   Vikas Datir
-#   Modified    :   21-05-2021
+#   Modified    :   01-06-2021
 #
 #
 #
@@ -46,18 +47,18 @@ class S3Connect:
             else:
                 raise
         except ClientError as e :
-            self.logger.error("#"*10,str(e))
+            self.logger.error("#"*10, "Aws S3 bucket creation error : "+str(e))
 
     def file_transfer(self, file_name=None, object_name=None):
         try:
             if self.s3_conn.head_bucket(Bucket=self.bucket_name) !=None:
                 self.file_name = file_name
                 self.object_name = object_name
-                self.s3_conn.upload_file(self.file_name, self.bucket_name, self.object_name)     
+                self.s3_conn.upload_file(self.file_name, self.bucket_name, self.object_name)
+                self.logger.info(self.file_name+ " has been transferred")
             else:
                 raise
         except ClientError as e:
-            self.logging.error("#"*10,str(e))
+            self.logging.error("#"*10,"Aws S3 file transfer error : "+str(e))
 
 
-#S3Connect().file_transfer()

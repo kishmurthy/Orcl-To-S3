@@ -1,0 +1,1225 @@
+2021-06-01 20:57:26  __main__  INFO : Data Transfer service started
+2021-06-01 20:57:26  urllib3.connectionpool  DEBUG : Starting new HTTP connection (1): www.google.com:80
+2021-06-01 20:57:27  urllib3.connectionpool  DEBUG : http://www.google.com:80 "GET / HTTP/1.1" 200 6126
+2021-06-01 20:57:27  __main__  INFO : Connected to the Internet
+2021-06-01 20:57:27  OracleConn.OraConnect  INFO : Oracle service started
+2021-06-01 20:57:28  botocore.hooks  DEBUG : Changing event name from creating-client-class.iot-data to creating-client-class.iot-data-plane
+2021-06-01 20:57:28  botocore.hooks  DEBUG : Changing event name from before-call.apigateway to before-call.api-gateway
+2021-06-01 20:57:28  botocore.hooks  DEBUG : Changing event name from request-created.machinelearning.Predict to request-created.machine-learning.Predict
+2021-06-01 20:57:28  botocore.hooks  DEBUG : Changing event name from before-parameter-build.autoscaling.CreateLaunchConfiguration to before-parameter-build.auto-scaling.CreateLaunchConfiguration
+2021-06-01 20:57:28  botocore.hooks  DEBUG : Changing event name from before-parameter-build.route53 to before-parameter-build.route-53
+2021-06-01 20:57:28  botocore.hooks  DEBUG : Changing event name from request-created.cloudsearchdomain.Search to request-created.cloudsearch-domain.Search
+2021-06-01 20:57:28  botocore.hooks  DEBUG : Changing event name from docs.*.autoscaling.CreateLaunchConfiguration.complete-section to docs.*.auto-scaling.CreateLaunchConfiguration.complete-section
+2021-06-01 20:57:28  botocore.hooks  DEBUG : Changing event name from before-parameter-build.logs.CreateExportTask to before-parameter-build.cloudwatch-logs.CreateExportTask
+2021-06-01 20:57:28  botocore.hooks  DEBUG : Changing event name from docs.*.logs.CreateExportTask.complete-section to docs.*.cloudwatch-logs.CreateExportTask.complete-section
+2021-06-01 20:57:28  botocore.hooks  DEBUG : Changing event name from before-parameter-build.cloudsearchdomain.Search to before-parameter-build.cloudsearch-domain.Search
+2021-06-01 20:57:28  botocore.hooks  DEBUG : Changing event name from docs.*.cloudsearchdomain.Search.complete-section to docs.*.cloudsearch-domain.Search.complete-section
+2021-06-01 20:57:28  botocore.loaders  DEBUG : Loading JSON file: C:\Users\Airflow\AppData\Local\Programs\Python\Python37\lib\site-packages\botocore\data\endpoints.json
+2021-06-01 20:57:28  botocore.hooks  DEBUG : Event choose-service-name: calling handler <function handle_service_name_alias at 0x000000000B984AF8>
+2021-06-01 20:57:28  botocore.loaders  DEBUG : Loading JSON file: C:\Users\Airflow\AppData\Local\Programs\Python\Python37\lib\site-packages\botocore\data\s3\2006-03-01\service-2.json
+2021-06-01 20:57:28  botocore.hooks  DEBUG : Event creating-client-class.s3: calling handler <function add_generate_presigned_post at 0x000000000B9374C8>
+2021-06-01 20:57:28  botocore.hooks  DEBUG : Event creating-client-class.s3: calling handler <function lazy_call.<locals>._handler at 0x000000000BBC5A68>
+2021-06-01 20:57:28  botocore.hooks  DEBUG : Event creating-client-class.s3: calling handler <function add_generate_presigned_url at 0x000000000B937288>
+2021-06-01 20:57:28  botocore.endpoint  DEBUG : Setting s3 timeout as (60, 60)
+2021-06-01 20:57:28  botocore.loaders  DEBUG : Loading JSON file: C:\Users\Airflow\AppData\Local\Programs\Python\Python37\lib\site-packages\botocore\data\_retry.json
+2021-06-01 20:57:28  botocore.client  DEBUG : Registering retry handlers for service: s3
+2021-06-01 20:57:28  AwsS3Conn.S3Connect  INFO : Connected to the AWS S3
+2021-06-01 20:57:28  botocore.hooks  DEBUG : Event before-parameter-build.s3.CreateBucket: calling handler <function validate_bucket_name at 0x000000000B9B7558>
+2021-06-01 20:57:28  botocore.hooks  DEBUG : Event before-parameter-build.s3.CreateBucket: calling handler <bound method S3RegionRedirector.redirect_from_cache of <botocore.utils.S3RegionRedirector object at 0x0000000011DE2CC8>>
+2021-06-01 20:57:28  botocore.hooks  DEBUG : Event before-parameter-build.s3.CreateBucket: calling handler <bound method S3ArnParamHandler.handle_arn of <botocore.utils.S3ArnParamHandler object at 0x0000000011DD5148>>
+2021-06-01 20:57:28  botocore.hooks  DEBUG : Event before-parameter-build.s3.CreateBucket: calling handler <function generate_idempotent_uuid at 0x000000000B9B73A8>
+2021-06-01 20:57:28  botocore.hooks  DEBUG : Event before-call.s3.CreateBucket: calling handler <function add_expect_header at 0x000000000B9B78B8>
+2021-06-01 20:57:28  botocore.hooks  DEBUG : Event before-call.s3.CreateBucket: calling handler <bound method S3RegionRedirector.set_request_url of <botocore.utils.S3RegionRedirector object at 0x0000000011DE2CC8>>
+2021-06-01 20:57:28  botocore.hooks  DEBUG : Event before-call.s3.CreateBucket: calling handler <function inject_api_version_header_if_needed at 0x000000000B9BDC18>
+2021-06-01 20:57:28  botocore.endpoint  DEBUG : Making request for OperationModel(name=CreateBucket) with params: {'url_path': '/orcl-tbls-ext-2021-06-01', 'query_string': {}, 'method': 'PUT', 'headers': {'User-Agent': 'Boto3/1.17.62 Python/3.7.4 Windows/7 Botocore/1.20.62'}, 'body': b'<CreateBucketConfiguration xmlns="http://s3.amazonaws.com/doc/2006-03-01/"><LocationConstraint>ap-south-1</LocationConstraint></CreateBucketConfiguration>', 'url': 'https://s3.ap-south-1.amazonaws.com/orcl-tbls-ext-2021-06-01', 'context': {'client_region': 'ap-south-1', 'client_config': <botocore.config.Config object at 0x0000000011DD0688>, 'has_streaming_input': False, 'auth_type': None, 'signing': {'bucket': 'orcl-tbls-ext-2021-06-01'}}}
+2021-06-01 20:57:28  botocore.hooks  DEBUG : Event request-created.s3.CreateBucket: calling handler <bound method RequestSigner.handler of <botocore.signers.RequestSigner object at 0x0000000011DD0648>>
+2021-06-01 20:57:28  botocore.hooks  DEBUG : Event choose-signer.s3.CreateBucket: calling handler <function set_operation_specific_signer at 0x000000000B9B7288>
+2021-06-01 20:57:28  botocore.hooks  DEBUG : Event before-sign.s3.CreateBucket: calling handler <bound method S3EndpointSetter.set_endpoint of <botocore.utils.S3EndpointSetter object at 0x000000000BBF2088>>
+2021-06-01 20:57:28  botocore.utils  DEBUG : Defaulting to S3 virtual host style addressing with path style addressing fallback.
+2021-06-01 20:57:28  botocore.utils  DEBUG : Checking for DNS compatible bucket for: https://s3.ap-south-1.amazonaws.com/orcl-tbls-ext-2021-06-01
+2021-06-01 20:57:28  botocore.utils  DEBUG : URI updated to: https://orcl-tbls-ext-2021-06-01.s3.ap-south-1.amazonaws.com/
+2021-06-01 20:57:28  botocore.auth  DEBUG : Calculating signature using v4 auth.
+2021-06-01 20:57:28  botocore.auth  DEBUG : CanonicalRequest:
+PUT
+/
+
+host:orcl-tbls-ext-2021-06-01.s3.ap-south-1.amazonaws.com
+x-amz-content-sha256:4a721217057c4d5019a418db756fc18e9dce8f67d4d23aa67d8f1819d1fb073c
+x-amz-date:20210601T152728Z
+
+host;x-amz-content-sha256;x-amz-date
+4a721217057c4d5019a418db756fc18e9dce8f67d4d23aa67d8f1819d1fb073c
+2021-06-01 20:57:28  botocore.auth  DEBUG : StringToSign:
+AWS4-HMAC-SHA256
+20210601T152728Z
+20210601/ap-south-1/s3/aws4_request
+179903eed4e4c2eb23f6e8aa24867681d5f9d9b03583cdd176bf478cdea23e3a
+2021-06-01 20:57:28  botocore.auth  DEBUG : Signature:
+c5ae3a3e93eb0be9fc6a25bc5838063c8b41099fca7ab65e84abaedcee21cdac
+2021-06-01 20:57:28  botocore.endpoint  DEBUG : Sending http request: <AWSPreparedRequest stream_output=False, method=PUT, url=https://orcl-tbls-ext-2021-06-01.s3.ap-south-1.amazonaws.com/, headers={'User-Agent': b'Boto3/1.17.62 Python/3.7.4 Windows/7 Botocore/1.20.62', 'X-Amz-Date': b'20210601T152728Z', 'X-Amz-Content-SHA256': b'4a721217057c4d5019a418db756fc18e9dce8f67d4d23aa67d8f1819d1fb073c', 'Authorization': b'AWS4-HMAC-SHA256 Credential=AKIARVFIS5JY6QTR7PJQ/20210601/ap-south-1/s3/aws4_request, SignedHeaders=host;x-amz-content-sha256;x-amz-date, Signature=c5ae3a3e93eb0be9fc6a25bc5838063c8b41099fca7ab65e84abaedcee21cdac', 'Content-Length': '154'}>
+2021-06-01 20:57:28  botocore.httpsession  DEBUG : Certificate path: C:\Users\Airflow\AppData\Local\Programs\Python\Python37\lib\site-packages\certifi\cacert.pem
+2021-06-01 20:57:28  urllib3.connectionpool  DEBUG : Starting new HTTPS connection (1): orcl-tbls-ext-2021-06-01.s3.ap-south-1.amazonaws.com:443
+2021-06-01 20:57:30  urllib3.connectionpool  DEBUG : https://orcl-tbls-ext-2021-06-01.s3.ap-south-1.amazonaws.com:443 "PUT / HTTP/1.1" 200 0
+2021-06-01 20:57:30  botocore.parsers  DEBUG : Response headers: {'x-amz-id-2': '/QE7sXhV19m+/OBEwDGmYlxZxj+QNLrw80GTxXse9lb+1931aSMB8omKNzLhdmhOjCj+eYmNU/o=', 'x-amz-request-id': 'GR6W35G70FM4QBT6', 'Date': 'Tue, 01 Jun 2021 15:27:30 GMT', 'Location': 'http://orcl-tbls-ext-2021-06-01.s3.amazonaws.com/', 'Content-Length': '0', 'Server': 'AmazonS3'}
+2021-06-01 20:57:30  botocore.parsers  DEBUG : Response body:
+b''
+2021-06-01 20:57:30  botocore.hooks  DEBUG : Event needs-retry.s3.CreateBucket: calling handler <botocore.retryhandler.RetryHandler object at 0x0000000011DE2FC8>
+2021-06-01 20:57:30  botocore.retryhandler  DEBUG : No retry needed.
+2021-06-01 20:57:30  botocore.hooks  DEBUG : Event needs-retry.s3.CreateBucket: calling handler <bound method S3RegionRedirector.redirect_from_error of <botocore.utils.S3RegionRedirector object at 0x0000000011DE2CC8>>
+2021-06-01 20:57:30  AwsS3Conn.S3Connect  INFO : AWS orcl-tbls-ext-2021-06-01 bucket has been created in region ap-south-1
+2021-06-01 20:57:30  __main__  INFO : File location object has created at : D:\Orcl-To-S3
+2021-06-01 20:57:30  FileWriter.FileZipper  INFO : Orcl_to_S3_batch_2021-06-01 has been created 
+2021-06-01 20:57:30  __main__  INFO : Batch folder has created at : D:\Orcl-To-S3\Orcl_to_S3_batch_2021-06-01
+2021-06-01 20:57:30  FileWriter.FileZipper  INFO : REGIONS has been created 
+2021-06-01 20:57:31  FileWriter.FileZipper  INFO : LOCATIONS has been created 
+2021-06-01 20:57:31  FileWriter.FileZipper  INFO : DEPARTMENTS has been created 
+2021-06-01 20:57:31  FileWriter.FileZipper  INFO : JOBS has been created 
+2021-06-01 20:57:31  FileWriter.FileZipper  INFO : EMPLOYEES has been created 
+2021-06-01 20:57:31  FileWriter.FileZipper  INFO : JOB_HISTORY has been created 
+2021-06-01 20:57:31  FileWriter.FileZipper  INFO : AA has been created 
+2021-06-01 20:57:31  FileWriter.FileZipper  INFO : BB has been created 
+2021-06-01 20:57:31  FileWriter.FileZipper  INFO : TAB1 has been created 
+2021-06-01 20:57:31  FileWriter.FileZipper  INFO : TAB2 has been created 
+2021-06-01 20:57:31  FileWriter.FileZipper  INFO : COUNTRIES has been created 
+2021-06-01 20:57:31  botocore.hooks  DEBUG : Event before-parameter-build.s3.HeadBucket: calling handler <function validate_bucket_name at 0x000000000B9B7558>
+2021-06-01 20:57:31  botocore.hooks  DEBUG : Event before-parameter-build.s3.HeadBucket: calling handler <bound method S3RegionRedirector.redirect_from_cache of <botocore.utils.S3RegionRedirector object at 0x0000000011DE2CC8>>
+2021-06-01 20:57:31  botocore.hooks  DEBUG : Event before-parameter-build.s3.HeadBucket: calling handler <bound method S3ArnParamHandler.handle_arn of <botocore.utils.S3ArnParamHandler object at 0x0000000011DD5148>>
+2021-06-01 20:57:31  botocore.hooks  DEBUG : Event before-parameter-build.s3.HeadBucket: calling handler <function generate_idempotent_uuid at 0x000000000B9B73A8>
+2021-06-01 20:57:31  botocore.hooks  DEBUG : Event before-call.s3.HeadBucket: calling handler <function add_expect_header at 0x000000000B9B78B8>
+2021-06-01 20:57:31  botocore.hooks  DEBUG : Event before-call.s3.HeadBucket: calling handler <bound method S3RegionRedirector.set_request_url of <botocore.utils.S3RegionRedirector object at 0x0000000011DE2CC8>>
+2021-06-01 20:57:31  botocore.hooks  DEBUG : Event before-call.s3.HeadBucket: calling handler <function inject_api_version_header_if_needed at 0x000000000B9BDC18>
+2021-06-01 20:57:31  botocore.endpoint  DEBUG : Making request for OperationModel(name=HeadBucket) with params: {'url_path': '/orcl-tbls-ext-2021-06-01', 'query_string': {}, 'method': 'HEAD', 'headers': {'User-Agent': 'Boto3/1.17.62 Python/3.7.4 Windows/7 Botocore/1.20.62'}, 'body': b'', 'url': 'https://s3.ap-south-1.amazonaws.com/orcl-tbls-ext-2021-06-01', 'context': {'client_region': 'ap-south-1', 'client_config': <botocore.config.Config object at 0x0000000011DD0688>, 'has_streaming_input': False, 'auth_type': None, 'signing': {'bucket': 'orcl-tbls-ext-2021-06-01'}}}
+2021-06-01 20:57:31  botocore.hooks  DEBUG : Event request-created.s3.HeadBucket: calling handler <bound method RequestSigner.handler of <botocore.signers.RequestSigner object at 0x0000000011DD0648>>
+2021-06-01 20:57:31  botocore.hooks  DEBUG : Event choose-signer.s3.HeadBucket: calling handler <function set_operation_specific_signer at 0x000000000B9B7288>
+2021-06-01 20:57:31  botocore.hooks  DEBUG : Event before-sign.s3.HeadBucket: calling handler <bound method S3EndpointSetter.set_endpoint of <botocore.utils.S3EndpointSetter object at 0x000000000BBF2088>>
+2021-06-01 20:57:31  botocore.utils  DEBUG : Checking for DNS compatible bucket for: https://s3.ap-south-1.amazonaws.com/orcl-tbls-ext-2021-06-01
+2021-06-01 20:57:31  botocore.utils  DEBUG : URI updated to: https://orcl-tbls-ext-2021-06-01.s3.ap-south-1.amazonaws.com/
+2021-06-01 20:57:31  botocore.auth  DEBUG : Calculating signature using v4 auth.
+2021-06-01 20:57:31  botocore.auth  DEBUG : CanonicalRequest:
+HEAD
+/
+
+host:orcl-tbls-ext-2021-06-01.s3.ap-south-1.amazonaws.com
+x-amz-content-sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+x-amz-date:20210601T152731Z
+
+host;x-amz-content-sha256;x-amz-date
+e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+2021-06-01 20:57:31  botocore.auth  DEBUG : StringToSign:
+AWS4-HMAC-SHA256
+20210601T152731Z
+20210601/ap-south-1/s3/aws4_request
+3415561703089ed07eb72ee94af346c3eb3e6e5cdf489d18f95ada95d06b560a
+2021-06-01 20:57:31  botocore.auth  DEBUG : Signature:
+e4a2096588710abb72cf7d0662f6690a4cdbfe3661a28bacc8b0bbce58689899
+2021-06-01 20:57:31  botocore.endpoint  DEBUG : Sending http request: <AWSPreparedRequest stream_output=False, method=HEAD, url=https://orcl-tbls-ext-2021-06-01.s3.ap-south-1.amazonaws.com/, headers={'User-Agent': b'Boto3/1.17.62 Python/3.7.4 Windows/7 Botocore/1.20.62', 'X-Amz-Date': b'20210601T152731Z', 'X-Amz-Content-SHA256': b'e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855', 'Authorization': b'AWS4-HMAC-SHA256 Credential=AKIARVFIS5JY6QTR7PJQ/20210601/ap-south-1/s3/aws4_request, SignedHeaders=host;x-amz-content-sha256;x-amz-date, Signature=e4a2096588710abb72cf7d0662f6690a4cdbfe3661a28bacc8b0bbce58689899'}>
+2021-06-01 20:57:31  botocore.httpsession  DEBUG : Certificate path: C:\Users\Airflow\AppData\Local\Programs\Python\Python37\lib\site-packages\certifi\cacert.pem
+2021-06-01 20:57:31  urllib3.connectionpool  DEBUG : https://orcl-tbls-ext-2021-06-01.s3.ap-south-1.amazonaws.com:443 "HEAD / HTTP/1.1" 200 0
+2021-06-01 20:57:31  botocore.parsers  DEBUG : Response headers: {'x-amz-id-2': '+Xiz5gC6U7LwbgP/ZrqGh9jas3cvx9USsxOUqrY0NSN3sx5Sg8wb4aVkSPh+YwlVP312/26anas=', 'x-amz-request-id': '68R5ZWNQ9C6CRW3F', 'Date': 'Tue, 01 Jun 2021 15:27:32 GMT', 'x-amz-bucket-region': 'ap-south-1', 'Content-Type': 'application/xml', 'Server': 'AmazonS3'}
+2021-06-01 20:57:31  botocore.parsers  DEBUG : Response body:
+b''
+2021-06-01 20:57:31  botocore.hooks  DEBUG : Event needs-retry.s3.HeadBucket: calling handler <botocore.retryhandler.RetryHandler object at 0x0000000011DE2FC8>
+2021-06-01 20:57:31  botocore.retryhandler  DEBUG : No retry needed.
+2021-06-01 20:57:31  botocore.hooks  DEBUG : Event needs-retry.s3.HeadBucket: calling handler <bound method S3RegionRedirector.redirect_from_error of <botocore.utils.S3RegionRedirector object at 0x0000000011DE2CC8>>
+2021-06-01 20:57:31  s3transfer.utils  DEBUG : Acquiring 0
+2021-06-01 20:57:31  s3transfer.tasks  DEBUG : UploadSubmissionTask(transfer_id=0, {'transfer_future': <s3transfer.futures.TransferFuture object at 0x0000000011E4B6C8>}) about to wait for the following futures []
+2021-06-01 20:57:31  s3transfer.tasks  DEBUG : UploadSubmissionTask(transfer_id=0, {'transfer_future': <s3transfer.futures.TransferFuture object at 0x0000000011E4B6C8>}) done waiting for dependent futures
+2021-06-01 20:57:31  s3transfer.tasks  DEBUG : Executing task UploadSubmissionTask(transfer_id=0, {'transfer_future': <s3transfer.futures.TransferFuture object at 0x0000000011E4B6C8>}) with kwargs {'client': <botocore.client.S3 object at 0x0000000011AB9E48>, 'config': <boto3.s3.transfer.TransferConfig object at 0x0000000011E10048>, 'osutil': <s3transfer.utils.OSUtils object at 0x0000000011E10088>, 'request_executor': <s3transfer.futures.BoundedExecutor object at 0x0000000011E44488>, 'transfer_future': <s3transfer.futures.TransferFuture object at 0x0000000011E4B6C8>}
+2021-06-01 20:57:31  s3transfer.futures  DEBUG : Submitting task PutObjectTask(transfer_id=0, {'bucket': 'orcl-tbls-ext-2021-06-01', 'key': 'REGIONS.zip', 'extra_args': {}}) to executor <s3transfer.futures.BoundedExecutor object at 0x0000000011E44488> for transfer request: 0.
+2021-06-01 20:57:31  s3transfer.utils  DEBUG : Acquiring 0
+2021-06-01 20:57:31  s3transfer.tasks  DEBUG : PutObjectTask(transfer_id=0, {'bucket': 'orcl-tbls-ext-2021-06-01', 'key': 'REGIONS.zip', 'extra_args': {}}) about to wait for the following futures []
+2021-06-01 20:57:31  s3transfer.tasks  DEBUG : PutObjectTask(transfer_id=0, {'bucket': 'orcl-tbls-ext-2021-06-01', 'key': 'REGIONS.zip', 'extra_args': {}}) done waiting for dependent futures
+2021-06-01 20:57:31  s3transfer.tasks  DEBUG : Executing task PutObjectTask(transfer_id=0, {'bucket': 'orcl-tbls-ext-2021-06-01', 'key': 'REGIONS.zip', 'extra_args': {}}) with kwargs {'client': <botocore.client.S3 object at 0x0000000011AB9E48>, 'fileobj': <s3transfer.utils.ReadFileChunk object at 0x0000000011E48608>, 'bucket': 'orcl-tbls-ext-2021-06-01', 'key': 'REGIONS.zip', 'extra_args': {}}
+2021-06-01 20:57:31  botocore.hooks  DEBUG : Event before-parameter-build.s3.PutObject: calling handler <function validate_ascii_metadata at 0x000000000B9BD1F8>
+2021-06-01 20:57:31  botocore.hooks  DEBUG : Event before-parameter-build.s3.PutObject: calling handler <function sse_md5 at 0x000000000B9B75E8>
+2021-06-01 20:57:31  botocore.hooks  DEBUG : Event before-parameter-build.s3.PutObject: calling handler <function convert_body_to_file_like_object at 0x000000000B9BDAF8>
+2021-06-01 20:57:31  botocore.hooks  DEBUG : Event before-parameter-build.s3.PutObject: calling handler <function validate_bucket_name at 0x000000000B9B7558>
+2021-06-01 20:57:31  botocore.hooks  DEBUG : Event before-parameter-build.s3.PutObject: calling handler <bound method S3RegionRedirector.redirect_from_cache of <botocore.utils.S3RegionRedirector object at 0x0000000011DE2CC8>>
+2021-06-01 20:57:31  botocore.hooks  DEBUG : Event before-parameter-build.s3.PutObject: calling handler <bound method S3ArnParamHandler.handle_arn of <botocore.utils.S3ArnParamHandler object at 0x0000000011DD5148>>
+2021-06-01 20:57:31  botocore.hooks  DEBUG : Event before-parameter-build.s3.PutObject: calling handler <function generate_idempotent_uuid at 0x000000000B9B73A8>
+2021-06-01 20:57:31  botocore.hooks  DEBUG : Event before-call.s3.PutObject: calling handler <function conditionally_calculate_md5 at 0x000000000B80ED38>
+2021-06-01 20:57:31  s3transfer.utils  DEBUG : Releasing acquire 0/None
+2021-06-01 20:57:31  botocore.hooks  DEBUG : Event before-call.s3.PutObject: calling handler <function add_expect_header at 0x000000000B9B78B8>
+2021-06-01 20:57:31  botocore.handlers  DEBUG : Adding expect 100 continue header to request.
+2021-06-01 20:57:31  botocore.hooks  DEBUG : Event before-call.s3.PutObject: calling handler <bound method S3RegionRedirector.set_request_url of <botocore.utils.S3RegionRedirector object at 0x0000000011DE2CC8>>
+2021-06-01 20:57:31  botocore.hooks  DEBUG : Event before-call.s3.PutObject: calling handler <function inject_api_version_header_if_needed at 0x000000000B9BDC18>
+2021-06-01 20:57:31  botocore.endpoint  DEBUG : Making request for OperationModel(name=PutObject) with params: {'url_path': '/orcl-tbls-ext-2021-06-01/REGIONS.zip', 'query_string': {}, 'method': 'PUT', 'headers': {'User-Agent': 'Boto3/1.17.62 Python/3.7.4 Windows/7 Botocore/1.20.62', 'Content-MD5': 'HZhpQBc3ParYozBuVCB3ZQ==', 'Expect': '100-continue'}, 'body': <s3transfer.utils.ReadFileChunk object at 0x0000000011E48608>, 'url': 'https://s3.ap-south-1.amazonaws.com/orcl-tbls-ext-2021-06-01/REGIONS.zip', 'context': {'client_region': 'ap-south-1', 'client_config': <botocore.config.Config object at 0x0000000011DD0688>, 'has_streaming_input': True, 'auth_type': None, 'signing': {'bucket': 'orcl-tbls-ext-2021-06-01'}}}
+2021-06-01 20:57:31  botocore.hooks  DEBUG : Event request-created.s3.PutObject: calling handler <function signal_not_transferring at 0x0000000011B78828>
+2021-06-01 20:57:31  botocore.hooks  DEBUG : Event request-created.s3.PutObject: calling handler <bound method RequestSigner.handler of <botocore.signers.RequestSigner object at 0x0000000011DD0648>>
+2021-06-01 20:57:31  botocore.hooks  DEBUG : Event choose-signer.s3.PutObject: calling handler <function set_operation_specific_signer at 0x000000000B9B7288>
+2021-06-01 20:57:31  botocore.hooks  DEBUG : Event before-sign.s3.PutObject: calling handler <bound method S3EndpointSetter.set_endpoint of <botocore.utils.S3EndpointSetter object at 0x000000000BBF2088>>
+2021-06-01 20:57:31  botocore.utils  DEBUG : Checking for DNS compatible bucket for: https://s3.ap-south-1.amazonaws.com/orcl-tbls-ext-2021-06-01/REGIONS.zip
+2021-06-01 20:57:31  botocore.utils  DEBUG : URI updated to: https://orcl-tbls-ext-2021-06-01.s3.ap-south-1.amazonaws.com/REGIONS.zip
+2021-06-01 20:57:31  botocore.auth  DEBUG : Calculating signature using v4 auth.
+2021-06-01 20:57:31  botocore.auth  DEBUG : CanonicalRequest:
+PUT
+/REGIONS.zip
+
+content-md5:HZhpQBc3ParYozBuVCB3ZQ==
+host:orcl-tbls-ext-2021-06-01.s3.ap-south-1.amazonaws.com
+x-amz-content-sha256:UNSIGNED-PAYLOAD
+x-amz-date:20210601T152731Z
+
+content-md5;host;x-amz-content-sha256;x-amz-date
+UNSIGNED-PAYLOAD
+2021-06-01 20:57:31  botocore.auth  DEBUG : StringToSign:
+AWS4-HMAC-SHA256
+20210601T152731Z
+20210601/ap-south-1/s3/aws4_request
+48bc5ff53798f24dcb561f4364f2f603c73b44fe9ab109edbb32aa5ea2320945
+2021-06-01 20:57:31  botocore.auth  DEBUG : Signature:
+36c136178192c755478da7c6f1da0dcc39bc738158d12af7fca20ce8f0dfc103
+2021-06-01 20:57:31  botocore.hooks  DEBUG : Event request-created.s3.PutObject: calling handler <function signal_transferring at 0x0000000011B85948>
+2021-06-01 20:57:31  botocore.endpoint  DEBUG : Sending http request: <AWSPreparedRequest stream_output=False, method=PUT, url=https://orcl-tbls-ext-2021-06-01.s3.ap-south-1.amazonaws.com/REGIONS.zip, headers={'User-Agent': b'Boto3/1.17.62 Python/3.7.4 Windows/7 Botocore/1.20.62', 'Content-MD5': b'HZhpQBc3ParYozBuVCB3ZQ==', 'Expect': b'100-continue', 'X-Amz-Date': b'20210601T152731Z', 'X-Amz-Content-SHA256': b'UNSIGNED-PAYLOAD', 'Authorization': b'AWS4-HMAC-SHA256 Credential=AKIARVFIS5JY6QTR7PJQ/20210601/ap-south-1/s3/aws4_request, SignedHeaders=content-md5;host;x-amz-content-sha256;x-amz-date, Signature=36c136178192c755478da7c6f1da0dcc39bc738158d12af7fca20ce8f0dfc103', 'Content-Length': '199'}>
+2021-06-01 20:57:31  botocore.httpsession  DEBUG : Certificate path: C:\Users\Airflow\AppData\Local\Programs\Python\Python37\lib\site-packages\certifi\cacert.pem
+2021-06-01 20:57:31  botocore.awsrequest  DEBUG : Waiting for 100 Continue response.
+2021-06-01 20:57:32  botocore.awsrequest  DEBUG : 100 Continue response seen, now sending request body.
+2021-06-01 20:57:32  urllib3.connectionpool  DEBUG : https://orcl-tbls-ext-2021-06-01.s3.ap-south-1.amazonaws.com:443 "PUT /REGIONS.zip HTTP/1.1" 200 0
+2021-06-01 20:57:32  botocore.parsers  DEBUG : Response headers: {'x-amz-id-2': '1VzZ4xcHN53PnlTlefaHFajuBpwMHdPPBVlQBZcEvMEG0Z1huXrq++qaAheLdEDJbFq8cIRduUg=', 'x-amz-request-id': '68RFA04QENNGE9PW', 'Date': 'Tue, 01 Jun 2021 15:27:32 GMT', 'ETag': '"1d98694017373daad8a3306e54207765"', 'Content-Length': '0', 'Server': 'AmazonS3'}
+2021-06-01 20:57:32  botocore.parsers  DEBUG : Response body:
+b''
+2021-06-01 20:57:32  botocore.hooks  DEBUG : Event needs-retry.s3.PutObject: calling handler <botocore.retryhandler.RetryHandler object at 0x0000000011DE2FC8>
+2021-06-01 20:57:32  botocore.retryhandler  DEBUG : No retry needed.
+2021-06-01 20:57:32  botocore.hooks  DEBUG : Event needs-retry.s3.PutObject: calling handler <bound method S3RegionRedirector.redirect_from_error of <botocore.utils.S3RegionRedirector object at 0x0000000011DE2CC8>>
+2021-06-01 20:57:32  s3transfer.utils  DEBUG : Releasing acquire 0/None
+2021-06-01 20:57:32  AwsS3Conn.S3Connect  INFO : D:\Orcl-To-S3\Orcl_to_S3_batch_2021-06-01\REGIONS.zip has been transferred to 
+2021-06-01 20:57:32  botocore.hooks  DEBUG : Event before-parameter-build.s3.HeadBucket: calling handler <function validate_bucket_name at 0x000000000B9B7558>
+2021-06-01 20:57:32  botocore.hooks  DEBUG : Event before-parameter-build.s3.HeadBucket: calling handler <bound method S3RegionRedirector.redirect_from_cache of <botocore.utils.S3RegionRedirector object at 0x0000000011DE2CC8>>
+2021-06-01 20:57:32  botocore.hooks  DEBUG : Event before-parameter-build.s3.HeadBucket: calling handler <bound method S3ArnParamHandler.handle_arn of <botocore.utils.S3ArnParamHandler object at 0x0000000011DD5148>>
+2021-06-01 20:57:32  botocore.hooks  DEBUG : Event before-parameter-build.s3.HeadBucket: calling handler <function generate_idempotent_uuid at 0x000000000B9B73A8>
+2021-06-01 20:57:32  botocore.hooks  DEBUG : Event before-call.s3.HeadBucket: calling handler <function add_expect_header at 0x000000000B9B78B8>
+2021-06-01 20:57:32  botocore.hooks  DEBUG : Event before-call.s3.HeadBucket: calling handler <bound method S3RegionRedirector.set_request_url of <botocore.utils.S3RegionRedirector object at 0x0000000011DE2CC8>>
+2021-06-01 20:57:32  botocore.hooks  DEBUG : Event before-call.s3.HeadBucket: calling handler <function inject_api_version_header_if_needed at 0x000000000B9BDC18>
+2021-06-01 20:57:32  botocore.endpoint  DEBUG : Making request for OperationModel(name=HeadBucket) with params: {'url_path': '/orcl-tbls-ext-2021-06-01', 'query_string': {}, 'method': 'HEAD', 'headers': {'User-Agent': 'Boto3/1.17.62 Python/3.7.4 Windows/7 Botocore/1.20.62'}, 'body': b'', 'url': 'https://s3.ap-south-1.amazonaws.com/orcl-tbls-ext-2021-06-01', 'context': {'client_region': 'ap-south-1', 'client_config': <botocore.config.Config object at 0x0000000011DD0688>, 'has_streaming_input': False, 'auth_type': None, 'signing': {'bucket': 'orcl-tbls-ext-2021-06-01'}}}
+2021-06-01 20:57:32  botocore.hooks  DEBUG : Event request-created.s3.HeadBucket: calling handler <function signal_not_transferring at 0x0000000011B78828>
+2021-06-01 20:57:32  botocore.hooks  DEBUG : Event request-created.s3.HeadBucket: calling handler <bound method RequestSigner.handler of <botocore.signers.RequestSigner object at 0x0000000011DD0648>>
+2021-06-01 20:57:32  botocore.hooks  DEBUG : Event choose-signer.s3.HeadBucket: calling handler <function set_operation_specific_signer at 0x000000000B9B7288>
+2021-06-01 20:57:32  botocore.hooks  DEBUG : Event before-sign.s3.HeadBucket: calling handler <bound method S3EndpointSetter.set_endpoint of <botocore.utils.S3EndpointSetter object at 0x000000000BBF2088>>
+2021-06-01 20:57:32  botocore.utils  DEBUG : Checking for DNS compatible bucket for: https://s3.ap-south-1.amazonaws.com/orcl-tbls-ext-2021-06-01
+2021-06-01 20:57:32  botocore.utils  DEBUG : URI updated to: https://orcl-tbls-ext-2021-06-01.s3.ap-south-1.amazonaws.com/
+2021-06-01 20:57:32  botocore.auth  DEBUG : Calculating signature using v4 auth.
+2021-06-01 20:57:32  botocore.auth  DEBUG : CanonicalRequest:
+HEAD
+/
+
+host:orcl-tbls-ext-2021-06-01.s3.ap-south-1.amazonaws.com
+x-amz-content-sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+x-amz-date:20210601T152732Z
+
+host;x-amz-content-sha256;x-amz-date
+e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+2021-06-01 20:57:32  botocore.auth  DEBUG : StringToSign:
+AWS4-HMAC-SHA256
+20210601T152732Z
+20210601/ap-south-1/s3/aws4_request
+aa857152d161be0e346b836ed926228b0828faf9b9448935f9ad38263e823313
+2021-06-01 20:57:32  botocore.auth  DEBUG : Signature:
+50e01eb7322b74e9c07d3c584be2501f5821917ab41d84bc4d87ff179bebb737
+2021-06-01 20:57:32  botocore.hooks  DEBUG : Event request-created.s3.HeadBucket: calling handler <function signal_transferring at 0x0000000011B85948>
+2021-06-01 20:57:32  botocore.endpoint  DEBUG : Sending http request: <AWSPreparedRequest stream_output=False, method=HEAD, url=https://orcl-tbls-ext-2021-06-01.s3.ap-south-1.amazonaws.com/, headers={'User-Agent': b'Boto3/1.17.62 Python/3.7.4 Windows/7 Botocore/1.20.62', 'X-Amz-Date': b'20210601T152732Z', 'X-Amz-Content-SHA256': b'e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855', 'Authorization': b'AWS4-HMAC-SHA256 Credential=AKIARVFIS5JY6QTR7PJQ/20210601/ap-south-1/s3/aws4_request, SignedHeaders=host;x-amz-content-sha256;x-amz-date, Signature=50e01eb7322b74e9c07d3c584be2501f5821917ab41d84bc4d87ff179bebb737'}>
+2021-06-01 20:57:32  botocore.httpsession  DEBUG : Certificate path: C:\Users\Airflow\AppData\Local\Programs\Python\Python37\lib\site-packages\certifi\cacert.pem
+2021-06-01 20:57:32  urllib3.connectionpool  DEBUG : https://orcl-tbls-ext-2021-06-01.s3.ap-south-1.amazonaws.com:443 "HEAD / HTTP/1.1" 200 0
+2021-06-01 20:57:32  botocore.parsers  DEBUG : Response headers: {'x-amz-id-2': 'r5CpT+PKJAL6Wg1FRZfws7Ttnoz9e0X4rhM1S8VX5VeFvGmlkm+mJZE5Ti4Z5Q7n5cM6JcEBsX8=', 'x-amz-request-id': 'AD3VRVTCV485T4KK', 'Date': 'Tue, 01 Jun 2021 15:27:33 GMT', 'x-amz-bucket-region': 'ap-south-1', 'Content-Type': 'application/xml', 'Server': 'AmazonS3'}
+2021-06-01 20:57:32  botocore.parsers  DEBUG : Response body:
+b''
+2021-06-01 20:57:32  botocore.hooks  DEBUG : Event needs-retry.s3.HeadBucket: calling handler <botocore.retryhandler.RetryHandler object at 0x0000000011DE2FC8>
+2021-06-01 20:57:32  botocore.retryhandler  DEBUG : No retry needed.
+2021-06-01 20:57:32  botocore.hooks  DEBUG : Event needs-retry.s3.HeadBucket: calling handler <bound method S3RegionRedirector.redirect_from_error of <botocore.utils.S3RegionRedirector object at 0x0000000011DE2CC8>>
+2021-06-01 20:57:32  s3transfer.utils  DEBUG : Acquiring 0
+2021-06-01 20:57:32  s3transfer.tasks  DEBUG : UploadSubmissionTask(transfer_id=0, {'transfer_future': <s3transfer.futures.TransferFuture object at 0x0000000011E2F748>}) about to wait for the following futures []
+2021-06-01 20:57:32  s3transfer.tasks  DEBUG : UploadSubmissionTask(transfer_id=0, {'transfer_future': <s3transfer.futures.TransferFuture object at 0x0000000011E2F748>}) done waiting for dependent futures
+2021-06-01 20:57:32  s3transfer.tasks  DEBUG : Executing task UploadSubmissionTask(transfer_id=0, {'transfer_future': <s3transfer.futures.TransferFuture object at 0x0000000011E2F748>}) with kwargs {'client': <botocore.client.S3 object at 0x0000000011AB9E48>, 'config': <boto3.s3.transfer.TransferConfig object at 0x0000000009DB1B88>, 'osutil': <s3transfer.utils.OSUtils object at 0x0000000011E33C08>, 'request_executor': <s3transfer.futures.BoundedExecutor object at 0x0000000011E48208>, 'transfer_future': <s3transfer.futures.TransferFuture object at 0x0000000011E2F748>}
+2021-06-01 20:57:32  s3transfer.futures  DEBUG : Submitting task PutObjectTask(transfer_id=0, {'bucket': 'orcl-tbls-ext-2021-06-01', 'key': 'LOCATIONS.zip', 'extra_args': {}}) to executor <s3transfer.futures.BoundedExecutor object at 0x0000000011E48208> for transfer request: 0.
+2021-06-01 20:57:32  s3transfer.utils  DEBUG : Acquiring 0
+2021-06-01 20:57:32  s3transfer.tasks  DEBUG : PutObjectTask(transfer_id=0, {'bucket': 'orcl-tbls-ext-2021-06-01', 'key': 'LOCATIONS.zip', 'extra_args': {}}) about to wait for the following futures []
+2021-06-01 20:57:32  s3transfer.tasks  DEBUG : PutObjectTask(transfer_id=0, {'bucket': 'orcl-tbls-ext-2021-06-01', 'key': 'LOCATIONS.zip', 'extra_args': {}}) done waiting for dependent futures
+2021-06-01 20:57:32  s3transfer.tasks  DEBUG : Executing task PutObjectTask(transfer_id=0, {'bucket': 'orcl-tbls-ext-2021-06-01', 'key': 'LOCATIONS.zip', 'extra_args': {}}) with kwargs {'client': <botocore.client.S3 object at 0x0000000011AB9E48>, 'fileobj': <s3transfer.utils.ReadFileChunk object at 0x0000000011E3AC08>, 'bucket': 'orcl-tbls-ext-2021-06-01', 'key': 'LOCATIONS.zip', 'extra_args': {}}
+2021-06-01 20:57:32  s3transfer.utils  DEBUG : Releasing acquire 0/None
+2021-06-01 20:57:32  botocore.hooks  DEBUG : Event before-parameter-build.s3.PutObject: calling handler <function validate_ascii_metadata at 0x000000000B9BD1F8>
+2021-06-01 20:57:32  botocore.hooks  DEBUG : Event before-parameter-build.s3.PutObject: calling handler <function sse_md5 at 0x000000000B9B75E8>
+2021-06-01 20:57:32  botocore.hooks  DEBUG : Event before-parameter-build.s3.PutObject: calling handler <function convert_body_to_file_like_object at 0x000000000B9BDAF8>
+2021-06-01 20:57:32  botocore.hooks  DEBUG : Event before-parameter-build.s3.PutObject: calling handler <function validate_bucket_name at 0x000000000B9B7558>
+2021-06-01 20:57:32  botocore.hooks  DEBUG : Event before-parameter-build.s3.PutObject: calling handler <bound method S3RegionRedirector.redirect_from_cache of <botocore.utils.S3RegionRedirector object at 0x0000000011DE2CC8>>
+2021-06-01 20:57:32  botocore.hooks  DEBUG : Event before-parameter-build.s3.PutObject: calling handler <bound method S3ArnParamHandler.handle_arn of <botocore.utils.S3ArnParamHandler object at 0x0000000011DD5148>>
+2021-06-01 20:57:32  botocore.hooks  DEBUG : Event before-parameter-build.s3.PutObject: calling handler <function generate_idempotent_uuid at 0x000000000B9B73A8>
+2021-06-01 20:57:32  botocore.hooks  DEBUG : Event before-call.s3.PutObject: calling handler <function conditionally_calculate_md5 at 0x000000000B80ED38>
+2021-06-01 20:57:32  botocore.hooks  DEBUG : Event before-call.s3.PutObject: calling handler <function add_expect_header at 0x000000000B9B78B8>
+2021-06-01 20:57:32  botocore.handlers  DEBUG : Adding expect 100 continue header to request.
+2021-06-01 20:57:32  botocore.hooks  DEBUG : Event before-call.s3.PutObject: calling handler <bound method S3RegionRedirector.set_request_url of <botocore.utils.S3RegionRedirector object at 0x0000000011DE2CC8>>
+2021-06-01 20:57:32  botocore.hooks  DEBUG : Event before-call.s3.PutObject: calling handler <function inject_api_version_header_if_needed at 0x000000000B9BDC18>
+2021-06-01 20:57:32  botocore.endpoint  DEBUG : Making request for OperationModel(name=PutObject) with params: {'url_path': '/orcl-tbls-ext-2021-06-01/LOCATIONS.zip', 'query_string': {}, 'method': 'PUT', 'headers': {'User-Agent': 'Boto3/1.17.62 Python/3.7.4 Windows/7 Botocore/1.20.62', 'Content-MD5': '/FOkWnA2T83MM36puOt7xg==', 'Expect': '100-continue'}, 'body': <s3transfer.utils.ReadFileChunk object at 0x0000000011E3AC08>, 'url': 'https://s3.ap-south-1.amazonaws.com/orcl-tbls-ext-2021-06-01/LOCATIONS.zip', 'context': {'client_region': 'ap-south-1', 'client_config': <botocore.config.Config object at 0x0000000011DD0688>, 'has_streaming_input': True, 'auth_type': None, 'signing': {'bucket': 'orcl-tbls-ext-2021-06-01'}}}
+2021-06-01 20:57:32  botocore.hooks  DEBUG : Event request-created.s3.PutObject: calling handler <function signal_not_transferring at 0x0000000011B78828>
+2021-06-01 20:57:32  botocore.hooks  DEBUG : Event request-created.s3.PutObject: calling handler <bound method RequestSigner.handler of <botocore.signers.RequestSigner object at 0x0000000011DD0648>>
+2021-06-01 20:57:32  botocore.hooks  DEBUG : Event choose-signer.s3.PutObject: calling handler <function set_operation_specific_signer at 0x000000000B9B7288>
+2021-06-01 20:57:32  botocore.hooks  DEBUG : Event before-sign.s3.PutObject: calling handler <bound method S3EndpointSetter.set_endpoint of <botocore.utils.S3EndpointSetter object at 0x000000000BBF2088>>
+2021-06-01 20:57:32  botocore.utils  DEBUG : Checking for DNS compatible bucket for: https://s3.ap-south-1.amazonaws.com/orcl-tbls-ext-2021-06-01/LOCATIONS.zip
+2021-06-01 20:57:32  botocore.utils  DEBUG : URI updated to: https://orcl-tbls-ext-2021-06-01.s3.ap-south-1.amazonaws.com/LOCATIONS.zip
+2021-06-01 20:57:32  botocore.auth  DEBUG : Calculating signature using v4 auth.
+2021-06-01 20:57:32  botocore.auth  DEBUG : CanonicalRequest:
+PUT
+/LOCATIONS.zip
+
+content-md5:/FOkWnA2T83MM36puOt7xg==
+host:orcl-tbls-ext-2021-06-01.s3.ap-south-1.amazonaws.com
+x-amz-content-sha256:UNSIGNED-PAYLOAD
+x-amz-date:20210601T152732Z
+
+content-md5;host;x-amz-content-sha256;x-amz-date
+UNSIGNED-PAYLOAD
+2021-06-01 20:57:32  botocore.auth  DEBUG : StringToSign:
+AWS4-HMAC-SHA256
+20210601T152732Z
+20210601/ap-south-1/s3/aws4_request
+fa6e4511dad0f82493737c9aa6e7450f5e1c1ea7f3a7d0ce27c2be279f1fb2bf
+2021-06-01 20:57:32  botocore.auth  DEBUG : Signature:
+4e9b825a91c1b3c651b97025db397b52d3f959ce8c846179804c71d1ba2ff86c
+2021-06-01 20:57:32  botocore.hooks  DEBUG : Event request-created.s3.PutObject: calling handler <function signal_transferring at 0x0000000011B85948>
+2021-06-01 20:57:32  botocore.endpoint  DEBUG : Sending http request: <AWSPreparedRequest stream_output=False, method=PUT, url=https://orcl-tbls-ext-2021-06-01.s3.ap-south-1.amazonaws.com/LOCATIONS.zip, headers={'User-Agent': b'Boto3/1.17.62 Python/3.7.4 Windows/7 Botocore/1.20.62', 'Content-MD5': b'/FOkWnA2T83MM36puOt7xg==', 'Expect': b'100-continue', 'X-Amz-Date': b'20210601T152732Z', 'X-Amz-Content-SHA256': b'UNSIGNED-PAYLOAD', 'Authorization': b'AWS4-HMAC-SHA256 Credential=AKIARVFIS5JY6QTR7PJQ/20210601/ap-south-1/s3/aws4_request, SignedHeaders=content-md5;host;x-amz-content-sha256;x-amz-date, Signature=4e9b825a91c1b3c651b97025db397b52d3f959ce8c846179804c71d1ba2ff86c', 'Content-Length': '1020'}>
+2021-06-01 20:57:32  botocore.httpsession  DEBUG : Certificate path: C:\Users\Airflow\AppData\Local\Programs\Python\Python37\lib\site-packages\certifi\cacert.pem
+2021-06-01 20:57:32  botocore.awsrequest  DEBUG : Waiting for 100 Continue response.
+2021-06-01 20:57:32  botocore.awsrequest  DEBUG : 100 Continue response seen, now sending request body.
+2021-06-01 20:57:32  urllib3.connectionpool  DEBUG : https://orcl-tbls-ext-2021-06-01.s3.ap-south-1.amazonaws.com:443 "PUT /LOCATIONS.zip HTTP/1.1" 200 0
+2021-06-01 20:57:32  botocore.parsers  DEBUG : Response headers: {'x-amz-id-2': '0/tyJR0qO28f9m5/sAK9nn0wkft8H6xtD4FtAHTlWeGsI9c0JpOTYA1Y2Gi10RWIuji+7W6Yb8w=', 'x-amz-request-id': 'AD3N32A5DPVNAXFM', 'Date': 'Tue, 01 Jun 2021 15:27:33 GMT', 'ETag': '"fc53a45a70364fcdcc337ea9b8eb7bc6"', 'Content-Length': '0', 'Server': 'AmazonS3'}
+2021-06-01 20:57:32  botocore.parsers  DEBUG : Response body:
+b''
+2021-06-01 20:57:32  botocore.hooks  DEBUG : Event needs-retry.s3.PutObject: calling handler <botocore.retryhandler.RetryHandler object at 0x0000000011DE2FC8>
+2021-06-01 20:57:32  botocore.retryhandler  DEBUG : No retry needed.
+2021-06-01 20:57:32  botocore.hooks  DEBUG : Event needs-retry.s3.PutObject: calling handler <bound method S3RegionRedirector.redirect_from_error of <botocore.utils.S3RegionRedirector object at 0x0000000011DE2CC8>>
+2021-06-01 20:57:32  s3transfer.utils  DEBUG : Releasing acquire 0/None
+2021-06-01 20:57:32  AwsS3Conn.S3Connect  INFO : D:\Orcl-To-S3\Orcl_to_S3_batch_2021-06-01\LOCATIONS.zip has been transferred to 
+2021-06-01 20:57:32  botocore.hooks  DEBUG : Event before-parameter-build.s3.HeadBucket: calling handler <function validate_bucket_name at 0x000000000B9B7558>
+2021-06-01 20:57:32  botocore.hooks  DEBUG : Event before-parameter-build.s3.HeadBucket: calling handler <bound method S3RegionRedirector.redirect_from_cache of <botocore.utils.S3RegionRedirector object at 0x0000000011DE2CC8>>
+2021-06-01 20:57:32  botocore.hooks  DEBUG : Event before-parameter-build.s3.HeadBucket: calling handler <bound method S3ArnParamHandler.handle_arn of <botocore.utils.S3ArnParamHandler object at 0x0000000011DD5148>>
+2021-06-01 20:57:32  botocore.hooks  DEBUG : Event before-parameter-build.s3.HeadBucket: calling handler <function generate_idempotent_uuid at 0x000000000B9B73A8>
+2021-06-01 20:57:32  botocore.hooks  DEBUG : Event before-call.s3.HeadBucket: calling handler <function add_expect_header at 0x000000000B9B78B8>
+2021-06-01 20:57:32  botocore.hooks  DEBUG : Event before-call.s3.HeadBucket: calling handler <bound method S3RegionRedirector.set_request_url of <botocore.utils.S3RegionRedirector object at 0x0000000011DE2CC8>>
+2021-06-01 20:57:32  botocore.hooks  DEBUG : Event before-call.s3.HeadBucket: calling handler <function inject_api_version_header_if_needed at 0x000000000B9BDC18>
+2021-06-01 20:57:32  botocore.endpoint  DEBUG : Making request for OperationModel(name=HeadBucket) with params: {'url_path': '/orcl-tbls-ext-2021-06-01', 'query_string': {}, 'method': 'HEAD', 'headers': {'User-Agent': 'Boto3/1.17.62 Python/3.7.4 Windows/7 Botocore/1.20.62'}, 'body': b'', 'url': 'https://s3.ap-south-1.amazonaws.com/orcl-tbls-ext-2021-06-01', 'context': {'client_region': 'ap-south-1', 'client_config': <botocore.config.Config object at 0x0000000011DD0688>, 'has_streaming_input': False, 'auth_type': None, 'signing': {'bucket': 'orcl-tbls-ext-2021-06-01'}}}
+2021-06-01 20:57:32  botocore.hooks  DEBUG : Event request-created.s3.HeadBucket: calling handler <function signal_not_transferring at 0x0000000011B78828>
+2021-06-01 20:57:32  botocore.hooks  DEBUG : Event request-created.s3.HeadBucket: calling handler <bound method RequestSigner.handler of <botocore.signers.RequestSigner object at 0x0000000011DD0648>>
+2021-06-01 20:57:32  botocore.hooks  DEBUG : Event choose-signer.s3.HeadBucket: calling handler <function set_operation_specific_signer at 0x000000000B9B7288>
+2021-06-01 20:57:32  botocore.hooks  DEBUG : Event before-sign.s3.HeadBucket: calling handler <bound method S3EndpointSetter.set_endpoint of <botocore.utils.S3EndpointSetter object at 0x000000000BBF2088>>
+2021-06-01 20:57:32  botocore.utils  DEBUG : Checking for DNS compatible bucket for: https://s3.ap-south-1.amazonaws.com/orcl-tbls-ext-2021-06-01
+2021-06-01 20:57:32  botocore.utils  DEBUG : URI updated to: https://orcl-tbls-ext-2021-06-01.s3.ap-south-1.amazonaws.com/
+2021-06-01 20:57:32  botocore.auth  DEBUG : Calculating signature using v4 auth.
+2021-06-01 20:57:32  botocore.auth  DEBUG : CanonicalRequest:
+HEAD
+/
+
+host:orcl-tbls-ext-2021-06-01.s3.ap-south-1.amazonaws.com
+x-amz-content-sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+x-amz-date:20210601T152732Z
+
+host;x-amz-content-sha256;x-amz-date
+e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+2021-06-01 20:57:32  botocore.auth  DEBUG : StringToSign:
+AWS4-HMAC-SHA256
+20210601T152732Z
+20210601/ap-south-1/s3/aws4_request
+aa857152d161be0e346b836ed926228b0828faf9b9448935f9ad38263e823313
+2021-06-01 20:57:32  botocore.auth  DEBUG : Signature:
+50e01eb7322b74e9c07d3c584be2501f5821917ab41d84bc4d87ff179bebb737
+2021-06-01 20:57:32  botocore.hooks  DEBUG : Event request-created.s3.HeadBucket: calling handler <function signal_transferring at 0x0000000011B85948>
+2021-06-01 20:57:32  botocore.endpoint  DEBUG : Sending http request: <AWSPreparedRequest stream_output=False, method=HEAD, url=https://orcl-tbls-ext-2021-06-01.s3.ap-south-1.amazonaws.com/, headers={'User-Agent': b'Boto3/1.17.62 Python/3.7.4 Windows/7 Botocore/1.20.62', 'X-Amz-Date': b'20210601T152732Z', 'X-Amz-Content-SHA256': b'e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855', 'Authorization': b'AWS4-HMAC-SHA256 Credential=AKIARVFIS5JY6QTR7PJQ/20210601/ap-south-1/s3/aws4_request, SignedHeaders=host;x-amz-content-sha256;x-amz-date, Signature=50e01eb7322b74e9c07d3c584be2501f5821917ab41d84bc4d87ff179bebb737'}>
+2021-06-01 20:57:32  botocore.httpsession  DEBUG : Certificate path: C:\Users\Airflow\AppData\Local\Programs\Python\Python37\lib\site-packages\certifi\cacert.pem
+2021-06-01 20:57:32  urllib3.connectionpool  DEBUG : https://orcl-tbls-ext-2021-06-01.s3.ap-south-1.amazonaws.com:443 "HEAD / HTTP/1.1" 200 0
+2021-06-01 20:57:32  botocore.parsers  DEBUG : Response headers: {'x-amz-id-2': 'zSWYYgGTJ8MHu34vfkqXySM6kVi08Vc0rLxAOSPL8W9VrDjBtrPpozZexUVY3UbmgRaf40EvxVs=', 'x-amz-request-id': 'AD3V3HXA4DWR78H1', 'Date': 'Tue, 01 Jun 2021 15:27:33 GMT', 'x-amz-bucket-region': 'ap-south-1', 'Content-Type': 'application/xml', 'Server': 'AmazonS3'}
+2021-06-01 20:57:32  botocore.parsers  DEBUG : Response body:
+b''
+2021-06-01 20:57:32  botocore.hooks  DEBUG : Event needs-retry.s3.HeadBucket: calling handler <botocore.retryhandler.RetryHandler object at 0x0000000011DE2FC8>
+2021-06-01 20:57:32  botocore.retryhandler  DEBUG : No retry needed.
+2021-06-01 20:57:32  botocore.hooks  DEBUG : Event needs-retry.s3.HeadBucket: calling handler <bound method S3RegionRedirector.redirect_from_error of <botocore.utils.S3RegionRedirector object at 0x0000000011DE2CC8>>
+2021-06-01 20:57:32  s3transfer.utils  DEBUG : Acquiring 0
+2021-06-01 20:57:32  s3transfer.tasks  DEBUG : UploadSubmissionTask(transfer_id=0, {'transfer_future': <s3transfer.futures.TransferFuture object at 0x0000000011E485C8>}) about to wait for the following futures []
+2021-06-01 20:57:32  s3transfer.tasks  DEBUG : UploadSubmissionTask(transfer_id=0, {'transfer_future': <s3transfer.futures.TransferFuture object at 0x0000000011E485C8>}) done waiting for dependent futures
+2021-06-01 20:57:32  s3transfer.tasks  DEBUG : Executing task UploadSubmissionTask(transfer_id=0, {'transfer_future': <s3transfer.futures.TransferFuture object at 0x0000000011E485C8>}) with kwargs {'client': <botocore.client.S3 object at 0x0000000011AB9E48>, 'config': <boto3.s3.transfer.TransferConfig object at 0x0000000011E2F648>, 'osutil': <s3transfer.utils.OSUtils object at 0x0000000011E2F748>, 'request_executor': <s3transfer.futures.BoundedExecutor object at 0x0000000011DD0C88>, 'transfer_future': <s3transfer.futures.TransferFuture object at 0x0000000011E485C8>}
+2021-06-01 20:57:32  s3transfer.futures  DEBUG : Submitting task PutObjectTask(transfer_id=0, {'bucket': 'orcl-tbls-ext-2021-06-01', 'key': 'DEPARTMENTS.zip', 'extra_args': {}}) to executor <s3transfer.futures.BoundedExecutor object at 0x0000000011DD0C88> for transfer request: 0.
+2021-06-01 20:57:32  s3transfer.utils  DEBUG : Acquiring 0
+2021-06-01 20:57:32  s3transfer.tasks  DEBUG : PutObjectTask(transfer_id=0, {'bucket': 'orcl-tbls-ext-2021-06-01', 'key': 'DEPARTMENTS.zip', 'extra_args': {}}) about to wait for the following futures []
+2021-06-01 20:57:32  s3transfer.tasks  DEBUG : PutObjectTask(transfer_id=0, {'bucket': 'orcl-tbls-ext-2021-06-01', 'key': 'DEPARTMENTS.zip', 'extra_args': {}}) done waiting for dependent futures
+2021-06-01 20:57:32  s3transfer.tasks  DEBUG : Executing task PutObjectTask(transfer_id=0, {'bucket': 'orcl-tbls-ext-2021-06-01', 'key': 'DEPARTMENTS.zip', 'extra_args': {}}) with kwargs {'client': <botocore.client.S3 object at 0x0000000011AB9E48>, 'fileobj': <s3transfer.utils.ReadFileChunk object at 0x0000000011E3A208>, 'bucket': 'orcl-tbls-ext-2021-06-01', 'key': 'DEPARTMENTS.zip', 'extra_args': {}}
+2021-06-01 20:57:32  botocore.hooks  DEBUG : Event before-parameter-build.s3.PutObject: calling handler <function validate_ascii_metadata at 0x000000000B9BD1F8>
+2021-06-01 20:57:32  botocore.hooks  DEBUG : Event before-parameter-build.s3.PutObject: calling handler <function sse_md5 at 0x000000000B9B75E8>
+2021-06-01 20:57:32  botocore.hooks  DEBUG : Event before-parameter-build.s3.PutObject: calling handler <function convert_body_to_file_like_object at 0x000000000B9BDAF8>
+2021-06-01 20:57:32  botocore.hooks  DEBUG : Event before-parameter-build.s3.PutObject: calling handler <function validate_bucket_name at 0x000000000B9B7558>
+2021-06-01 20:57:32  botocore.hooks  DEBUG : Event before-parameter-build.s3.PutObject: calling handler <bound method S3RegionRedirector.redirect_from_cache of <botocore.utils.S3RegionRedirector object at 0x0000000011DE2CC8>>
+2021-06-01 20:57:32  botocore.hooks  DEBUG : Event before-parameter-build.s3.PutObject: calling handler <bound method S3ArnParamHandler.handle_arn of <botocore.utils.S3ArnParamHandler object at 0x0000000011DD5148>>
+2021-06-01 20:57:32  botocore.hooks  DEBUG : Event before-parameter-build.s3.PutObject: calling handler <function generate_idempotent_uuid at 0x000000000B9B73A8>
+2021-06-01 20:57:32  botocore.hooks  DEBUG : Event before-call.s3.PutObject: calling handler <function conditionally_calculate_md5 at 0x000000000B80ED38>
+2021-06-01 20:57:32  s3transfer.utils  DEBUG : Releasing acquire 0/None
+2021-06-01 20:57:32  botocore.hooks  DEBUG : Event before-call.s3.PutObject: calling handler <function add_expect_header at 0x000000000B9B78B8>
+2021-06-01 20:57:32  botocore.handlers  DEBUG : Adding expect 100 continue header to request.
+2021-06-01 20:57:32  botocore.hooks  DEBUG : Event before-call.s3.PutObject: calling handler <bound method S3RegionRedirector.set_request_url of <botocore.utils.S3RegionRedirector object at 0x0000000011DE2CC8>>
+2021-06-01 20:57:32  botocore.hooks  DEBUG : Event before-call.s3.PutObject: calling handler <function inject_api_version_header_if_needed at 0x000000000B9BDC18>
+2021-06-01 20:57:32  botocore.endpoint  DEBUG : Making request for OperationModel(name=PutObject) with params: {'url_path': '/orcl-tbls-ext-2021-06-01/DEPARTMENTS.zip', 'query_string': {}, 'method': 'PUT', 'headers': {'User-Agent': 'Boto3/1.17.62 Python/3.7.4 Windows/7 Botocore/1.20.62', 'Content-MD5': 'Xbf9ySyjO/xM4uY6kdW6BQ==', 'Expect': '100-continue'}, 'body': <s3transfer.utils.ReadFileChunk object at 0x0000000011E3A208>, 'url': 'https://s3.ap-south-1.amazonaws.com/orcl-tbls-ext-2021-06-01/DEPARTMENTS.zip', 'context': {'client_region': 'ap-south-1', 'client_config': <botocore.config.Config object at 0x0000000011DD0688>, 'has_streaming_input': True, 'auth_type': None, 'signing': {'bucket': 'orcl-tbls-ext-2021-06-01'}}}
+2021-06-01 20:57:32  botocore.hooks  DEBUG : Event request-created.s3.PutObject: calling handler <function signal_not_transferring at 0x0000000011B78828>
+2021-06-01 20:57:32  botocore.hooks  DEBUG : Event request-created.s3.PutObject: calling handler <bound method RequestSigner.handler of <botocore.signers.RequestSigner object at 0x0000000011DD0648>>
+2021-06-01 20:57:32  botocore.hooks  DEBUG : Event choose-signer.s3.PutObject: calling handler <function set_operation_specific_signer at 0x000000000B9B7288>
+2021-06-01 20:57:32  botocore.hooks  DEBUG : Event before-sign.s3.PutObject: calling handler <bound method S3EndpointSetter.set_endpoint of <botocore.utils.S3EndpointSetter object at 0x000000000BBF2088>>
+2021-06-01 20:57:32  botocore.utils  DEBUG : Checking for DNS compatible bucket for: https://s3.ap-south-1.amazonaws.com/orcl-tbls-ext-2021-06-01/DEPARTMENTS.zip
+2021-06-01 20:57:32  botocore.utils  DEBUG : URI updated to: https://orcl-tbls-ext-2021-06-01.s3.ap-south-1.amazonaws.com/DEPARTMENTS.zip
+2021-06-01 20:57:32  botocore.auth  DEBUG : Calculating signature using v4 auth.
+2021-06-01 20:57:32  botocore.auth  DEBUG : CanonicalRequest:
+PUT
+/DEPARTMENTS.zip
+
+content-md5:Xbf9ySyjO/xM4uY6kdW6BQ==
+host:orcl-tbls-ext-2021-06-01.s3.ap-south-1.amazonaws.com
+x-amz-content-sha256:UNSIGNED-PAYLOAD
+x-amz-date:20210601T152732Z
+
+content-md5;host;x-amz-content-sha256;x-amz-date
+UNSIGNED-PAYLOAD
+2021-06-01 20:57:32  botocore.auth  DEBUG : StringToSign:
+AWS4-HMAC-SHA256
+20210601T152732Z
+20210601/ap-south-1/s3/aws4_request
+04b3481dd745f50cedbccb2d0b821ad28b8c46e64124ef51c6d0bcee00169259
+2021-06-01 20:57:32  botocore.auth  DEBUG : Signature:
+c263af4e8f686f30e30cc1924007299fb6fa845f8470d1800b8f27790e9cbbfb
+2021-06-01 20:57:32  botocore.hooks  DEBUG : Event request-created.s3.PutObject: calling handler <function signal_transferring at 0x0000000011B85948>
+2021-06-01 20:57:32  botocore.endpoint  DEBUG : Sending http request: <AWSPreparedRequest stream_output=False, method=PUT, url=https://orcl-tbls-ext-2021-06-01.s3.ap-south-1.amazonaws.com/DEPARTMENTS.zip, headers={'User-Agent': b'Boto3/1.17.62 Python/3.7.4 Windows/7 Botocore/1.20.62', 'Content-MD5': b'Xbf9ySyjO/xM4uY6kdW6BQ==', 'Expect': b'100-continue', 'X-Amz-Date': b'20210601T152732Z', 'X-Amz-Content-SHA256': b'UNSIGNED-PAYLOAD', 'Authorization': b'AWS4-HMAC-SHA256 Credential=AKIARVFIS5JY6QTR7PJQ/20210601/ap-south-1/s3/aws4_request, SignedHeaders=content-md5;host;x-amz-content-sha256;x-amz-date, Signature=c263af4e8f686f30e30cc1924007299fb6fa845f8470d1800b8f27790e9cbbfb', 'Content-Length': '523'}>
+2021-06-01 20:57:32  botocore.httpsession  DEBUG : Certificate path: C:\Users\Airflow\AppData\Local\Programs\Python\Python37\lib\site-packages\certifi\cacert.pem
+2021-06-01 20:57:32  botocore.awsrequest  DEBUG : Waiting for 100 Continue response.
+2021-06-01 20:57:33  botocore.awsrequest  DEBUG : 100 Continue response seen, now sending request body.
+2021-06-01 20:57:33  urllib3.connectionpool  DEBUG : https://orcl-tbls-ext-2021-06-01.s3.ap-south-1.amazonaws.com:443 "PUT /DEPARTMENTS.zip HTTP/1.1" 200 0
+2021-06-01 20:57:33  botocore.parsers  DEBUG : Response headers: {'x-amz-id-2': '/X6O7/gn2/38ssMmAUCjttjdrRls9maXoh8vW8mDs86RG+OrRBvXxxFSt2em0VHx5j+a5tBJN1E=', 'x-amz-request-id': 'ME6142DNDPS5V54S', 'Date': 'Tue, 01 Jun 2021 15:27:34 GMT', 'ETag': '"5db7fdc92ca33bfc4ce2e63a91d5ba05"', 'Content-Length': '0', 'Server': 'AmazonS3'}
+2021-06-01 20:57:33  botocore.parsers  DEBUG : Response body:
+b''
+2021-06-01 20:57:33  botocore.hooks  DEBUG : Event needs-retry.s3.PutObject: calling handler <botocore.retryhandler.RetryHandler object at 0x0000000011DE2FC8>
+2021-06-01 20:57:33  botocore.retryhandler  DEBUG : No retry needed.
+2021-06-01 20:57:33  botocore.hooks  DEBUG : Event needs-retry.s3.PutObject: calling handler <bound method S3RegionRedirector.redirect_from_error of <botocore.utils.S3RegionRedirector object at 0x0000000011DE2CC8>>
+2021-06-01 20:57:33  s3transfer.utils  DEBUG : Releasing acquire 0/None
+2021-06-01 20:57:33  AwsS3Conn.S3Connect  INFO : D:\Orcl-To-S3\Orcl_to_S3_batch_2021-06-01\DEPARTMENTS.zip has been transferred to 
+2021-06-01 20:57:33  botocore.hooks  DEBUG : Event before-parameter-build.s3.HeadBucket: calling handler <function validate_bucket_name at 0x000000000B9B7558>
+2021-06-01 20:57:33  botocore.hooks  DEBUG : Event before-parameter-build.s3.HeadBucket: calling handler <bound method S3RegionRedirector.redirect_from_cache of <botocore.utils.S3RegionRedirector object at 0x0000000011DE2CC8>>
+2021-06-01 20:57:33  botocore.hooks  DEBUG : Event before-parameter-build.s3.HeadBucket: calling handler <bound method S3ArnParamHandler.handle_arn of <botocore.utils.S3ArnParamHandler object at 0x0000000011DD5148>>
+2021-06-01 20:57:33  botocore.hooks  DEBUG : Event before-parameter-build.s3.HeadBucket: calling handler <function generate_idempotent_uuid at 0x000000000B9B73A8>
+2021-06-01 20:57:33  botocore.hooks  DEBUG : Event before-call.s3.HeadBucket: calling handler <function add_expect_header at 0x000000000B9B78B8>
+2021-06-01 20:57:33  botocore.hooks  DEBUG : Event before-call.s3.HeadBucket: calling handler <bound method S3RegionRedirector.set_request_url of <botocore.utils.S3RegionRedirector object at 0x0000000011DE2CC8>>
+2021-06-01 20:57:33  botocore.hooks  DEBUG : Event before-call.s3.HeadBucket: calling handler <function inject_api_version_header_if_needed at 0x000000000B9BDC18>
+2021-06-01 20:57:33  botocore.endpoint  DEBUG : Making request for OperationModel(name=HeadBucket) with params: {'url_path': '/orcl-tbls-ext-2021-06-01', 'query_string': {}, 'method': 'HEAD', 'headers': {'User-Agent': 'Boto3/1.17.62 Python/3.7.4 Windows/7 Botocore/1.20.62'}, 'body': b'', 'url': 'https://s3.ap-south-1.amazonaws.com/orcl-tbls-ext-2021-06-01', 'context': {'client_region': 'ap-south-1', 'client_config': <botocore.config.Config object at 0x0000000011DD0688>, 'has_streaming_input': False, 'auth_type': None, 'signing': {'bucket': 'orcl-tbls-ext-2021-06-01'}}}
+2021-06-01 20:57:33  botocore.hooks  DEBUG : Event request-created.s3.HeadBucket: calling handler <function signal_not_transferring at 0x0000000011B78828>
+2021-06-01 20:57:33  botocore.hooks  DEBUG : Event request-created.s3.HeadBucket: calling handler <bound method RequestSigner.handler of <botocore.signers.RequestSigner object at 0x0000000011DD0648>>
+2021-06-01 20:57:33  botocore.hooks  DEBUG : Event choose-signer.s3.HeadBucket: calling handler <function set_operation_specific_signer at 0x000000000B9B7288>
+2021-06-01 20:57:33  botocore.hooks  DEBUG : Event before-sign.s3.HeadBucket: calling handler <bound method S3EndpointSetter.set_endpoint of <botocore.utils.S3EndpointSetter object at 0x000000000BBF2088>>
+2021-06-01 20:57:33  botocore.utils  DEBUG : Checking for DNS compatible bucket for: https://s3.ap-south-1.amazonaws.com/orcl-tbls-ext-2021-06-01
+2021-06-01 20:57:33  botocore.utils  DEBUG : URI updated to: https://orcl-tbls-ext-2021-06-01.s3.ap-south-1.amazonaws.com/
+2021-06-01 20:57:33  botocore.auth  DEBUG : Calculating signature using v4 auth.
+2021-06-01 20:57:33  botocore.auth  DEBUG : CanonicalRequest:
+HEAD
+/
+
+host:orcl-tbls-ext-2021-06-01.s3.ap-south-1.amazonaws.com
+x-amz-content-sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+x-amz-date:20210601T152733Z
+
+host;x-amz-content-sha256;x-amz-date
+e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+2021-06-01 20:57:33  botocore.auth  DEBUG : StringToSign:
+AWS4-HMAC-SHA256
+20210601T152733Z
+20210601/ap-south-1/s3/aws4_request
+befffa0608a34c085a04c531a53505f78dd898233b63b2f95abd86bb2d4433de
+2021-06-01 20:57:33  botocore.auth  DEBUG : Signature:
+87a499244d4ecc875b005b9bc9186d0a7a00f64108d38b7affef33f0feb4bc4e
+2021-06-01 20:57:33  botocore.hooks  DEBUG : Event request-created.s3.HeadBucket: calling handler <function signal_transferring at 0x0000000011B85948>
+2021-06-01 20:57:33  botocore.endpoint  DEBUG : Sending http request: <AWSPreparedRequest stream_output=False, method=HEAD, url=https://orcl-tbls-ext-2021-06-01.s3.ap-south-1.amazonaws.com/, headers={'User-Agent': b'Boto3/1.17.62 Python/3.7.4 Windows/7 Botocore/1.20.62', 'X-Amz-Date': b'20210601T152733Z', 'X-Amz-Content-SHA256': b'e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855', 'Authorization': b'AWS4-HMAC-SHA256 Credential=AKIARVFIS5JY6QTR7PJQ/20210601/ap-south-1/s3/aws4_request, SignedHeaders=host;x-amz-content-sha256;x-amz-date, Signature=87a499244d4ecc875b005b9bc9186d0a7a00f64108d38b7affef33f0feb4bc4e'}>
+2021-06-01 20:57:33  botocore.httpsession  DEBUG : Certificate path: C:\Users\Airflow\AppData\Local\Programs\Python\Python37\lib\site-packages\certifi\cacert.pem
+2021-06-01 20:57:33  urllib3.connectionpool  DEBUG : https://orcl-tbls-ext-2021-06-01.s3.ap-south-1.amazonaws.com:443 "HEAD / HTTP/1.1" 200 0
+2021-06-01 20:57:33  botocore.parsers  DEBUG : Response headers: {'x-amz-id-2': '1k8ulVbnzpIDj1+28IWt/xpKb7vfV+CLXpSEFph2xWtZvWBeuGu0prPFCQqy1y3FRb65K3uKSX0=', 'x-amz-request-id': 'ME68EGNMGSA8AA1Y', 'Date': 'Tue, 01 Jun 2021 15:27:34 GMT', 'x-amz-bucket-region': 'ap-south-1', 'Content-Type': 'application/xml', 'Server': 'AmazonS3'}
+2021-06-01 20:57:33  botocore.parsers  DEBUG : Response body:
+b''
+2021-06-01 20:57:33  botocore.hooks  DEBUG : Event needs-retry.s3.HeadBucket: calling handler <botocore.retryhandler.RetryHandler object at 0x0000000011DE2FC8>
+2021-06-01 20:57:33  botocore.retryhandler  DEBUG : No retry needed.
+2021-06-01 20:57:33  botocore.hooks  DEBUG : Event needs-retry.s3.HeadBucket: calling handler <bound method S3RegionRedirector.redirect_from_error of <botocore.utils.S3RegionRedirector object at 0x0000000011DE2CC8>>
+2021-06-01 20:57:33  s3transfer.utils  DEBUG : Acquiring 0
+2021-06-01 20:57:33  s3transfer.tasks  DEBUG : UploadSubmissionTask(transfer_id=0, {'transfer_future': <s3transfer.futures.TransferFuture object at 0x0000000011E44748>}) about to wait for the following futures []
+2021-06-01 20:57:33  s3transfer.tasks  DEBUG : UploadSubmissionTask(transfer_id=0, {'transfer_future': <s3transfer.futures.TransferFuture object at 0x0000000011E44748>}) done waiting for dependent futures
+2021-06-01 20:57:33  s3transfer.tasks  DEBUG : Executing task UploadSubmissionTask(transfer_id=0, {'transfer_future': <s3transfer.futures.TransferFuture object at 0x0000000011E44748>}) with kwargs {'client': <botocore.client.S3 object at 0x0000000011AB9E48>, 'config': <boto3.s3.transfer.TransferConfig object at 0x0000000011E488C8>, 'osutil': <s3transfer.utils.OSUtils object at 0x0000000011E48A08>, 'request_executor': <s3transfer.futures.BoundedExecutor object at 0x0000000011E3AF48>, 'transfer_future': <s3transfer.futures.TransferFuture object at 0x0000000011E44748>}
+2021-06-01 20:57:33  s3transfer.futures  DEBUG : Submitting task PutObjectTask(transfer_id=0, {'bucket': 'orcl-tbls-ext-2021-06-01', 'key': 'JOBS.zip', 'extra_args': {}}) to executor <s3transfer.futures.BoundedExecutor object at 0x0000000011E3AF48> for transfer request: 0.
+2021-06-01 20:57:33  s3transfer.utils  DEBUG : Acquiring 0
+2021-06-01 20:57:33  s3transfer.tasks  DEBUG : PutObjectTask(transfer_id=0, {'bucket': 'orcl-tbls-ext-2021-06-01', 'key': 'JOBS.zip', 'extra_args': {}}) about to wait for the following futures []
+2021-06-01 20:57:33  s3transfer.tasks  DEBUG : PutObjectTask(transfer_id=0, {'bucket': 'orcl-tbls-ext-2021-06-01', 'key': 'JOBS.zip', 'extra_args': {}}) done waiting for dependent futures
+2021-06-01 20:57:33  s3transfer.tasks  DEBUG : Executing task PutObjectTask(transfer_id=0, {'bucket': 'orcl-tbls-ext-2021-06-01', 'key': 'JOBS.zip', 'extra_args': {}}) with kwargs {'client': <botocore.client.S3 object at 0x0000000011AB9E48>, 'fileobj': <s3transfer.utils.ReadFileChunk object at 0x0000000011E364C8>, 'bucket': 'orcl-tbls-ext-2021-06-01', 'key': 'JOBS.zip', 'extra_args': {}}
+2021-06-01 20:57:33  botocore.hooks  DEBUG : Event before-parameter-build.s3.PutObject: calling handler <function validate_ascii_metadata at 0x000000000B9BD1F8>
+2021-06-01 20:57:33  botocore.hooks  DEBUG : Event before-parameter-build.s3.PutObject: calling handler <function sse_md5 at 0x000000000B9B75E8>
+2021-06-01 20:57:33  botocore.hooks  DEBUG : Event before-parameter-build.s3.PutObject: calling handler <function convert_body_to_file_like_object at 0x000000000B9BDAF8>
+2021-06-01 20:57:33  botocore.hooks  DEBUG : Event before-parameter-build.s3.PutObject: calling handler <function validate_bucket_name at 0x000000000B9B7558>
+2021-06-01 20:57:33  botocore.hooks  DEBUG : Event before-parameter-build.s3.PutObject: calling handler <bound method S3RegionRedirector.redirect_from_cache of <botocore.utils.S3RegionRedirector object at 0x0000000011DE2CC8>>
+2021-06-01 20:57:33  botocore.hooks  DEBUG : Event before-parameter-build.s3.PutObject: calling handler <bound method S3ArnParamHandler.handle_arn of <botocore.utils.S3ArnParamHandler object at 0x0000000011DD5148>>
+2021-06-01 20:57:33  botocore.hooks  DEBUG : Event before-parameter-build.s3.PutObject: calling handler <function generate_idempotent_uuid at 0x000000000B9B73A8>
+2021-06-01 20:57:33  botocore.hooks  DEBUG : Event before-call.s3.PutObject: calling handler <function conditionally_calculate_md5 at 0x000000000B80ED38>
+2021-06-01 20:57:33  s3transfer.utils  DEBUG : Releasing acquire 0/None
+2021-06-01 20:57:33  botocore.hooks  DEBUG : Event before-call.s3.PutObject: calling handler <function add_expect_header at 0x000000000B9B78B8>
+2021-06-01 20:57:33  botocore.handlers  DEBUG : Adding expect 100 continue header to request.
+2021-06-01 20:57:33  botocore.hooks  DEBUG : Event before-call.s3.PutObject: calling handler <bound method S3RegionRedirector.set_request_url of <botocore.utils.S3RegionRedirector object at 0x0000000011DE2CC8>>
+2021-06-01 20:57:33  botocore.hooks  DEBUG : Event before-call.s3.PutObject: calling handler <function inject_api_version_header_if_needed at 0x000000000B9BDC18>
+2021-06-01 20:57:33  botocore.endpoint  DEBUG : Making request for OperationModel(name=PutObject) with params: {'url_path': '/orcl-tbls-ext-2021-06-01/JOBS.zip', 'query_string': {}, 'method': 'PUT', 'headers': {'User-Agent': 'Boto3/1.17.62 Python/3.7.4 Windows/7 Botocore/1.20.62', 'Content-MD5': 'SVobnVnTTOH61rlKdQMdHg==', 'Expect': '100-continue'}, 'body': <s3transfer.utils.ReadFileChunk object at 0x0000000011E364C8>, 'url': 'https://s3.ap-south-1.amazonaws.com/orcl-tbls-ext-2021-06-01/JOBS.zip', 'context': {'client_region': 'ap-south-1', 'client_config': <botocore.config.Config object at 0x0000000011DD0688>, 'has_streaming_input': True, 'auth_type': None, 'signing': {'bucket': 'orcl-tbls-ext-2021-06-01'}}}
+2021-06-01 20:57:33  botocore.hooks  DEBUG : Event request-created.s3.PutObject: calling handler <function signal_not_transferring at 0x0000000011B78828>
+2021-06-01 20:57:33  botocore.hooks  DEBUG : Event request-created.s3.PutObject: calling handler <bound method RequestSigner.handler of <botocore.signers.RequestSigner object at 0x0000000011DD0648>>
+2021-06-01 20:57:33  botocore.hooks  DEBUG : Event choose-signer.s3.PutObject: calling handler <function set_operation_specific_signer at 0x000000000B9B7288>
+2021-06-01 20:57:33  botocore.hooks  DEBUG : Event before-sign.s3.PutObject: calling handler <bound method S3EndpointSetter.set_endpoint of <botocore.utils.S3EndpointSetter object at 0x000000000BBF2088>>
+2021-06-01 20:57:33  botocore.utils  DEBUG : Checking for DNS compatible bucket for: https://s3.ap-south-1.amazonaws.com/orcl-tbls-ext-2021-06-01/JOBS.zip
+2021-06-01 20:57:33  botocore.utils  DEBUG : URI updated to: https://orcl-tbls-ext-2021-06-01.s3.ap-south-1.amazonaws.com/JOBS.zip
+2021-06-01 20:57:33  botocore.auth  DEBUG : Calculating signature using v4 auth.
+2021-06-01 20:57:33  botocore.auth  DEBUG : CanonicalRequest:
+PUT
+/JOBS.zip
+
+content-md5:SVobnVnTTOH61rlKdQMdHg==
+host:orcl-tbls-ext-2021-06-01.s3.ap-south-1.amazonaws.com
+x-amz-content-sha256:UNSIGNED-PAYLOAD
+x-amz-date:20210601T152733Z
+
+content-md5;host;x-amz-content-sha256;x-amz-date
+UNSIGNED-PAYLOAD
+2021-06-01 20:57:33  botocore.auth  DEBUG : StringToSign:
+AWS4-HMAC-SHA256
+20210601T152733Z
+20210601/ap-south-1/s3/aws4_request
+ea02f617f42eb44c95abf0ca06aeb05a2077ccbd41f9a610126a9ce046f2c884
+2021-06-01 20:57:33  botocore.auth  DEBUG : Signature:
+ce73d17b516989a1c72cd6f668c0a368879922fd39a99a342742c88fab2264ca
+2021-06-01 20:57:33  botocore.hooks  DEBUG : Event request-created.s3.PutObject: calling handler <function signal_transferring at 0x0000000011B85948>
+2021-06-01 20:57:33  botocore.endpoint  DEBUG : Sending http request: <AWSPreparedRequest stream_output=False, method=PUT, url=https://orcl-tbls-ext-2021-06-01.s3.ap-south-1.amazonaws.com/JOBS.zip, headers={'User-Agent': b'Boto3/1.17.62 Python/3.7.4 Windows/7 Botocore/1.20.62', 'Content-MD5': b'SVobnVnTTOH61rlKdQMdHg==', 'Expect': b'100-continue', 'X-Amz-Date': b'20210601T152733Z', 'X-Amz-Content-SHA256': b'UNSIGNED-PAYLOAD', 'Authorization': b'AWS4-HMAC-SHA256 Credential=AKIARVFIS5JY6QTR7PJQ/20210601/ap-south-1/s3/aws4_request, SignedHeaders=content-md5;host;x-amz-content-sha256;x-amz-date, Signature=ce73d17b516989a1c72cd6f668c0a368879922fd39a99a342742c88fab2264ca', 'Content-Length': '488'}>
+2021-06-01 20:57:33  botocore.httpsession  DEBUG : Certificate path: C:\Users\Airflow\AppData\Local\Programs\Python\Python37\lib\site-packages\certifi\cacert.pem
+2021-06-01 20:57:33  botocore.awsrequest  DEBUG : Waiting for 100 Continue response.
+2021-06-01 20:57:33  botocore.awsrequest  DEBUG : 100 Continue response seen, now sending request body.
+2021-06-01 20:57:33  urllib3.connectionpool  DEBUG : https://orcl-tbls-ext-2021-06-01.s3.ap-south-1.amazonaws.com:443 "PUT /JOBS.zip HTTP/1.1" 200 0
+2021-06-01 20:57:33  botocore.parsers  DEBUG : Response headers: {'x-amz-id-2': '5utHmu7aDigSTp1e2hGC65/eGyEQkrqDvJlvH5PYqRK4N8GgdG4q4srvXRxNB5w/AcZvaJz5+uw=', 'x-amz-request-id': 'ME62W9RSBRAWWF1S', 'Date': 'Tue, 01 Jun 2021 15:27:34 GMT', 'ETag': '"495a1b9d59d34ce1fad6b94a75031d1e"', 'Content-Length': '0', 'Server': 'AmazonS3'}
+2021-06-01 20:57:33  botocore.parsers  DEBUG : Response body:
+b''
+2021-06-01 20:57:33  botocore.hooks  DEBUG : Event needs-retry.s3.PutObject: calling handler <botocore.retryhandler.RetryHandler object at 0x0000000011DE2FC8>
+2021-06-01 20:57:33  botocore.retryhandler  DEBUG : No retry needed.
+2021-06-01 20:57:33  botocore.hooks  DEBUG : Event needs-retry.s3.PutObject: calling handler <bound method S3RegionRedirector.redirect_from_error of <botocore.utils.S3RegionRedirector object at 0x0000000011DE2CC8>>
+2021-06-01 20:57:33  s3transfer.utils  DEBUG : Releasing acquire 0/None
+2021-06-01 20:57:33  AwsS3Conn.S3Connect  INFO : D:\Orcl-To-S3\Orcl_to_S3_batch_2021-06-01\JOBS.zip has been transferred to 
+2021-06-01 20:57:33  botocore.hooks  DEBUG : Event before-parameter-build.s3.HeadBucket: calling handler <function validate_bucket_name at 0x000000000B9B7558>
+2021-06-01 20:57:33  botocore.hooks  DEBUG : Event before-parameter-build.s3.HeadBucket: calling handler <bound method S3RegionRedirector.redirect_from_cache of <botocore.utils.S3RegionRedirector object at 0x0000000011DE2CC8>>
+2021-06-01 20:57:33  botocore.hooks  DEBUG : Event before-parameter-build.s3.HeadBucket: calling handler <bound method S3ArnParamHandler.handle_arn of <botocore.utils.S3ArnParamHandler object at 0x0000000011DD5148>>
+2021-06-01 20:57:33  botocore.hooks  DEBUG : Event before-parameter-build.s3.HeadBucket: calling handler <function generate_idempotent_uuid at 0x000000000B9B73A8>
+2021-06-01 20:57:33  botocore.hooks  DEBUG : Event before-call.s3.HeadBucket: calling handler <function add_expect_header at 0x000000000B9B78B8>
+2021-06-01 20:57:33  botocore.hooks  DEBUG : Event before-call.s3.HeadBucket: calling handler <bound method S3RegionRedirector.set_request_url of <botocore.utils.S3RegionRedirector object at 0x0000000011DE2CC8>>
+2021-06-01 20:57:33  botocore.hooks  DEBUG : Event before-call.s3.HeadBucket: calling handler <function inject_api_version_header_if_needed at 0x000000000B9BDC18>
+2021-06-01 20:57:33  botocore.endpoint  DEBUG : Making request for OperationModel(name=HeadBucket) with params: {'url_path': '/orcl-tbls-ext-2021-06-01', 'query_string': {}, 'method': 'HEAD', 'headers': {'User-Agent': 'Boto3/1.17.62 Python/3.7.4 Windows/7 Botocore/1.20.62'}, 'body': b'', 'url': 'https://s3.ap-south-1.amazonaws.com/orcl-tbls-ext-2021-06-01', 'context': {'client_region': 'ap-south-1', 'client_config': <botocore.config.Config object at 0x0000000011DD0688>, 'has_streaming_input': False, 'auth_type': None, 'signing': {'bucket': 'orcl-tbls-ext-2021-06-01'}}}
+2021-06-01 20:57:33  botocore.hooks  DEBUG : Event request-created.s3.HeadBucket: calling handler <function signal_not_transferring at 0x0000000011B78828>
+2021-06-01 20:57:33  botocore.hooks  DEBUG : Event request-created.s3.HeadBucket: calling handler <bound method RequestSigner.handler of <botocore.signers.RequestSigner object at 0x0000000011DD0648>>
+2021-06-01 20:57:33  botocore.hooks  DEBUG : Event choose-signer.s3.HeadBucket: calling handler <function set_operation_specific_signer at 0x000000000B9B7288>
+2021-06-01 20:57:33  botocore.hooks  DEBUG : Event before-sign.s3.HeadBucket: calling handler <bound method S3EndpointSetter.set_endpoint of <botocore.utils.S3EndpointSetter object at 0x000000000BBF2088>>
+2021-06-01 20:57:33  botocore.utils  DEBUG : Checking for DNS compatible bucket for: https://s3.ap-south-1.amazonaws.com/orcl-tbls-ext-2021-06-01
+2021-06-01 20:57:33  botocore.utils  DEBUG : URI updated to: https://orcl-tbls-ext-2021-06-01.s3.ap-south-1.amazonaws.com/
+2021-06-01 20:57:33  botocore.auth  DEBUG : Calculating signature using v4 auth.
+2021-06-01 20:57:33  botocore.auth  DEBUG : CanonicalRequest:
+HEAD
+/
+
+host:orcl-tbls-ext-2021-06-01.s3.ap-south-1.amazonaws.com
+x-amz-content-sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+x-amz-date:20210601T152733Z
+
+host;x-amz-content-sha256;x-amz-date
+e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+2021-06-01 20:57:33  botocore.auth  DEBUG : StringToSign:
+AWS4-HMAC-SHA256
+20210601T152733Z
+20210601/ap-south-1/s3/aws4_request
+befffa0608a34c085a04c531a53505f78dd898233b63b2f95abd86bb2d4433de
+2021-06-01 20:57:33  botocore.auth  DEBUG : Signature:
+87a499244d4ecc875b005b9bc9186d0a7a00f64108d38b7affef33f0feb4bc4e
+2021-06-01 20:57:33  botocore.hooks  DEBUG : Event request-created.s3.HeadBucket: calling handler <function signal_transferring at 0x0000000011B85948>
+2021-06-01 20:57:33  botocore.endpoint  DEBUG : Sending http request: <AWSPreparedRequest stream_output=False, method=HEAD, url=https://orcl-tbls-ext-2021-06-01.s3.ap-south-1.amazonaws.com/, headers={'User-Agent': b'Boto3/1.17.62 Python/3.7.4 Windows/7 Botocore/1.20.62', 'X-Amz-Date': b'20210601T152733Z', 'X-Amz-Content-SHA256': b'e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855', 'Authorization': b'AWS4-HMAC-SHA256 Credential=AKIARVFIS5JY6QTR7PJQ/20210601/ap-south-1/s3/aws4_request, SignedHeaders=host;x-amz-content-sha256;x-amz-date, Signature=87a499244d4ecc875b005b9bc9186d0a7a00f64108d38b7affef33f0feb4bc4e'}>
+2021-06-01 20:57:33  botocore.httpsession  DEBUG : Certificate path: C:\Users\Airflow\AppData\Local\Programs\Python\Python37\lib\site-packages\certifi\cacert.pem
+2021-06-01 20:57:33  urllib3.connectionpool  DEBUG : https://orcl-tbls-ext-2021-06-01.s3.ap-south-1.amazonaws.com:443 "HEAD / HTTP/1.1" 200 0
+2021-06-01 20:57:33  botocore.parsers  DEBUG : Response headers: {'x-amz-id-2': 'ZhykXb+AI+02GIEboWu+VOVqZAUzeD+ih+yG06tWt3wo41suvfnKkZU+S/erQyfv65HHJa/nEDg=', 'x-amz-request-id': 'ME6B6W2883BBZ0FR', 'Date': 'Tue, 01 Jun 2021 15:27:34 GMT', 'x-amz-bucket-region': 'ap-south-1', 'Content-Type': 'application/xml', 'Server': 'AmazonS3'}
+2021-06-01 20:57:33  botocore.parsers  DEBUG : Response body:
+b''
+2021-06-01 20:57:33  botocore.hooks  DEBUG : Event needs-retry.s3.HeadBucket: calling handler <botocore.retryhandler.RetryHandler object at 0x0000000011DE2FC8>
+2021-06-01 20:57:33  botocore.retryhandler  DEBUG : No retry needed.
+2021-06-01 20:57:33  botocore.hooks  DEBUG : Event needs-retry.s3.HeadBucket: calling handler <bound method S3RegionRedirector.redirect_from_error of <botocore.utils.S3RegionRedirector object at 0x0000000011DE2CC8>>
+2021-06-01 20:57:33  s3transfer.utils  DEBUG : Acquiring 0
+2021-06-01 20:57:33  s3transfer.tasks  DEBUG : UploadSubmissionTask(transfer_id=0, {'transfer_future': <s3transfer.futures.TransferFuture object at 0x0000000011E48408>}) about to wait for the following futures []
+2021-06-01 20:57:33  s3transfer.tasks  DEBUG : UploadSubmissionTask(transfer_id=0, {'transfer_future': <s3transfer.futures.TransferFuture object at 0x0000000011E48408>}) done waiting for dependent futures
+2021-06-01 20:57:33  s3transfer.tasks  DEBUG : Executing task UploadSubmissionTask(transfer_id=0, {'transfer_future': <s3transfer.futures.TransferFuture object at 0x0000000011E48408>}) with kwargs {'client': <botocore.client.S3 object at 0x0000000011AB9E48>, 'config': <boto3.s3.transfer.TransferConfig object at 0x0000000011E423C8>, 'osutil': <s3transfer.utils.OSUtils object at 0x000000000A161548>, 'request_executor': <s3transfer.futures.BoundedExecutor object at 0x0000000011DD0B48>, 'transfer_future': <s3transfer.futures.TransferFuture object at 0x0000000011E48408>}
+2021-06-01 20:57:33  s3transfer.futures  DEBUG : Submitting task PutObjectTask(transfer_id=0, {'bucket': 'orcl-tbls-ext-2021-06-01', 'key': 'EMPLOYEES.zip', 'extra_args': {}}) to executor <s3transfer.futures.BoundedExecutor object at 0x0000000011DD0B48> for transfer request: 0.
+2021-06-01 20:57:33  s3transfer.utils  DEBUG : Acquiring 0
+2021-06-01 20:57:33  s3transfer.tasks  DEBUG : PutObjectTask(transfer_id=0, {'bucket': 'orcl-tbls-ext-2021-06-01', 'key': 'EMPLOYEES.zip', 'extra_args': {}}) about to wait for the following futures []
+2021-06-01 20:57:33  s3transfer.tasks  DEBUG : PutObjectTask(transfer_id=0, {'bucket': 'orcl-tbls-ext-2021-06-01', 'key': 'EMPLOYEES.zip', 'extra_args': {}}) done waiting for dependent futures
+2021-06-01 20:57:33  s3transfer.tasks  DEBUG : Executing task PutObjectTask(transfer_id=0, {'bucket': 'orcl-tbls-ext-2021-06-01', 'key': 'EMPLOYEES.zip', 'extra_args': {}}) with kwargs {'client': <botocore.client.S3 object at 0x0000000011AB9E48>, 'fileobj': <s3transfer.utils.ReadFileChunk object at 0x0000000011E2AB88>, 'bucket': 'orcl-tbls-ext-2021-06-01', 'key': 'EMPLOYEES.zip', 'extra_args': {}}
+2021-06-01 20:57:33  s3transfer.utils  DEBUG : Releasing acquire 0/None
+2021-06-01 20:57:33  botocore.hooks  DEBUG : Event before-parameter-build.s3.PutObject: calling handler <function validate_ascii_metadata at 0x000000000B9BD1F8>
+2021-06-01 20:57:33  botocore.hooks  DEBUG : Event before-parameter-build.s3.PutObject: calling handler <function sse_md5 at 0x000000000B9B75E8>
+2021-06-01 20:57:33  botocore.hooks  DEBUG : Event before-parameter-build.s3.PutObject: calling handler <function convert_body_to_file_like_object at 0x000000000B9BDAF8>
+2021-06-01 20:57:33  botocore.hooks  DEBUG : Event before-parameter-build.s3.PutObject: calling handler <function validate_bucket_name at 0x000000000B9B7558>
+2021-06-01 20:57:33  botocore.hooks  DEBUG : Event before-parameter-build.s3.PutObject: calling handler <bound method S3RegionRedirector.redirect_from_cache of <botocore.utils.S3RegionRedirector object at 0x0000000011DE2CC8>>
+2021-06-01 20:57:33  botocore.hooks  DEBUG : Event before-parameter-build.s3.PutObject: calling handler <bound method S3ArnParamHandler.handle_arn of <botocore.utils.S3ArnParamHandler object at 0x0000000011DD5148>>
+2021-06-01 20:57:33  botocore.hooks  DEBUG : Event before-parameter-build.s3.PutObject: calling handler <function generate_idempotent_uuid at 0x000000000B9B73A8>
+2021-06-01 20:57:33  botocore.hooks  DEBUG : Event before-call.s3.PutObject: calling handler <function conditionally_calculate_md5 at 0x000000000B80ED38>
+2021-06-01 20:57:33  botocore.hooks  DEBUG : Event before-call.s3.PutObject: calling handler <function add_expect_header at 0x000000000B9B78B8>
+2021-06-01 20:57:33  botocore.handlers  DEBUG : Adding expect 100 continue header to request.
+2021-06-01 20:57:33  botocore.hooks  DEBUG : Event before-call.s3.PutObject: calling handler <bound method S3RegionRedirector.set_request_url of <botocore.utils.S3RegionRedirector object at 0x0000000011DE2CC8>>
+2021-06-01 20:57:33  botocore.hooks  DEBUG : Event before-call.s3.PutObject: calling handler <function inject_api_version_header_if_needed at 0x000000000B9BDC18>
+2021-06-01 20:57:33  botocore.endpoint  DEBUG : Making request for OperationModel(name=PutObject) with params: {'url_path': '/orcl-tbls-ext-2021-06-01/EMPLOYEES.zip', 'query_string': {}, 'method': 'PUT', 'headers': {'User-Agent': 'Boto3/1.17.62 Python/3.7.4 Windows/7 Botocore/1.20.62', 'Content-MD5': '2UGWNEUnlytGUU4hgtjrdA==', 'Expect': '100-continue'}, 'body': <s3transfer.utils.ReadFileChunk object at 0x0000000011E2AB88>, 'url': 'https://s3.ap-south-1.amazonaws.com/orcl-tbls-ext-2021-06-01/EMPLOYEES.zip', 'context': {'client_region': 'ap-south-1', 'client_config': <botocore.config.Config object at 0x0000000011DD0688>, 'has_streaming_input': True, 'auth_type': None, 'signing': {'bucket': 'orcl-tbls-ext-2021-06-01'}}}
+2021-06-01 20:57:33  botocore.hooks  DEBUG : Event request-created.s3.PutObject: calling handler <function signal_not_transferring at 0x0000000011B78828>
+2021-06-01 20:57:33  botocore.hooks  DEBUG : Event request-created.s3.PutObject: calling handler <bound method RequestSigner.handler of <botocore.signers.RequestSigner object at 0x0000000011DD0648>>
+2021-06-01 20:57:33  botocore.hooks  DEBUG : Event choose-signer.s3.PutObject: calling handler <function set_operation_specific_signer at 0x000000000B9B7288>
+2021-06-01 20:57:33  botocore.hooks  DEBUG : Event before-sign.s3.PutObject: calling handler <bound method S3EndpointSetter.set_endpoint of <botocore.utils.S3EndpointSetter object at 0x000000000BBF2088>>
+2021-06-01 20:57:33  botocore.utils  DEBUG : Checking for DNS compatible bucket for: https://s3.ap-south-1.amazonaws.com/orcl-tbls-ext-2021-06-01/EMPLOYEES.zip
+2021-06-01 20:57:33  botocore.utils  DEBUG : URI updated to: https://orcl-tbls-ext-2021-06-01.s3.ap-south-1.amazonaws.com/EMPLOYEES.zip
+2021-06-01 20:57:33  botocore.auth  DEBUG : Calculating signature using v4 auth.
+2021-06-01 20:57:33  botocore.auth  DEBUG : CanonicalRequest:
+PUT
+/EMPLOYEES.zip
+
+content-md5:2UGWNEUnlytGUU4hgtjrdA==
+host:orcl-tbls-ext-2021-06-01.s3.ap-south-1.amazonaws.com
+x-amz-content-sha256:UNSIGNED-PAYLOAD
+x-amz-date:20210601T152733Z
+
+content-md5;host;x-amz-content-sha256;x-amz-date
+UNSIGNED-PAYLOAD
+2021-06-01 20:57:33  botocore.auth  DEBUG : StringToSign:
+AWS4-HMAC-SHA256
+20210601T152733Z
+20210601/ap-south-1/s3/aws4_request
+4262a4dedd742551ca68cc52868852c6154eaed7994be39e24bee9c717f42546
+2021-06-01 20:57:33  botocore.auth  DEBUG : Signature:
+575fb121b82153b2260acc504f349338107d4fc6245cf139ecb82bf6dabc7e2c
+2021-06-01 20:57:33  botocore.hooks  DEBUG : Event request-created.s3.PutObject: calling handler <function signal_transferring at 0x0000000011B85948>
+2021-06-01 20:57:33  botocore.endpoint  DEBUG : Sending http request: <AWSPreparedRequest stream_output=False, method=PUT, url=https://orcl-tbls-ext-2021-06-01.s3.ap-south-1.amazonaws.com/EMPLOYEES.zip, headers={'User-Agent': b'Boto3/1.17.62 Python/3.7.4 Windows/7 Botocore/1.20.62', 'Content-MD5': b'2UGWNEUnlytGUU4hgtjrdA==', 'Expect': b'100-continue', 'X-Amz-Date': b'20210601T152733Z', 'X-Amz-Content-SHA256': b'UNSIGNED-PAYLOAD', 'Authorization': b'AWS4-HMAC-SHA256 Credential=AKIARVFIS5JY6QTR7PJQ/20210601/ap-south-1/s3/aws4_request, SignedHeaders=content-md5;host;x-amz-content-sha256;x-amz-date, Signature=575fb121b82153b2260acc504f349338107d4fc6245cf139ecb82bf6dabc7e2c', 'Content-Length': '3555'}>
+2021-06-01 20:57:33  botocore.httpsession  DEBUG : Certificate path: C:\Users\Airflow\AppData\Local\Programs\Python\Python37\lib\site-packages\certifi\cacert.pem
+2021-06-01 20:57:33  botocore.awsrequest  DEBUG : Waiting for 100 Continue response.
+2021-06-01 20:57:33  botocore.awsrequest  DEBUG : 100 Continue response seen, now sending request body.
+2021-06-01 20:57:34  urllib3.connectionpool  DEBUG : https://orcl-tbls-ext-2021-06-01.s3.ap-south-1.amazonaws.com:443 "PUT /EMPLOYEES.zip HTTP/1.1" 200 0
+2021-06-01 20:57:34  botocore.parsers  DEBUG : Response headers: {'x-amz-id-2': 'YxG7MORaE7D5QMJRfFUu4sbhl0NrAmsS00NGdAA2IUKhiCBBjR2A16+Np1vi5UstnnYfFHFPyfM=', 'x-amz-request-id': 'ME6632C6V9GEE2Q3', 'Date': 'Tue, 01 Jun 2021 15:27:34 GMT', 'ETag': '"d94196344527972b46514e2182d8eb74"', 'Content-Length': '0', 'Server': 'AmazonS3'}
+2021-06-01 20:57:34  botocore.parsers  DEBUG : Response body:
+b''
+2021-06-01 20:57:34  botocore.hooks  DEBUG : Event needs-retry.s3.PutObject: calling handler <botocore.retryhandler.RetryHandler object at 0x0000000011DE2FC8>
+2021-06-01 20:57:34  botocore.retryhandler  DEBUG : No retry needed.
+2021-06-01 20:57:34  botocore.hooks  DEBUG : Event needs-retry.s3.PutObject: calling handler <bound method S3RegionRedirector.redirect_from_error of <botocore.utils.S3RegionRedirector object at 0x0000000011DE2CC8>>
+2021-06-01 20:57:34  s3transfer.utils  DEBUG : Releasing acquire 0/None
+2021-06-01 20:57:34  AwsS3Conn.S3Connect  INFO : D:\Orcl-To-S3\Orcl_to_S3_batch_2021-06-01\EMPLOYEES.zip has been transferred to 
+2021-06-01 20:57:34  botocore.hooks  DEBUG : Event before-parameter-build.s3.HeadBucket: calling handler <function validate_bucket_name at 0x000000000B9B7558>
+2021-06-01 20:57:34  botocore.hooks  DEBUG : Event before-parameter-build.s3.HeadBucket: calling handler <bound method S3RegionRedirector.redirect_from_cache of <botocore.utils.S3RegionRedirector object at 0x0000000011DE2CC8>>
+2021-06-01 20:57:34  botocore.hooks  DEBUG : Event before-parameter-build.s3.HeadBucket: calling handler <bound method S3ArnParamHandler.handle_arn of <botocore.utils.S3ArnParamHandler object at 0x0000000011DD5148>>
+2021-06-01 20:57:34  botocore.hooks  DEBUG : Event before-parameter-build.s3.HeadBucket: calling handler <function generate_idempotent_uuid at 0x000000000B9B73A8>
+2021-06-01 20:57:34  botocore.hooks  DEBUG : Event before-call.s3.HeadBucket: calling handler <function add_expect_header at 0x000000000B9B78B8>
+2021-06-01 20:57:34  botocore.hooks  DEBUG : Event before-call.s3.HeadBucket: calling handler <bound method S3RegionRedirector.set_request_url of <botocore.utils.S3RegionRedirector object at 0x0000000011DE2CC8>>
+2021-06-01 20:57:34  botocore.hooks  DEBUG : Event before-call.s3.HeadBucket: calling handler <function inject_api_version_header_if_needed at 0x000000000B9BDC18>
+2021-06-01 20:57:34  botocore.endpoint  DEBUG : Making request for OperationModel(name=HeadBucket) with params: {'url_path': '/orcl-tbls-ext-2021-06-01', 'query_string': {}, 'method': 'HEAD', 'headers': {'User-Agent': 'Boto3/1.17.62 Python/3.7.4 Windows/7 Botocore/1.20.62'}, 'body': b'', 'url': 'https://s3.ap-south-1.amazonaws.com/orcl-tbls-ext-2021-06-01', 'context': {'client_region': 'ap-south-1', 'client_config': <botocore.config.Config object at 0x0000000011DD0688>, 'has_streaming_input': False, 'auth_type': None, 'signing': {'bucket': 'orcl-tbls-ext-2021-06-01'}}}
+2021-06-01 20:57:34  botocore.hooks  DEBUG : Event request-created.s3.HeadBucket: calling handler <function signal_not_transferring at 0x0000000011B78828>
+2021-06-01 20:57:34  botocore.hooks  DEBUG : Event request-created.s3.HeadBucket: calling handler <bound method RequestSigner.handler of <botocore.signers.RequestSigner object at 0x0000000011DD0648>>
+2021-06-01 20:57:34  botocore.hooks  DEBUG : Event choose-signer.s3.HeadBucket: calling handler <function set_operation_specific_signer at 0x000000000B9B7288>
+2021-06-01 20:57:34  botocore.hooks  DEBUG : Event before-sign.s3.HeadBucket: calling handler <bound method S3EndpointSetter.set_endpoint of <botocore.utils.S3EndpointSetter object at 0x000000000BBF2088>>
+2021-06-01 20:57:34  botocore.utils  DEBUG : Checking for DNS compatible bucket for: https://s3.ap-south-1.amazonaws.com/orcl-tbls-ext-2021-06-01
+2021-06-01 20:57:34  botocore.utils  DEBUG : URI updated to: https://orcl-tbls-ext-2021-06-01.s3.ap-south-1.amazonaws.com/
+2021-06-01 20:57:34  botocore.auth  DEBUG : Calculating signature using v4 auth.
+2021-06-01 20:57:34  botocore.auth  DEBUG : CanonicalRequest:
+HEAD
+/
+
+host:orcl-tbls-ext-2021-06-01.s3.ap-south-1.amazonaws.com
+x-amz-content-sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+x-amz-date:20210601T152734Z
+
+host;x-amz-content-sha256;x-amz-date
+e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+2021-06-01 20:57:34  botocore.auth  DEBUG : StringToSign:
+AWS4-HMAC-SHA256
+20210601T152734Z
+20210601/ap-south-1/s3/aws4_request
+1dfa826992b580ea8018de1eb39b3648c752d3fab454f994d67a82aeb0d59872
+2021-06-01 20:57:34  botocore.auth  DEBUG : Signature:
+fcb9a9e47de8f3962e92de2aa39a0fad82cce1fc6f44cf846b2f1981e1cc4cf0
+2021-06-01 20:57:34  botocore.hooks  DEBUG : Event request-created.s3.HeadBucket: calling handler <function signal_transferring at 0x0000000011B85948>
+2021-06-01 20:57:34  botocore.endpoint  DEBUG : Sending http request: <AWSPreparedRequest stream_output=False, method=HEAD, url=https://orcl-tbls-ext-2021-06-01.s3.ap-south-1.amazonaws.com/, headers={'User-Agent': b'Boto3/1.17.62 Python/3.7.4 Windows/7 Botocore/1.20.62', 'X-Amz-Date': b'20210601T152734Z', 'X-Amz-Content-SHA256': b'e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855', 'Authorization': b'AWS4-HMAC-SHA256 Credential=AKIARVFIS5JY6QTR7PJQ/20210601/ap-south-1/s3/aws4_request, SignedHeaders=host;x-amz-content-sha256;x-amz-date, Signature=fcb9a9e47de8f3962e92de2aa39a0fad82cce1fc6f44cf846b2f1981e1cc4cf0'}>
+2021-06-01 20:57:34  botocore.httpsession  DEBUG : Certificate path: C:\Users\Airflow\AppData\Local\Programs\Python\Python37\lib\site-packages\certifi\cacert.pem
+2021-06-01 20:57:34  urllib3.connectionpool  DEBUG : https://orcl-tbls-ext-2021-06-01.s3.ap-south-1.amazonaws.com:443 "HEAD / HTTP/1.1" 200 0
+2021-06-01 20:57:34  botocore.parsers  DEBUG : Response headers: {'x-amz-id-2': 'K0cOMLYq5o2eZQYQsrbfsQxzFlpsOOAA2gN4/54P3lOmRACjkR3pS50jE4mk08ceJZfCiPELrAw=', 'x-amz-request-id': 'NRHB5QKAPVE2BQHD', 'Date': 'Tue, 01 Jun 2021 15:27:35 GMT', 'x-amz-bucket-region': 'ap-south-1', 'Content-Type': 'application/xml', 'Server': 'AmazonS3'}
+2021-06-01 20:57:34  botocore.parsers  DEBUG : Response body:
+b''
+2021-06-01 20:57:34  botocore.hooks  DEBUG : Event needs-retry.s3.HeadBucket: calling handler <botocore.retryhandler.RetryHandler object at 0x0000000011DE2FC8>
+2021-06-01 20:57:34  botocore.retryhandler  DEBUG : No retry needed.
+2021-06-01 20:57:34  botocore.hooks  DEBUG : Event needs-retry.s3.HeadBucket: calling handler <bound method S3RegionRedirector.redirect_from_error of <botocore.utils.S3RegionRedirector object at 0x0000000011DE2CC8>>
+2021-06-01 20:57:34  s3transfer.utils  DEBUG : Acquiring 0
+2021-06-01 20:57:34  s3transfer.tasks  DEBUG : UploadSubmissionTask(transfer_id=0, {'transfer_future': <s3transfer.futures.TransferFuture object at 0x0000000011E2A788>}) about to wait for the following futures []
+2021-06-01 20:57:34  s3transfer.tasks  DEBUG : UploadSubmissionTask(transfer_id=0, {'transfer_future': <s3transfer.futures.TransferFuture object at 0x0000000011E2A788>}) done waiting for dependent futures
+2021-06-01 20:57:34  s3transfer.tasks  DEBUG : Executing task UploadSubmissionTask(transfer_id=0, {'transfer_future': <s3transfer.futures.TransferFuture object at 0x0000000011E2A788>}) with kwargs {'client': <botocore.client.S3 object at 0x0000000011AB9E48>, 'config': <boto3.s3.transfer.TransferConfig object at 0x0000000011E10088>, 'osutil': <s3transfer.utils.OSUtils object at 0x0000000011E10108>, 'request_executor': <s3transfer.futures.BoundedExecutor object at 0x0000000011E3BC88>, 'transfer_future': <s3transfer.futures.TransferFuture object at 0x0000000011E2A788>}
+2021-06-01 20:57:34  s3transfer.futures  DEBUG : Submitting task PutObjectTask(transfer_id=0, {'bucket': 'orcl-tbls-ext-2021-06-01', 'key': 'JOB_HISTORY.zip', 'extra_args': {}}) to executor <s3transfer.futures.BoundedExecutor object at 0x0000000011E3BC88> for transfer request: 0.
+2021-06-01 20:57:34  s3transfer.utils  DEBUG : Acquiring 0
+2021-06-01 20:57:34  s3transfer.tasks  DEBUG : PutObjectTask(transfer_id=0, {'bucket': 'orcl-tbls-ext-2021-06-01', 'key': 'JOB_HISTORY.zip', 'extra_args': {}}) about to wait for the following futures []
+2021-06-01 20:57:34  s3transfer.tasks  DEBUG : PutObjectTask(transfer_id=0, {'bucket': 'orcl-tbls-ext-2021-06-01', 'key': 'JOB_HISTORY.zip', 'extra_args': {}}) done waiting for dependent futures
+2021-06-01 20:57:34  s3transfer.tasks  DEBUG : Executing task PutObjectTask(transfer_id=0, {'bucket': 'orcl-tbls-ext-2021-06-01', 'key': 'JOB_HISTORY.zip', 'extra_args': {}}) with kwargs {'client': <botocore.client.S3 object at 0x0000000011AB9E48>, 'fileobj': <s3transfer.utils.ReadFileChunk object at 0x0000000011E4BD88>, 'bucket': 'orcl-tbls-ext-2021-06-01', 'key': 'JOB_HISTORY.zip', 'extra_args': {}}
+2021-06-01 20:57:34  botocore.hooks  DEBUG : Event before-parameter-build.s3.PutObject: calling handler <function validate_ascii_metadata at 0x000000000B9BD1F8>
+2021-06-01 20:57:34  botocore.hooks  DEBUG : Event before-parameter-build.s3.PutObject: calling handler <function sse_md5 at 0x000000000B9B75E8>
+2021-06-01 20:57:34  botocore.hooks  DEBUG : Event before-parameter-build.s3.PutObject: calling handler <function convert_body_to_file_like_object at 0x000000000B9BDAF8>
+2021-06-01 20:57:34  botocore.hooks  DEBUG : Event before-parameter-build.s3.PutObject: calling handler <function validate_bucket_name at 0x000000000B9B7558>
+2021-06-01 20:57:34  botocore.hooks  DEBUG : Event before-parameter-build.s3.PutObject: calling handler <bound method S3RegionRedirector.redirect_from_cache of <botocore.utils.S3RegionRedirector object at 0x0000000011DE2CC8>>
+2021-06-01 20:57:34  botocore.hooks  DEBUG : Event before-parameter-build.s3.PutObject: calling handler <bound method S3ArnParamHandler.handle_arn of <botocore.utils.S3ArnParamHandler object at 0x0000000011DD5148>>
+2021-06-01 20:57:34  botocore.hooks  DEBUG : Event before-parameter-build.s3.PutObject: calling handler <function generate_idempotent_uuid at 0x000000000B9B73A8>
+2021-06-01 20:57:34  botocore.hooks  DEBUG : Event before-call.s3.PutObject: calling handler <function conditionally_calculate_md5 at 0x000000000B80ED38>
+2021-06-01 20:57:34  botocore.hooks  DEBUG : Event before-call.s3.PutObject: calling handler <function add_expect_header at 0x000000000B9B78B8>
+2021-06-01 20:57:34  botocore.handlers  DEBUG : Adding expect 100 continue header to request.
+2021-06-01 20:57:34  botocore.hooks  DEBUG : Event before-call.s3.PutObject: calling handler <bound method S3RegionRedirector.set_request_url of <botocore.utils.S3RegionRedirector object at 0x0000000011DE2CC8>>
+2021-06-01 20:57:34  botocore.hooks  DEBUG : Event before-call.s3.PutObject: calling handler <function inject_api_version_header_if_needed at 0x000000000B9BDC18>
+2021-06-01 20:57:34  botocore.endpoint  DEBUG : Making request for OperationModel(name=PutObject) with params: {'url_path': '/orcl-tbls-ext-2021-06-01/JOB_HISTORY.zip', 'query_string': {}, 'method': 'PUT', 'headers': {'User-Agent': 'Boto3/1.17.62 Python/3.7.4 Windows/7 Botocore/1.20.62', 'Content-MD5': 'Hnk5Dwr9JIQqSelSOR6QdA==', 'Expect': '100-continue'}, 'body': <s3transfer.utils.ReadFileChunk object at 0x0000000011E4BD88>, 'url': 'https://s3.ap-south-1.amazonaws.com/orcl-tbls-ext-2021-06-01/JOB_HISTORY.zip', 'context': {'client_region': 'ap-south-1', 'client_config': <botocore.config.Config object at 0x0000000011DD0688>, 'has_streaming_input': True, 'auth_type': None, 'signing': {'bucket': 'orcl-tbls-ext-2021-06-01'}}}
+2021-06-01 20:57:34  botocore.hooks  DEBUG : Event request-created.s3.PutObject: calling handler <function signal_not_transferring at 0x0000000011B78828>
+2021-06-01 20:57:34  botocore.hooks  DEBUG : Event request-created.s3.PutObject: calling handler <bound method RequestSigner.handler of <botocore.signers.RequestSigner object at 0x0000000011DD0648>>
+2021-06-01 20:57:34  botocore.hooks  DEBUG : Event choose-signer.s3.PutObject: calling handler <function set_operation_specific_signer at 0x000000000B9B7288>
+2021-06-01 20:57:34  botocore.hooks  DEBUG : Event before-sign.s3.PutObject: calling handler <bound method S3EndpointSetter.set_endpoint of <botocore.utils.S3EndpointSetter object at 0x000000000BBF2088>>
+2021-06-01 20:57:34  botocore.utils  DEBUG : Checking for DNS compatible bucket for: https://s3.ap-south-1.amazonaws.com/orcl-tbls-ext-2021-06-01/JOB_HISTORY.zip
+2021-06-01 20:57:34  botocore.utils  DEBUG : URI updated to: https://orcl-tbls-ext-2021-06-01.s3.ap-south-1.amazonaws.com/JOB_HISTORY.zip
+2021-06-01 20:57:34  botocore.auth  DEBUG : Calculating signature using v4 auth.
+2021-06-01 20:57:34  botocore.auth  DEBUG : CanonicalRequest:
+PUT
+/JOB_HISTORY.zip
+
+content-md5:Hnk5Dwr9JIQqSelSOR6QdA==
+host:orcl-tbls-ext-2021-06-01.s3.ap-south-1.amazonaws.com
+x-amz-content-sha256:UNSIGNED-PAYLOAD
+x-amz-date:20210601T152734Z
+
+content-md5;host;x-amz-content-sha256;x-amz-date
+UNSIGNED-PAYLOAD
+2021-06-01 20:57:34  botocore.auth  DEBUG : StringToSign:
+AWS4-HMAC-SHA256
+20210601T152734Z
+20210601/ap-south-1/s3/aws4_request
+314bc81b9c8c3078badf537945b1842f65c1c9f8a7725eeee11d9debeb86f57e
+2021-06-01 20:57:34  botocore.auth  DEBUG : Signature:
+1dc91c8f418b0f20d8001698331e6f2f4cbb8877b41e53fc5464593f989d0bcd
+2021-06-01 20:57:34  botocore.hooks  DEBUG : Event request-created.s3.PutObject: calling handler <function signal_transferring at 0x0000000011B85948>
+2021-06-01 20:57:34  botocore.endpoint  DEBUG : Sending http request: <AWSPreparedRequest stream_output=False, method=PUT, url=https://orcl-tbls-ext-2021-06-01.s3.ap-south-1.amazonaws.com/JOB_HISTORY.zip, headers={'User-Agent': b'Boto3/1.17.62 Python/3.7.4 Windows/7 Botocore/1.20.62', 'Content-MD5': b'Hnk5Dwr9JIQqSelSOR6QdA==', 'Expect': b'100-continue', 'X-Amz-Date': b'20210601T152734Z', 'X-Amz-Content-SHA256': b'UNSIGNED-PAYLOAD', 'Authorization': b'AWS4-HMAC-SHA256 Credential=AKIARVFIS5JY6QTR7PJQ/20210601/ap-south-1/s3/aws4_request, SignedHeaders=content-md5;host;x-amz-content-sha256;x-amz-date, Signature=1dc91c8f418b0f20d8001698331e6f2f4cbb8877b41e53fc5464593f989d0bcd', 'Content-Length': '364'}>
+2021-06-01 20:57:34  botocore.httpsession  DEBUG : Certificate path: C:\Users\Airflow\AppData\Local\Programs\Python\Python37\lib\site-packages\certifi\cacert.pem
+2021-06-01 20:57:34  s3transfer.utils  DEBUG : Releasing acquire 0/None
+2021-06-01 20:57:34  botocore.awsrequest  DEBUG : Waiting for 100 Continue response.
+2021-06-01 20:57:34  botocore.awsrequest  DEBUG : 100 Continue response seen, now sending request body.
+2021-06-01 20:57:34  urllib3.connectionpool  DEBUG : https://orcl-tbls-ext-2021-06-01.s3.ap-south-1.amazonaws.com:443 "PUT /JOB_HISTORY.zip HTTP/1.1" 200 0
+2021-06-01 20:57:34  botocore.parsers  DEBUG : Response headers: {'x-amz-id-2': 'KFdC4enSKsVnPZkMQhQ2nFUURKdnYS5Yp8lCBYDpQbMMs7pYAgyXyGan+jlFqUD+SvjlnMqlI7Y=', 'x-amz-request-id': 'NRHAX2F6WHNHEGJY', 'Date': 'Tue, 01 Jun 2021 15:27:35 GMT', 'ETag': '"1e79390f0afd24842a49e952391e9074"', 'Content-Length': '0', 'Server': 'AmazonS3'}
+2021-06-01 20:57:34  botocore.parsers  DEBUG : Response body:
+b''
+2021-06-01 20:57:34  botocore.hooks  DEBUG : Event needs-retry.s3.PutObject: calling handler <botocore.retryhandler.RetryHandler object at 0x0000000011DE2FC8>
+2021-06-01 20:57:34  botocore.retryhandler  DEBUG : No retry needed.
+2021-06-01 20:57:34  botocore.hooks  DEBUG : Event needs-retry.s3.PutObject: calling handler <bound method S3RegionRedirector.redirect_from_error of <botocore.utils.S3RegionRedirector object at 0x0000000011DE2CC8>>
+2021-06-01 20:57:34  s3transfer.utils  DEBUG : Releasing acquire 0/None
+2021-06-01 20:57:34  AwsS3Conn.S3Connect  INFO : D:\Orcl-To-S3\Orcl_to_S3_batch_2021-06-01\JOB_HISTORY.zip has been transferred to 
+2021-06-01 20:57:34  botocore.hooks  DEBUG : Event before-parameter-build.s3.HeadBucket: calling handler <function validate_bucket_name at 0x000000000B9B7558>
+2021-06-01 20:57:34  botocore.hooks  DEBUG : Event before-parameter-build.s3.HeadBucket: calling handler <bound method S3RegionRedirector.redirect_from_cache of <botocore.utils.S3RegionRedirector object at 0x0000000011DE2CC8>>
+2021-06-01 20:57:34  botocore.hooks  DEBUG : Event before-parameter-build.s3.HeadBucket: calling handler <bound method S3ArnParamHandler.handle_arn of <botocore.utils.S3ArnParamHandler object at 0x0000000011DD5148>>
+2021-06-01 20:57:34  botocore.hooks  DEBUG : Event before-parameter-build.s3.HeadBucket: calling handler <function generate_idempotent_uuid at 0x000000000B9B73A8>
+2021-06-01 20:57:34  botocore.hooks  DEBUG : Event before-call.s3.HeadBucket: calling handler <function add_expect_header at 0x000000000B9B78B8>
+2021-06-01 20:57:34  botocore.hooks  DEBUG : Event before-call.s3.HeadBucket: calling handler <bound method S3RegionRedirector.set_request_url of <botocore.utils.S3RegionRedirector object at 0x0000000011DE2CC8>>
+2021-06-01 20:57:34  botocore.hooks  DEBUG : Event before-call.s3.HeadBucket: calling handler <function inject_api_version_header_if_needed at 0x000000000B9BDC18>
+2021-06-01 20:57:34  botocore.endpoint  DEBUG : Making request for OperationModel(name=HeadBucket) with params: {'url_path': '/orcl-tbls-ext-2021-06-01', 'query_string': {}, 'method': 'HEAD', 'headers': {'User-Agent': 'Boto3/1.17.62 Python/3.7.4 Windows/7 Botocore/1.20.62'}, 'body': b'', 'url': 'https://s3.ap-south-1.amazonaws.com/orcl-tbls-ext-2021-06-01', 'context': {'client_region': 'ap-south-1', 'client_config': <botocore.config.Config object at 0x0000000011DD0688>, 'has_streaming_input': False, 'auth_type': None, 'signing': {'bucket': 'orcl-tbls-ext-2021-06-01'}}}
+2021-06-01 20:57:34  botocore.hooks  DEBUG : Event request-created.s3.HeadBucket: calling handler <function signal_not_transferring at 0x0000000011B78828>
+2021-06-01 20:57:34  botocore.hooks  DEBUG : Event request-created.s3.HeadBucket: calling handler <bound method RequestSigner.handler of <botocore.signers.RequestSigner object at 0x0000000011DD0648>>
+2021-06-01 20:57:34  botocore.hooks  DEBUG : Event choose-signer.s3.HeadBucket: calling handler <function set_operation_specific_signer at 0x000000000B9B7288>
+2021-06-01 20:57:34  botocore.hooks  DEBUG : Event before-sign.s3.HeadBucket: calling handler <bound method S3EndpointSetter.set_endpoint of <botocore.utils.S3EndpointSetter object at 0x000000000BBF2088>>
+2021-06-01 20:57:34  botocore.utils  DEBUG : Checking for DNS compatible bucket for: https://s3.ap-south-1.amazonaws.com/orcl-tbls-ext-2021-06-01
+2021-06-01 20:57:34  botocore.utils  DEBUG : URI updated to: https://orcl-tbls-ext-2021-06-01.s3.ap-south-1.amazonaws.com/
+2021-06-01 20:57:34  botocore.auth  DEBUG : Calculating signature using v4 auth.
+2021-06-01 20:57:34  botocore.auth  DEBUG : CanonicalRequest:
+HEAD
+/
+
+host:orcl-tbls-ext-2021-06-01.s3.ap-south-1.amazonaws.com
+x-amz-content-sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+x-amz-date:20210601T152734Z
+
+host;x-amz-content-sha256;x-amz-date
+e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+2021-06-01 20:57:34  botocore.auth  DEBUG : StringToSign:
+AWS4-HMAC-SHA256
+20210601T152734Z
+20210601/ap-south-1/s3/aws4_request
+1dfa826992b580ea8018de1eb39b3648c752d3fab454f994d67a82aeb0d59872
+2021-06-01 20:57:34  botocore.auth  DEBUG : Signature:
+fcb9a9e47de8f3962e92de2aa39a0fad82cce1fc6f44cf846b2f1981e1cc4cf0
+2021-06-01 20:57:34  botocore.hooks  DEBUG : Event request-created.s3.HeadBucket: calling handler <function signal_transferring at 0x0000000011B85948>
+2021-06-01 20:57:34  botocore.endpoint  DEBUG : Sending http request: <AWSPreparedRequest stream_output=False, method=HEAD, url=https://orcl-tbls-ext-2021-06-01.s3.ap-south-1.amazonaws.com/, headers={'User-Agent': b'Boto3/1.17.62 Python/3.7.4 Windows/7 Botocore/1.20.62', 'X-Amz-Date': b'20210601T152734Z', 'X-Amz-Content-SHA256': b'e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855', 'Authorization': b'AWS4-HMAC-SHA256 Credential=AKIARVFIS5JY6QTR7PJQ/20210601/ap-south-1/s3/aws4_request, SignedHeaders=host;x-amz-content-sha256;x-amz-date, Signature=fcb9a9e47de8f3962e92de2aa39a0fad82cce1fc6f44cf846b2f1981e1cc4cf0'}>
+2021-06-01 20:57:34  botocore.httpsession  DEBUG : Certificate path: C:\Users\Airflow\AppData\Local\Programs\Python\Python37\lib\site-packages\certifi\cacert.pem
+2021-06-01 20:57:34  urllib3.connectionpool  DEBUG : https://orcl-tbls-ext-2021-06-01.s3.ap-south-1.amazonaws.com:443 "HEAD / HTTP/1.1" 200 0
+2021-06-01 20:57:34  botocore.parsers  DEBUG : Response headers: {'x-amz-id-2': '5PWaZmVt2KYxeu0Mh6fOb8TYU9GJgbco+OdWtxzoWbd205o0rlFM+RPKYL4SIhMeb/ylK1cy+Vw=', 'x-amz-request-id': 'NRH60V8Y8V5QE4T3', 'Date': 'Tue, 01 Jun 2021 15:27:35 GMT', 'x-amz-bucket-region': 'ap-south-1', 'Content-Type': 'application/xml', 'Server': 'AmazonS3'}
+2021-06-01 20:57:34  botocore.parsers  DEBUG : Response body:
+b''
+2021-06-01 20:57:34  botocore.hooks  DEBUG : Event needs-retry.s3.HeadBucket: calling handler <botocore.retryhandler.RetryHandler object at 0x0000000011DE2FC8>
+2021-06-01 20:57:34  botocore.retryhandler  DEBUG : No retry needed.
+2021-06-01 20:57:34  botocore.hooks  DEBUG : Event needs-retry.s3.HeadBucket: calling handler <bound method S3RegionRedirector.redirect_from_error of <botocore.utils.S3RegionRedirector object at 0x0000000011DE2CC8>>
+2021-06-01 20:57:34  s3transfer.utils  DEBUG : Acquiring 0
+2021-06-01 20:57:34  s3transfer.tasks  DEBUG : UploadSubmissionTask(transfer_id=0, {'transfer_future': <s3transfer.futures.TransferFuture object at 0x0000000011E3BC88>}) about to wait for the following futures []
+2021-06-01 20:57:34  s3transfer.tasks  DEBUG : UploadSubmissionTask(transfer_id=0, {'transfer_future': <s3transfer.futures.TransferFuture object at 0x0000000011E3BC88>}) done waiting for dependent futures
+2021-06-01 20:57:34  s3transfer.tasks  DEBUG : Executing task UploadSubmissionTask(transfer_id=0, {'transfer_future': <s3transfer.futures.TransferFuture object at 0x0000000011E3BC88>}) with kwargs {'client': <botocore.client.S3 object at 0x0000000011AB9E48>, 'config': <boto3.s3.transfer.TransferConfig object at 0x000000000A161548>, 'osutil': <s3transfer.utils.OSUtils object at 0x0000000011E10088>, 'request_executor': <s3transfer.futures.BoundedExecutor object at 0x0000000011DD0F08>, 'transfer_future': <s3transfer.futures.TransferFuture object at 0x0000000011E3BC88>}
+2021-06-01 20:57:34  s3transfer.futures  DEBUG : Submitting task PutObjectTask(transfer_id=0, {'bucket': 'orcl-tbls-ext-2021-06-01', 'key': 'AA.zip', 'extra_args': {}}) to executor <s3transfer.futures.BoundedExecutor object at 0x0000000011DD0F08> for transfer request: 0.
+2021-06-01 20:57:34  s3transfer.utils  DEBUG : Acquiring 0
+2021-06-01 20:57:34  s3transfer.tasks  DEBUG : PutObjectTask(transfer_id=0, {'bucket': 'orcl-tbls-ext-2021-06-01', 'key': 'AA.zip', 'extra_args': {}}) about to wait for the following futures []
+2021-06-01 20:57:34  s3transfer.tasks  DEBUG : PutObjectTask(transfer_id=0, {'bucket': 'orcl-tbls-ext-2021-06-01', 'key': 'AA.zip', 'extra_args': {}}) done waiting for dependent futures
+2021-06-01 20:57:34  s3transfer.tasks  DEBUG : Executing task PutObjectTask(transfer_id=0, {'bucket': 'orcl-tbls-ext-2021-06-01', 'key': 'AA.zip', 'extra_args': {}}) with kwargs {'client': <botocore.client.S3 object at 0x0000000011AB9E48>, 'fileobj': <s3transfer.utils.ReadFileChunk object at 0x0000000011E36C88>, 'bucket': 'orcl-tbls-ext-2021-06-01', 'key': 'AA.zip', 'extra_args': {}}
+2021-06-01 20:57:34  botocore.hooks  DEBUG : Event before-parameter-build.s3.PutObject: calling handler <function validate_ascii_metadata at 0x000000000B9BD1F8>
+2021-06-01 20:57:34  botocore.hooks  DEBUG : Event before-parameter-build.s3.PutObject: calling handler <function sse_md5 at 0x000000000B9B75E8>
+2021-06-01 20:57:34  botocore.hooks  DEBUG : Event before-parameter-build.s3.PutObject: calling handler <function convert_body_to_file_like_object at 0x000000000B9BDAF8>
+2021-06-01 20:57:34  botocore.hooks  DEBUG : Event before-parameter-build.s3.PutObject: calling handler <function validate_bucket_name at 0x000000000B9B7558>
+2021-06-01 20:57:34  botocore.hooks  DEBUG : Event before-parameter-build.s3.PutObject: calling handler <bound method S3RegionRedirector.redirect_from_cache of <botocore.utils.S3RegionRedirector object at 0x0000000011DE2CC8>>
+2021-06-01 20:57:34  botocore.hooks  DEBUG : Event before-parameter-build.s3.PutObject: calling handler <bound method S3ArnParamHandler.handle_arn of <botocore.utils.S3ArnParamHandler object at 0x0000000011DD5148>>
+2021-06-01 20:57:34  botocore.hooks  DEBUG : Event before-parameter-build.s3.PutObject: calling handler <function generate_idempotent_uuid at 0x000000000B9B73A8>
+2021-06-01 20:57:34  botocore.hooks  DEBUG : Event before-call.s3.PutObject: calling handler <function conditionally_calculate_md5 at 0x000000000B80ED38>
+2021-06-01 20:57:34  botocore.hooks  DEBUG : Event before-call.s3.PutObject: calling handler <function add_expect_header at 0x000000000B9B78B8>
+2021-06-01 20:57:34  botocore.handlers  DEBUG : Adding expect 100 continue header to request.
+2021-06-01 20:57:34  botocore.hooks  DEBUG : Event before-call.s3.PutObject: calling handler <bound method S3RegionRedirector.set_request_url of <botocore.utils.S3RegionRedirector object at 0x0000000011DE2CC8>>
+2021-06-01 20:57:34  s3transfer.utils  DEBUG : Releasing acquire 0/None
+2021-06-01 20:57:34  botocore.hooks  DEBUG : Event before-call.s3.PutObject: calling handler <function inject_api_version_header_if_needed at 0x000000000B9BDC18>
+2021-06-01 20:57:34  botocore.endpoint  DEBUG : Making request for OperationModel(name=PutObject) with params: {'url_path': '/orcl-tbls-ext-2021-06-01/AA.zip', 'query_string': {}, 'method': 'PUT', 'headers': {'User-Agent': 'Boto3/1.17.62 Python/3.7.4 Windows/7 Botocore/1.20.62', 'Content-MD5': 'stEVIh/lQBQ2Sy2Sw+cuyw==', 'Expect': '100-continue'}, 'body': <s3transfer.utils.ReadFileChunk object at 0x0000000011E36C88>, 'url': 'https://s3.ap-south-1.amazonaws.com/orcl-tbls-ext-2021-06-01/AA.zip', 'context': {'client_region': 'ap-south-1', 'client_config': <botocore.config.Config object at 0x0000000011DD0688>, 'has_streaming_input': True, 'auth_type': None, 'signing': {'bucket': 'orcl-tbls-ext-2021-06-01'}}}
+2021-06-01 20:57:34  botocore.hooks  DEBUG : Event request-created.s3.PutObject: calling handler <function signal_not_transferring at 0x0000000011B78828>
+2021-06-01 20:57:34  botocore.hooks  DEBUG : Event request-created.s3.PutObject: calling handler <bound method RequestSigner.handler of <botocore.signers.RequestSigner object at 0x0000000011DD0648>>
+2021-06-01 20:57:34  botocore.hooks  DEBUG : Event choose-signer.s3.PutObject: calling handler <function set_operation_specific_signer at 0x000000000B9B7288>
+2021-06-01 20:57:34  botocore.hooks  DEBUG : Event before-sign.s3.PutObject: calling handler <bound method S3EndpointSetter.set_endpoint of <botocore.utils.S3EndpointSetter object at 0x000000000BBF2088>>
+2021-06-01 20:57:34  botocore.utils  DEBUG : Checking for DNS compatible bucket for: https://s3.ap-south-1.amazonaws.com/orcl-tbls-ext-2021-06-01/AA.zip
+2021-06-01 20:57:34  botocore.utils  DEBUG : URI updated to: https://orcl-tbls-ext-2021-06-01.s3.ap-south-1.amazonaws.com/AA.zip
+2021-06-01 20:57:34  botocore.auth  DEBUG : Calculating signature using v4 auth.
+2021-06-01 20:57:34  botocore.auth  DEBUG : CanonicalRequest:
+PUT
+/AA.zip
+
+content-md5:stEVIh/lQBQ2Sy2Sw+cuyw==
+host:orcl-tbls-ext-2021-06-01.s3.ap-south-1.amazonaws.com
+x-amz-content-sha256:UNSIGNED-PAYLOAD
+x-amz-date:20210601T152734Z
+
+content-md5;host;x-amz-content-sha256;x-amz-date
+UNSIGNED-PAYLOAD
+2021-06-01 20:57:34  botocore.auth  DEBUG : StringToSign:
+AWS4-HMAC-SHA256
+20210601T152734Z
+20210601/ap-south-1/s3/aws4_request
+3e69b7b3f69f6c2e254fd1bd1a039f49c583dedeacfc75bfb809afbb32df5191
+2021-06-01 20:57:34  botocore.auth  DEBUG : Signature:
+fb951e3830df848cb41d26adb7ef9f6f6bbe233443f2aaf557cae18e0d15e57f
+2021-06-01 20:57:34  botocore.hooks  DEBUG : Event request-created.s3.PutObject: calling handler <function signal_transferring at 0x0000000011B85948>
+2021-06-01 20:57:34  botocore.endpoint  DEBUG : Sending http request: <AWSPreparedRequest stream_output=False, method=PUT, url=https://orcl-tbls-ext-2021-06-01.s3.ap-south-1.amazonaws.com/AA.zip, headers={'User-Agent': b'Boto3/1.17.62 Python/3.7.4 Windows/7 Botocore/1.20.62', 'Content-MD5': b'stEVIh/lQBQ2Sy2Sw+cuyw==', 'Expect': b'100-continue', 'X-Amz-Date': b'20210601T152734Z', 'X-Amz-Content-SHA256': b'UNSIGNED-PAYLOAD', 'Authorization': b'AWS4-HMAC-SHA256 Credential=AKIARVFIS5JY6QTR7PJQ/20210601/ap-south-1/s3/aws4_request, SignedHeaders=content-md5;host;x-amz-content-sha256;x-amz-date, Signature=fb951e3830df848cb41d26adb7ef9f6f6bbe233443f2aaf557cae18e0d15e57f', 'Content-Length': '135'}>
+2021-06-01 20:57:34  botocore.httpsession  DEBUG : Certificate path: C:\Users\Airflow\AppData\Local\Programs\Python\Python37\lib\site-packages\certifi\cacert.pem
+2021-06-01 20:57:34  botocore.awsrequest  DEBUG : Waiting for 100 Continue response.
+2021-06-01 20:57:35  botocore.awsrequest  DEBUG : 100 Continue response seen, now sending request body.
+2021-06-01 20:57:35  urllib3.connectionpool  DEBUG : https://orcl-tbls-ext-2021-06-01.s3.ap-south-1.amazonaws.com:443 "PUT /AA.zip HTTP/1.1" 200 0
+2021-06-01 20:57:35  botocore.parsers  DEBUG : Response headers: {'x-amz-id-2': 'QBIPP3/1hIwlsTUyFRErIO97iWvxnOFwfxFSvcP5nG2/1FWbfksZt62yek7e3JSz0nau2bj4zAE=', 'x-amz-request-id': 'XNR710SCSBN9FNBZ', 'Date': 'Tue, 01 Jun 2021 15:27:36 GMT', 'ETag': '"b2d115221fe54014364b2d92c3e72ecb"', 'Content-Length': '0', 'Server': 'AmazonS3'}
+2021-06-01 20:57:35  botocore.parsers  DEBUG : Response body:
+b''
+2021-06-01 20:57:35  botocore.hooks  DEBUG : Event needs-retry.s3.PutObject: calling handler <botocore.retryhandler.RetryHandler object at 0x0000000011DE2FC8>
+2021-06-01 20:57:35  botocore.retryhandler  DEBUG : No retry needed.
+2021-06-01 20:57:35  botocore.hooks  DEBUG : Event needs-retry.s3.PutObject: calling handler <bound method S3RegionRedirector.redirect_from_error of <botocore.utils.S3RegionRedirector object at 0x0000000011DE2CC8>>
+2021-06-01 20:57:35  s3transfer.utils  DEBUG : Releasing acquire 0/None
+2021-06-01 20:57:35  AwsS3Conn.S3Connect  INFO : D:\Orcl-To-S3\Orcl_to_S3_batch_2021-06-01\AA.zip has been transferred to 
+2021-06-01 20:57:35  botocore.hooks  DEBUG : Event before-parameter-build.s3.HeadBucket: calling handler <function validate_bucket_name at 0x000000000B9B7558>
+2021-06-01 20:57:35  botocore.hooks  DEBUG : Event before-parameter-build.s3.HeadBucket: calling handler <bound method S3RegionRedirector.redirect_from_cache of <botocore.utils.S3RegionRedirector object at 0x0000000011DE2CC8>>
+2021-06-01 20:57:35  botocore.hooks  DEBUG : Event before-parameter-build.s3.HeadBucket: calling handler <bound method S3ArnParamHandler.handle_arn of <botocore.utils.S3ArnParamHandler object at 0x0000000011DD5148>>
+2021-06-01 20:57:35  botocore.hooks  DEBUG : Event before-parameter-build.s3.HeadBucket: calling handler <function generate_idempotent_uuid at 0x000000000B9B73A8>
+2021-06-01 20:57:35  botocore.hooks  DEBUG : Event before-call.s3.HeadBucket: calling handler <function add_expect_header at 0x000000000B9B78B8>
+2021-06-01 20:57:35  botocore.hooks  DEBUG : Event before-call.s3.HeadBucket: calling handler <bound method S3RegionRedirector.set_request_url of <botocore.utils.S3RegionRedirector object at 0x0000000011DE2CC8>>
+2021-06-01 20:57:35  botocore.hooks  DEBUG : Event before-call.s3.HeadBucket: calling handler <function inject_api_version_header_if_needed at 0x000000000B9BDC18>
+2021-06-01 20:57:35  botocore.endpoint  DEBUG : Making request for OperationModel(name=HeadBucket) with params: {'url_path': '/orcl-tbls-ext-2021-06-01', 'query_string': {}, 'method': 'HEAD', 'headers': {'User-Agent': 'Boto3/1.17.62 Python/3.7.4 Windows/7 Botocore/1.20.62'}, 'body': b'', 'url': 'https://s3.ap-south-1.amazonaws.com/orcl-tbls-ext-2021-06-01', 'context': {'client_region': 'ap-south-1', 'client_config': <botocore.config.Config object at 0x0000000011DD0688>, 'has_streaming_input': False, 'auth_type': None, 'signing': {'bucket': 'orcl-tbls-ext-2021-06-01'}}}
+2021-06-01 20:57:35  botocore.hooks  DEBUG : Event request-created.s3.HeadBucket: calling handler <function signal_not_transferring at 0x0000000011B78828>
+2021-06-01 20:57:35  botocore.hooks  DEBUG : Event request-created.s3.HeadBucket: calling handler <bound method RequestSigner.handler of <botocore.signers.RequestSigner object at 0x0000000011DD0648>>
+2021-06-01 20:57:35  botocore.hooks  DEBUG : Event choose-signer.s3.HeadBucket: calling handler <function set_operation_specific_signer at 0x000000000B9B7288>
+2021-06-01 20:57:35  botocore.hooks  DEBUG : Event before-sign.s3.HeadBucket: calling handler <bound method S3EndpointSetter.set_endpoint of <botocore.utils.S3EndpointSetter object at 0x000000000BBF2088>>
+2021-06-01 20:57:35  botocore.utils  DEBUG : Checking for DNS compatible bucket for: https://s3.ap-south-1.amazonaws.com/orcl-tbls-ext-2021-06-01
+2021-06-01 20:57:35  botocore.utils  DEBUG : URI updated to: https://orcl-tbls-ext-2021-06-01.s3.ap-south-1.amazonaws.com/
+2021-06-01 20:57:35  botocore.auth  DEBUG : Calculating signature using v4 auth.
+2021-06-01 20:57:35  botocore.auth  DEBUG : CanonicalRequest:
+HEAD
+/
+
+host:orcl-tbls-ext-2021-06-01.s3.ap-south-1.amazonaws.com
+x-amz-content-sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+x-amz-date:20210601T152735Z
+
+host;x-amz-content-sha256;x-amz-date
+e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+2021-06-01 20:57:35  botocore.auth  DEBUG : StringToSign:
+AWS4-HMAC-SHA256
+20210601T152735Z
+20210601/ap-south-1/s3/aws4_request
+7fecbea19b26ec83ab64e6f83ee54d5b52aa6246fde4a5413b3a090ce0657ed1
+2021-06-01 20:57:35  botocore.auth  DEBUG : Signature:
+bd9f6d5b01b1d485c9ee7be9b74eb26508137ac242e9c6f59a176ce1b0b8ad65
+2021-06-01 20:57:35  botocore.hooks  DEBUG : Event request-created.s3.HeadBucket: calling handler <function signal_transferring at 0x0000000011B85948>
+2021-06-01 20:57:35  botocore.endpoint  DEBUG : Sending http request: <AWSPreparedRequest stream_output=False, method=HEAD, url=https://orcl-tbls-ext-2021-06-01.s3.ap-south-1.amazonaws.com/, headers={'User-Agent': b'Boto3/1.17.62 Python/3.7.4 Windows/7 Botocore/1.20.62', 'X-Amz-Date': b'20210601T152735Z', 'X-Amz-Content-SHA256': b'e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855', 'Authorization': b'AWS4-HMAC-SHA256 Credential=AKIARVFIS5JY6QTR7PJQ/20210601/ap-south-1/s3/aws4_request, SignedHeaders=host;x-amz-content-sha256;x-amz-date, Signature=bd9f6d5b01b1d485c9ee7be9b74eb26508137ac242e9c6f59a176ce1b0b8ad65'}>
+2021-06-01 20:57:35  botocore.httpsession  DEBUG : Certificate path: C:\Users\Airflow\AppData\Local\Programs\Python\Python37\lib\site-packages\certifi\cacert.pem
+2021-06-01 20:57:35  urllib3.connectionpool  DEBUG : https://orcl-tbls-ext-2021-06-01.s3.ap-south-1.amazonaws.com:443 "HEAD / HTTP/1.1" 200 0
+2021-06-01 20:57:35  botocore.parsers  DEBUG : Response headers: {'x-amz-id-2': 'd2CqnNkh9vPBLMBuga7mKlBLpgnbecW9o49POwFUAnAp8RuheShtJ99izCpBMQ5NfEHJ/4Xhu7I=', 'x-amz-request-id': 'XNR74RKNK5VEZFRD', 'Date': 'Tue, 01 Jun 2021 15:27:36 GMT', 'x-amz-bucket-region': 'ap-south-1', 'Content-Type': 'application/xml', 'Server': 'AmazonS3'}
+2021-06-01 20:57:35  botocore.parsers  DEBUG : Response body:
+b''
+2021-06-01 20:57:35  botocore.hooks  DEBUG : Event needs-retry.s3.HeadBucket: calling handler <botocore.retryhandler.RetryHandler object at 0x0000000011DE2FC8>
+2021-06-01 20:57:35  botocore.retryhandler  DEBUG : No retry needed.
+2021-06-01 20:57:35  botocore.hooks  DEBUG : Event needs-retry.s3.HeadBucket: calling handler <bound method S3RegionRedirector.redirect_from_error of <botocore.utils.S3RegionRedirector object at 0x0000000011DE2CC8>>
+2021-06-01 20:57:35  s3transfer.utils  DEBUG : Acquiring 0
+2021-06-01 20:57:35  s3transfer.tasks  DEBUG : UploadSubmissionTask(transfer_id=0, {'transfer_future': <s3transfer.futures.TransferFuture object at 0x0000000011E448C8>}) about to wait for the following futures []
+2021-06-01 20:57:35  s3transfer.tasks  DEBUG : UploadSubmissionTask(transfer_id=0, {'transfer_future': <s3transfer.futures.TransferFuture object at 0x0000000011E448C8>}) done waiting for dependent futures
+2021-06-01 20:57:35  s3transfer.tasks  DEBUG : Executing task UploadSubmissionTask(transfer_id=0, {'transfer_future': <s3transfer.futures.TransferFuture object at 0x0000000011E448C8>}) with kwargs {'client': <botocore.client.S3 object at 0x0000000011AB9E48>, 'config': <boto3.s3.transfer.TransferConfig object at 0x0000000011E3BDC8>, 'osutil': <s3transfer.utils.OSUtils object at 0x0000000011E3BC88>, 'request_executor': <s3transfer.futures.BoundedExecutor object at 0x0000000011E36A08>, 'transfer_future': <s3transfer.futures.TransferFuture object at 0x0000000011E448C8>}
+2021-06-01 20:57:35  s3transfer.futures  DEBUG : Submitting task PutObjectTask(transfer_id=0, {'bucket': 'orcl-tbls-ext-2021-06-01', 'key': 'BB.zip', 'extra_args': {}}) to executor <s3transfer.futures.BoundedExecutor object at 0x0000000011E36A08> for transfer request: 0.
+2021-06-01 20:57:35  s3transfer.utils  DEBUG : Acquiring 0
+2021-06-01 20:57:35  s3transfer.tasks  DEBUG : PutObjectTask(transfer_id=0, {'bucket': 'orcl-tbls-ext-2021-06-01', 'key': 'BB.zip', 'extra_args': {}}) about to wait for the following futures []
+2021-06-01 20:57:35  s3transfer.tasks  DEBUG : PutObjectTask(transfer_id=0, {'bucket': 'orcl-tbls-ext-2021-06-01', 'key': 'BB.zip', 'extra_args': {}}) done waiting for dependent futures
+2021-06-01 20:57:35  s3transfer.tasks  DEBUG : Executing task PutObjectTask(transfer_id=0, {'bucket': 'orcl-tbls-ext-2021-06-01', 'key': 'BB.zip', 'extra_args': {}}) with kwargs {'client': <botocore.client.S3 object at 0x0000000011AB9E48>, 'fileobj': <s3transfer.utils.ReadFileChunk object at 0x0000000011E2AD08>, 'bucket': 'orcl-tbls-ext-2021-06-01', 'key': 'BB.zip', 'extra_args': {}}
+2021-06-01 20:57:35  botocore.hooks  DEBUG : Event before-parameter-build.s3.PutObject: calling handler <function validate_ascii_metadata at 0x000000000B9BD1F8>
+2021-06-01 20:57:35  botocore.hooks  DEBUG : Event before-parameter-build.s3.PutObject: calling handler <function sse_md5 at 0x000000000B9B75E8>
+2021-06-01 20:57:35  botocore.hooks  DEBUG : Event before-parameter-build.s3.PutObject: calling handler <function convert_body_to_file_like_object at 0x000000000B9BDAF8>
+2021-06-01 20:57:35  botocore.hooks  DEBUG : Event before-parameter-build.s3.PutObject: calling handler <function validate_bucket_name at 0x000000000B9B7558>
+2021-06-01 20:57:35  botocore.hooks  DEBUG : Event before-parameter-build.s3.PutObject: calling handler <bound method S3RegionRedirector.redirect_from_cache of <botocore.utils.S3RegionRedirector object at 0x0000000011DE2CC8>>
+2021-06-01 20:57:35  botocore.hooks  DEBUG : Event before-parameter-build.s3.PutObject: calling handler <bound method S3ArnParamHandler.handle_arn of <botocore.utils.S3ArnParamHandler object at 0x0000000011DD5148>>
+2021-06-01 20:57:35  botocore.hooks  DEBUG : Event before-parameter-build.s3.PutObject: calling handler <function generate_idempotent_uuid at 0x000000000B9B73A8>
+2021-06-01 20:57:35  botocore.hooks  DEBUG : Event before-call.s3.PutObject: calling handler <function conditionally_calculate_md5 at 0x000000000B80ED38>
+2021-06-01 20:57:35  s3transfer.utils  DEBUG : Releasing acquire 0/None
+2021-06-01 20:57:35  botocore.hooks  DEBUG : Event before-call.s3.PutObject: calling handler <function add_expect_header at 0x000000000B9B78B8>
+2021-06-01 20:57:35  botocore.handlers  DEBUG : Adding expect 100 continue header to request.
+2021-06-01 20:57:35  botocore.hooks  DEBUG : Event before-call.s3.PutObject: calling handler <bound method S3RegionRedirector.set_request_url of <botocore.utils.S3RegionRedirector object at 0x0000000011DE2CC8>>
+2021-06-01 20:57:35  botocore.hooks  DEBUG : Event before-call.s3.PutObject: calling handler <function inject_api_version_header_if_needed at 0x000000000B9BDC18>
+2021-06-01 20:57:35  botocore.endpoint  DEBUG : Making request for OperationModel(name=PutObject) with params: {'url_path': '/orcl-tbls-ext-2021-06-01/BB.zip', 'query_string': {}, 'method': 'PUT', 'headers': {'User-Agent': 'Boto3/1.17.62 Python/3.7.4 Windows/7 Botocore/1.20.62', 'Content-MD5': '1f7ARcA9lLuBOBA0M7D0IQ==', 'Expect': '100-continue'}, 'body': <s3transfer.utils.ReadFileChunk object at 0x0000000011E2AD08>, 'url': 'https://s3.ap-south-1.amazonaws.com/orcl-tbls-ext-2021-06-01/BB.zip', 'context': {'client_region': 'ap-south-1', 'client_config': <botocore.config.Config object at 0x0000000011DD0688>, 'has_streaming_input': True, 'auth_type': None, 'signing': {'bucket': 'orcl-tbls-ext-2021-06-01'}}}
+2021-06-01 20:57:35  botocore.hooks  DEBUG : Event request-created.s3.PutObject: calling handler <function signal_not_transferring at 0x0000000011B78828>
+2021-06-01 20:57:35  botocore.hooks  DEBUG : Event request-created.s3.PutObject: calling handler <bound method RequestSigner.handler of <botocore.signers.RequestSigner object at 0x0000000011DD0648>>
+2021-06-01 20:57:35  botocore.hooks  DEBUG : Event choose-signer.s3.PutObject: calling handler <function set_operation_specific_signer at 0x000000000B9B7288>
+2021-06-01 20:57:35  botocore.hooks  DEBUG : Event before-sign.s3.PutObject: calling handler <bound method S3EndpointSetter.set_endpoint of <botocore.utils.S3EndpointSetter object at 0x000000000BBF2088>>
+2021-06-01 20:57:35  botocore.utils  DEBUG : Checking for DNS compatible bucket for: https://s3.ap-south-1.amazonaws.com/orcl-tbls-ext-2021-06-01/BB.zip
+2021-06-01 20:57:35  botocore.utils  DEBUG : URI updated to: https://orcl-tbls-ext-2021-06-01.s3.ap-south-1.amazonaws.com/BB.zip
+2021-06-01 20:57:35  botocore.auth  DEBUG : Calculating signature using v4 auth.
+2021-06-01 20:57:35  botocore.auth  DEBUG : CanonicalRequest:
+PUT
+/BB.zip
+
+content-md5:1f7ARcA9lLuBOBA0M7D0IQ==
+host:orcl-tbls-ext-2021-06-01.s3.ap-south-1.amazonaws.com
+x-amz-content-sha256:UNSIGNED-PAYLOAD
+x-amz-date:20210601T152735Z
+
+content-md5;host;x-amz-content-sha256;x-amz-date
+UNSIGNED-PAYLOAD
+2021-06-01 20:57:35  botocore.auth  DEBUG : StringToSign:
+AWS4-HMAC-SHA256
+20210601T152735Z
+20210601/ap-south-1/s3/aws4_request
+d3244f8b262ea4659f2828de699c65d76b1ec9cfd0dba6c797e3692ae838bf25
+2021-06-01 20:57:35  botocore.auth  DEBUG : Signature:
+777a9893c50feaa6fac801ca1eb46c7363dd5bdacc81e237bf67e893f0b4005c
+2021-06-01 20:57:35  botocore.hooks  DEBUG : Event request-created.s3.PutObject: calling handler <function signal_transferring at 0x0000000011B85948>
+2021-06-01 20:57:35  botocore.endpoint  DEBUG : Sending http request: <AWSPreparedRequest stream_output=False, method=PUT, url=https://orcl-tbls-ext-2021-06-01.s3.ap-south-1.amazonaws.com/BB.zip, headers={'User-Agent': b'Boto3/1.17.62 Python/3.7.4 Windows/7 Botocore/1.20.62', 'Content-MD5': b'1f7ARcA9lLuBOBA0M7D0IQ==', 'Expect': b'100-continue', 'X-Amz-Date': b'20210601T152735Z', 'X-Amz-Content-SHA256': b'UNSIGNED-PAYLOAD', 'Authorization': b'AWS4-HMAC-SHA256 Credential=AKIARVFIS5JY6QTR7PJQ/20210601/ap-south-1/s3/aws4_request, SignedHeaders=content-md5;host;x-amz-content-sha256;x-amz-date, Signature=777a9893c50feaa6fac801ca1eb46c7363dd5bdacc81e237bf67e893f0b4005c', 'Content-Length': '132'}>
+2021-06-01 20:57:35  botocore.httpsession  DEBUG : Certificate path: C:\Users\Airflow\AppData\Local\Programs\Python\Python37\lib\site-packages\certifi\cacert.pem
+2021-06-01 20:57:35  botocore.awsrequest  DEBUG : Waiting for 100 Continue response.
+2021-06-01 20:57:35  botocore.awsrequest  DEBUG : 100 Continue response seen, now sending request body.
+2021-06-01 20:57:36  urllib3.connectionpool  DEBUG : https://orcl-tbls-ext-2021-06-01.s3.ap-south-1.amazonaws.com:443 "PUT /BB.zip HTTP/1.1" 200 0
+2021-06-01 20:57:36  botocore.parsers  DEBUG : Response headers: {'x-amz-id-2': '4HMtwEuo5h56Gi3Tg8Ok9WoEVJ0OgsUj2Lr0TV44cS+yc7fVzVkjOCfGvLK06XEwp1qXDb9peAI=', 'x-amz-request-id': 'XNRCA4JDBW4HRMSM', 'Date': 'Tue, 01 Jun 2021 15:27:36 GMT', 'ETag': '"d5fec045c03d94bb8138103433b0f421"', 'Content-Length': '0', 'Server': 'AmazonS3'}
+2021-06-01 20:57:36  botocore.parsers  DEBUG : Response body:
+b''
+2021-06-01 20:57:36  botocore.hooks  DEBUG : Event needs-retry.s3.PutObject: calling handler <botocore.retryhandler.RetryHandler object at 0x0000000011DE2FC8>
+2021-06-01 20:57:36  botocore.retryhandler  DEBUG : No retry needed.
+2021-06-01 20:57:36  botocore.hooks  DEBUG : Event needs-retry.s3.PutObject: calling handler <bound method S3RegionRedirector.redirect_from_error of <botocore.utils.S3RegionRedirector object at 0x0000000011DE2CC8>>
+2021-06-01 20:57:36  s3transfer.utils  DEBUG : Releasing acquire 0/None
+2021-06-01 20:57:36  AwsS3Conn.S3Connect  INFO : D:\Orcl-To-S3\Orcl_to_S3_batch_2021-06-01\BB.zip has been transferred to 
+2021-06-01 20:57:36  botocore.hooks  DEBUG : Event before-parameter-build.s3.HeadBucket: calling handler <function validate_bucket_name at 0x000000000B9B7558>
+2021-06-01 20:57:36  botocore.hooks  DEBUG : Event before-parameter-build.s3.HeadBucket: calling handler <bound method S3RegionRedirector.redirect_from_cache of <botocore.utils.S3RegionRedirector object at 0x0000000011DE2CC8>>
+2021-06-01 20:57:36  botocore.hooks  DEBUG : Event before-parameter-build.s3.HeadBucket: calling handler <bound method S3ArnParamHandler.handle_arn of <botocore.utils.S3ArnParamHandler object at 0x0000000011DD5148>>
+2021-06-01 20:57:36  botocore.hooks  DEBUG : Event before-parameter-build.s3.HeadBucket: calling handler <function generate_idempotent_uuid at 0x000000000B9B73A8>
+2021-06-01 20:57:36  botocore.hooks  DEBUG : Event before-call.s3.HeadBucket: calling handler <function add_expect_header at 0x000000000B9B78B8>
+2021-06-01 20:57:36  botocore.hooks  DEBUG : Event before-call.s3.HeadBucket: calling handler <bound method S3RegionRedirector.set_request_url of <botocore.utils.S3RegionRedirector object at 0x0000000011DE2CC8>>
+2021-06-01 20:57:36  botocore.hooks  DEBUG : Event before-call.s3.HeadBucket: calling handler <function inject_api_version_header_if_needed at 0x000000000B9BDC18>
+2021-06-01 20:57:36  botocore.endpoint  DEBUG : Making request for OperationModel(name=HeadBucket) with params: {'url_path': '/orcl-tbls-ext-2021-06-01', 'query_string': {}, 'method': 'HEAD', 'headers': {'User-Agent': 'Boto3/1.17.62 Python/3.7.4 Windows/7 Botocore/1.20.62'}, 'body': b'', 'url': 'https://s3.ap-south-1.amazonaws.com/orcl-tbls-ext-2021-06-01', 'context': {'client_region': 'ap-south-1', 'client_config': <botocore.config.Config object at 0x0000000011DD0688>, 'has_streaming_input': False, 'auth_type': None, 'signing': {'bucket': 'orcl-tbls-ext-2021-06-01'}}}
+2021-06-01 20:57:36  botocore.hooks  DEBUG : Event request-created.s3.HeadBucket: calling handler <function signal_not_transferring at 0x0000000011B78828>
+2021-06-01 20:57:36  botocore.hooks  DEBUG : Event request-created.s3.HeadBucket: calling handler <bound method RequestSigner.handler of <botocore.signers.RequestSigner object at 0x0000000011DD0648>>
+2021-06-01 20:57:36  botocore.hooks  DEBUG : Event choose-signer.s3.HeadBucket: calling handler <function set_operation_specific_signer at 0x000000000B9B7288>
+2021-06-01 20:57:36  botocore.hooks  DEBUG : Event before-sign.s3.HeadBucket: calling handler <bound method S3EndpointSetter.set_endpoint of <botocore.utils.S3EndpointSetter object at 0x000000000BBF2088>>
+2021-06-01 20:57:36  botocore.utils  DEBUG : Checking for DNS compatible bucket for: https://s3.ap-south-1.amazonaws.com/orcl-tbls-ext-2021-06-01
+2021-06-01 20:57:36  botocore.utils  DEBUG : URI updated to: https://orcl-tbls-ext-2021-06-01.s3.ap-south-1.amazonaws.com/
+2021-06-01 20:57:36  botocore.auth  DEBUG : Calculating signature using v4 auth.
+2021-06-01 20:57:36  botocore.auth  DEBUG : CanonicalRequest:
+HEAD
+/
+
+host:orcl-tbls-ext-2021-06-01.s3.ap-south-1.amazonaws.com
+x-amz-content-sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+x-amz-date:20210601T152736Z
+
+host;x-amz-content-sha256;x-amz-date
+e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+2021-06-01 20:57:36  botocore.auth  DEBUG : StringToSign:
+AWS4-HMAC-SHA256
+20210601T152736Z
+20210601/ap-south-1/s3/aws4_request
+5971c9080963148a143bd569f016f10c7be2c9a7732c4e769c7a40929ab401af
+2021-06-01 20:57:36  botocore.auth  DEBUG : Signature:
+fcdca60780add9cd8d911ec468125ec1201422dd51d0a2e9965683fcf731d64b
+2021-06-01 20:57:36  botocore.hooks  DEBUG : Event request-created.s3.HeadBucket: calling handler <function signal_transferring at 0x0000000011B85948>
+2021-06-01 20:57:36  botocore.endpoint  DEBUG : Sending http request: <AWSPreparedRequest stream_output=False, method=HEAD, url=https://orcl-tbls-ext-2021-06-01.s3.ap-south-1.amazonaws.com/, headers={'User-Agent': b'Boto3/1.17.62 Python/3.7.4 Windows/7 Botocore/1.20.62', 'X-Amz-Date': b'20210601T152736Z', 'X-Amz-Content-SHA256': b'e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855', 'Authorization': b'AWS4-HMAC-SHA256 Credential=AKIARVFIS5JY6QTR7PJQ/20210601/ap-south-1/s3/aws4_request, SignedHeaders=host;x-amz-content-sha256;x-amz-date, Signature=fcdca60780add9cd8d911ec468125ec1201422dd51d0a2e9965683fcf731d64b'}>
+2021-06-01 20:57:36  botocore.httpsession  DEBUG : Certificate path: C:\Users\Airflow\AppData\Local\Programs\Python\Python37\lib\site-packages\certifi\cacert.pem
+2021-06-01 20:57:36  urllib3.connectionpool  DEBUG : https://orcl-tbls-ext-2021-06-01.s3.ap-south-1.amazonaws.com:443 "HEAD / HTTP/1.1" 200 0
+2021-06-01 20:57:36  botocore.parsers  DEBUG : Response headers: {'x-amz-id-2': 'FrHTMcbdk/uHiQ1govMuSG0bHNkS/bPKTIiGgP86Kl+/djudn2aUeMjCsUJfx/r7+Kw5Q76kpOw=', 'x-amz-request-id': 'QFTYHT1J77FQ9ME1', 'Date': 'Tue, 01 Jun 2021 15:27:37 GMT', 'x-amz-bucket-region': 'ap-south-1', 'Content-Type': 'application/xml', 'Server': 'AmazonS3'}
+2021-06-01 20:57:36  botocore.parsers  DEBUG : Response body:
+b''
+2021-06-01 20:57:36  botocore.hooks  DEBUG : Event needs-retry.s3.HeadBucket: calling handler <botocore.retryhandler.RetryHandler object at 0x0000000011DE2FC8>
+2021-06-01 20:57:36  botocore.retryhandler  DEBUG : No retry needed.
+2021-06-01 20:57:36  botocore.hooks  DEBUG : Event needs-retry.s3.HeadBucket: calling handler <bound method S3RegionRedirector.redirect_from_error of <botocore.utils.S3RegionRedirector object at 0x0000000011DE2CC8>>
+2021-06-01 20:57:36  s3transfer.utils  DEBUG : Acquiring 0
+2021-06-01 20:57:36  s3transfer.tasks  DEBUG : UploadSubmissionTask(transfer_id=0, {'transfer_future': <s3transfer.futures.TransferFuture object at 0x0000000011E4BEC8>}) about to wait for the following futures []
+2021-06-01 20:57:36  s3transfer.tasks  DEBUG : UploadSubmissionTask(transfer_id=0, {'transfer_future': <s3transfer.futures.TransferFuture object at 0x0000000011E4BEC8>}) done waiting for dependent futures
+2021-06-01 20:57:36  s3transfer.tasks  DEBUG : Executing task UploadSubmissionTask(transfer_id=0, {'transfer_future': <s3transfer.futures.TransferFuture object at 0x0000000011E4BEC8>}) with kwargs {'client': <botocore.client.S3 object at 0x0000000011AB9E48>, 'config': <boto3.s3.transfer.TransferConfig object at 0x0000000011DE9E48>, 'osutil': <s3transfer.utils.OSUtils object at 0x0000000011E33C08>, 'request_executor': <s3transfer.futures.BoundedExecutor object at 0x0000000011E42CC8>, 'transfer_future': <s3transfer.futures.TransferFuture object at 0x0000000011E4BEC8>}
+2021-06-01 20:57:36  s3transfer.futures  DEBUG : Submitting task PutObjectTask(transfer_id=0, {'bucket': 'orcl-tbls-ext-2021-06-01', 'key': 'TAB1.zip', 'extra_args': {}}) to executor <s3transfer.futures.BoundedExecutor object at 0x0000000011E42CC8> for transfer request: 0.
+2021-06-01 20:57:36  s3transfer.utils  DEBUG : Acquiring 0
+2021-06-01 20:57:36  s3transfer.tasks  DEBUG : PutObjectTask(transfer_id=0, {'bucket': 'orcl-tbls-ext-2021-06-01', 'key': 'TAB1.zip', 'extra_args': {}}) about to wait for the following futures []
+2021-06-01 20:57:36  s3transfer.tasks  DEBUG : PutObjectTask(transfer_id=0, {'bucket': 'orcl-tbls-ext-2021-06-01', 'key': 'TAB1.zip', 'extra_args': {}}) done waiting for dependent futures
+2021-06-01 20:57:36  s3transfer.tasks  DEBUG : Executing task PutObjectTask(transfer_id=0, {'bucket': 'orcl-tbls-ext-2021-06-01', 'key': 'TAB1.zip', 'extra_args': {}}) with kwargs {'client': <botocore.client.S3 object at 0x0000000011AB9E48>, 'fileobj': <s3transfer.utils.ReadFileChunk object at 0x0000000011E3A208>, 'bucket': 'orcl-tbls-ext-2021-06-01', 'key': 'TAB1.zip', 'extra_args': {}}
+2021-06-01 20:57:36  botocore.hooks  DEBUG : Event before-parameter-build.s3.PutObject: calling handler <function validate_ascii_metadata at 0x000000000B9BD1F8>
+2021-06-01 20:57:36  botocore.hooks  DEBUG : Event before-parameter-build.s3.PutObject: calling handler <function sse_md5 at 0x000000000B9B75E8>
+2021-06-01 20:57:36  botocore.hooks  DEBUG : Event before-parameter-build.s3.PutObject: calling handler <function convert_body_to_file_like_object at 0x000000000B9BDAF8>
+2021-06-01 20:57:36  s3transfer.utils  DEBUG : Releasing acquire 0/None
+2021-06-01 20:57:36  botocore.hooks  DEBUG : Event before-parameter-build.s3.PutObject: calling handler <function validate_bucket_name at 0x000000000B9B7558>
+2021-06-01 20:57:36  botocore.hooks  DEBUG : Event before-parameter-build.s3.PutObject: calling handler <bound method S3RegionRedirector.redirect_from_cache of <botocore.utils.S3RegionRedirector object at 0x0000000011DE2CC8>>
+2021-06-01 20:57:36  botocore.hooks  DEBUG : Event before-parameter-build.s3.PutObject: calling handler <bound method S3ArnParamHandler.handle_arn of <botocore.utils.S3ArnParamHandler object at 0x0000000011DD5148>>
+2021-06-01 20:57:36  botocore.hooks  DEBUG : Event before-parameter-build.s3.PutObject: calling handler <function generate_idempotent_uuid at 0x000000000B9B73A8>
+2021-06-01 20:57:36  botocore.hooks  DEBUG : Event before-call.s3.PutObject: calling handler <function conditionally_calculate_md5 at 0x000000000B80ED38>
+2021-06-01 20:57:36  botocore.hooks  DEBUG : Event before-call.s3.PutObject: calling handler <function add_expect_header at 0x000000000B9B78B8>
+2021-06-01 20:57:36  botocore.handlers  DEBUG : Adding expect 100 continue header to request.
+2021-06-01 20:57:36  botocore.hooks  DEBUG : Event before-call.s3.PutObject: calling handler <bound method S3RegionRedirector.set_request_url of <botocore.utils.S3RegionRedirector object at 0x0000000011DE2CC8>>
+2021-06-01 20:57:36  botocore.hooks  DEBUG : Event before-call.s3.PutObject: calling handler <function inject_api_version_header_if_needed at 0x000000000B9BDC18>
+2021-06-01 20:57:36  botocore.endpoint  DEBUG : Making request for OperationModel(name=PutObject) with params: {'url_path': '/orcl-tbls-ext-2021-06-01/TAB1.zip', 'query_string': {}, 'method': 'PUT', 'headers': {'User-Agent': 'Boto3/1.17.62 Python/3.7.4 Windows/7 Botocore/1.20.62', 'Content-MD5': 'A02DTC55K+7Xjta7hTHLiA==', 'Expect': '100-continue'}, 'body': <s3transfer.utils.ReadFileChunk object at 0x0000000011E3A208>, 'url': 'https://s3.ap-south-1.amazonaws.com/orcl-tbls-ext-2021-06-01/TAB1.zip', 'context': {'client_region': 'ap-south-1', 'client_config': <botocore.config.Config object at 0x0000000011DD0688>, 'has_streaming_input': True, 'auth_type': None, 'signing': {'bucket': 'orcl-tbls-ext-2021-06-01'}}}
+2021-06-01 20:57:36  botocore.hooks  DEBUG : Event request-created.s3.PutObject: calling handler <function signal_not_transferring at 0x0000000011B78828>
+2021-06-01 20:57:36  botocore.hooks  DEBUG : Event request-created.s3.PutObject: calling handler <bound method RequestSigner.handler of <botocore.signers.RequestSigner object at 0x0000000011DD0648>>
+2021-06-01 20:57:36  botocore.hooks  DEBUG : Event choose-signer.s3.PutObject: calling handler <function set_operation_specific_signer at 0x000000000B9B7288>
+2021-06-01 20:57:36  botocore.hooks  DEBUG : Event before-sign.s3.PutObject: calling handler <bound method S3EndpointSetter.set_endpoint of <botocore.utils.S3EndpointSetter object at 0x000000000BBF2088>>
+2021-06-01 20:57:36  botocore.utils  DEBUG : Checking for DNS compatible bucket for: https://s3.ap-south-1.amazonaws.com/orcl-tbls-ext-2021-06-01/TAB1.zip
+2021-06-01 20:57:36  botocore.utils  DEBUG : URI updated to: https://orcl-tbls-ext-2021-06-01.s3.ap-south-1.amazonaws.com/TAB1.zip
+2021-06-01 20:57:36  botocore.auth  DEBUG : Calculating signature using v4 auth.
+2021-06-01 20:57:36  botocore.auth  DEBUG : CanonicalRequest:
+PUT
+/TAB1.zip
+
+content-md5:A02DTC55K+7Xjta7hTHLiA==
+host:orcl-tbls-ext-2021-06-01.s3.ap-south-1.amazonaws.com
+x-amz-content-sha256:UNSIGNED-PAYLOAD
+x-amz-date:20210601T152736Z
+
+content-md5;host;x-amz-content-sha256;x-amz-date
+UNSIGNED-PAYLOAD
+2021-06-01 20:57:36  botocore.auth  DEBUG : StringToSign:
+AWS4-HMAC-SHA256
+20210601T152736Z
+20210601/ap-south-1/s3/aws4_request
+06d2445598757c3401cd2bccba780829fa9422cc2f8166584e523dcb2c9026df
+2021-06-01 20:57:36  botocore.auth  DEBUG : Signature:
+ab8ea27c914401f01b1d5621e82ee51dca491046e392ba2dcde9b11bedf1c1b0
+2021-06-01 20:57:36  botocore.hooks  DEBUG : Event request-created.s3.PutObject: calling handler <function signal_transferring at 0x0000000011B85948>
+2021-06-01 20:57:36  botocore.endpoint  DEBUG : Sending http request: <AWSPreparedRequest stream_output=False, method=PUT, url=https://orcl-tbls-ext-2021-06-01.s3.ap-south-1.amazonaws.com/TAB1.zip, headers={'User-Agent': b'Boto3/1.17.62 Python/3.7.4 Windows/7 Botocore/1.20.62', 'Content-MD5': b'A02DTC55K+7Xjta7hTHLiA==', 'Expect': b'100-continue', 'X-Amz-Date': b'20210601T152736Z', 'X-Amz-Content-SHA256': b'UNSIGNED-PAYLOAD', 'Authorization': b'AWS4-HMAC-SHA256 Credential=AKIARVFIS5JY6QTR7PJQ/20210601/ap-south-1/s3/aws4_request, SignedHeaders=content-md5;host;x-amz-content-sha256;x-amz-date, Signature=ab8ea27c914401f01b1d5621e82ee51dca491046e392ba2dcde9b11bedf1c1b0', 'Content-Length': '149'}>
+2021-06-01 20:57:36  botocore.httpsession  DEBUG : Certificate path: C:\Users\Airflow\AppData\Local\Programs\Python\Python37\lib\site-packages\certifi\cacert.pem
+2021-06-01 20:57:36  botocore.awsrequest  DEBUG : Waiting for 100 Continue response.
+2021-06-01 20:57:36  botocore.awsrequest  DEBUG : 100 Continue response seen, now sending request body.
+2021-06-01 20:57:36  urllib3.connectionpool  DEBUG : https://orcl-tbls-ext-2021-06-01.s3.ap-south-1.amazonaws.com:443 "PUT /TAB1.zip HTTP/1.1" 200 0
+2021-06-01 20:57:36  botocore.parsers  DEBUG : Response headers: {'x-amz-id-2': 'YUoYE5uEHYsQKRWL40zl3Hv83fzv87f2CvuooI4ZUKRJw8ASyvHXP5Mr/67N6JENGGNCmBaSDMA=', 'x-amz-request-id': 'QFTTB2R0YXM8NFR0', 'Date': 'Tue, 01 Jun 2021 15:27:37 GMT', 'ETag': '"034d834c2e792beed78ed6bb8531cb88"', 'Content-Length': '0', 'Server': 'AmazonS3'}
+2021-06-01 20:57:36  botocore.parsers  DEBUG : Response body:
+b''
+2021-06-01 20:57:36  botocore.hooks  DEBUG : Event needs-retry.s3.PutObject: calling handler <botocore.retryhandler.RetryHandler object at 0x0000000011DE2FC8>
+2021-06-01 20:57:36  botocore.retryhandler  DEBUG : No retry needed.
+2021-06-01 20:57:36  botocore.hooks  DEBUG : Event needs-retry.s3.PutObject: calling handler <bound method S3RegionRedirector.redirect_from_error of <botocore.utils.S3RegionRedirector object at 0x0000000011DE2CC8>>
+2021-06-01 20:57:36  s3transfer.utils  DEBUG : Releasing acquire 0/None
+2021-06-01 20:57:36  AwsS3Conn.S3Connect  INFO : D:\Orcl-To-S3\Orcl_to_S3_batch_2021-06-01\TAB1.zip has been transferred to 
+2021-06-01 20:57:36  botocore.hooks  DEBUG : Event before-parameter-build.s3.HeadBucket: calling handler <function validate_bucket_name at 0x000000000B9B7558>
+2021-06-01 20:57:36  botocore.hooks  DEBUG : Event before-parameter-build.s3.HeadBucket: calling handler <bound method S3RegionRedirector.redirect_from_cache of <botocore.utils.S3RegionRedirector object at 0x0000000011DE2CC8>>
+2021-06-01 20:57:36  botocore.hooks  DEBUG : Event before-parameter-build.s3.HeadBucket: calling handler <bound method S3ArnParamHandler.handle_arn of <botocore.utils.S3ArnParamHandler object at 0x0000000011DD5148>>
+2021-06-01 20:57:36  botocore.hooks  DEBUG : Event before-parameter-build.s3.HeadBucket: calling handler <function generate_idempotent_uuid at 0x000000000B9B73A8>
+2021-06-01 20:57:36  botocore.hooks  DEBUG : Event before-call.s3.HeadBucket: calling handler <function add_expect_header at 0x000000000B9B78B8>
+2021-06-01 20:57:36  botocore.hooks  DEBUG : Event before-call.s3.HeadBucket: calling handler <bound method S3RegionRedirector.set_request_url of <botocore.utils.S3RegionRedirector object at 0x0000000011DE2CC8>>
+2021-06-01 20:57:36  botocore.hooks  DEBUG : Event before-call.s3.HeadBucket: calling handler <function inject_api_version_header_if_needed at 0x000000000B9BDC18>
+2021-06-01 20:57:36  botocore.endpoint  DEBUG : Making request for OperationModel(name=HeadBucket) with params: {'url_path': '/orcl-tbls-ext-2021-06-01', 'query_string': {}, 'method': 'HEAD', 'headers': {'User-Agent': 'Boto3/1.17.62 Python/3.7.4 Windows/7 Botocore/1.20.62'}, 'body': b'', 'url': 'https://s3.ap-south-1.amazonaws.com/orcl-tbls-ext-2021-06-01', 'context': {'client_region': 'ap-south-1', 'client_config': <botocore.config.Config object at 0x0000000011DD0688>, 'has_streaming_input': False, 'auth_type': None, 'signing': {'bucket': 'orcl-tbls-ext-2021-06-01'}}}
+2021-06-01 20:57:36  botocore.hooks  DEBUG : Event request-created.s3.HeadBucket: calling handler <function signal_not_transferring at 0x0000000011B78828>
+2021-06-01 20:57:36  botocore.hooks  DEBUG : Event request-created.s3.HeadBucket: calling handler <bound method RequestSigner.handler of <botocore.signers.RequestSigner object at 0x0000000011DD0648>>
+2021-06-01 20:57:36  botocore.hooks  DEBUG : Event choose-signer.s3.HeadBucket: calling handler <function set_operation_specific_signer at 0x000000000B9B7288>
+2021-06-01 20:57:36  botocore.hooks  DEBUG : Event before-sign.s3.HeadBucket: calling handler <bound method S3EndpointSetter.set_endpoint of <botocore.utils.S3EndpointSetter object at 0x000000000BBF2088>>
+2021-06-01 20:57:36  botocore.utils  DEBUG : Checking for DNS compatible bucket for: https://s3.ap-south-1.amazonaws.com/orcl-tbls-ext-2021-06-01
+2021-06-01 20:57:36  botocore.utils  DEBUG : URI updated to: https://orcl-tbls-ext-2021-06-01.s3.ap-south-1.amazonaws.com/
+2021-06-01 20:57:36  botocore.auth  DEBUG : Calculating signature using v4 auth.
+2021-06-01 20:57:36  botocore.auth  DEBUG : CanonicalRequest:
+HEAD
+/
+
+host:orcl-tbls-ext-2021-06-01.s3.ap-south-1.amazonaws.com
+x-amz-content-sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+x-amz-date:20210601T152736Z
+
+host;x-amz-content-sha256;x-amz-date
+e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+2021-06-01 20:57:36  botocore.auth  DEBUG : StringToSign:
+AWS4-HMAC-SHA256
+20210601T152736Z
+20210601/ap-south-1/s3/aws4_request
+5971c9080963148a143bd569f016f10c7be2c9a7732c4e769c7a40929ab401af
+2021-06-01 20:57:36  botocore.auth  DEBUG : Signature:
+fcdca60780add9cd8d911ec468125ec1201422dd51d0a2e9965683fcf731d64b
+2021-06-01 20:57:36  botocore.hooks  DEBUG : Event request-created.s3.HeadBucket: calling handler <function signal_transferring at 0x0000000011B85948>
+2021-06-01 20:57:36  botocore.endpoint  DEBUG : Sending http request: <AWSPreparedRequest stream_output=False, method=HEAD, url=https://orcl-tbls-ext-2021-06-01.s3.ap-south-1.amazonaws.com/, headers={'User-Agent': b'Boto3/1.17.62 Python/3.7.4 Windows/7 Botocore/1.20.62', 'X-Amz-Date': b'20210601T152736Z', 'X-Amz-Content-SHA256': b'e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855', 'Authorization': b'AWS4-HMAC-SHA256 Credential=AKIARVFIS5JY6QTR7PJQ/20210601/ap-south-1/s3/aws4_request, SignedHeaders=host;x-amz-content-sha256;x-amz-date, Signature=fcdca60780add9cd8d911ec468125ec1201422dd51d0a2e9965683fcf731d64b'}>
+2021-06-01 20:57:36  botocore.httpsession  DEBUG : Certificate path: C:\Users\Airflow\AppData\Local\Programs\Python\Python37\lib\site-packages\certifi\cacert.pem
+2021-06-01 20:57:36  urllib3.connectionpool  DEBUG : https://orcl-tbls-ext-2021-06-01.s3.ap-south-1.amazonaws.com:443 "HEAD / HTTP/1.1" 200 0
+2021-06-01 20:57:36  botocore.parsers  DEBUG : Response headers: {'x-amz-id-2': 'z5m89/JSmSN6FJDV6vLcbRH/YbrL/uCW7XarlSXrSB18Zej+QaZmEsnw4XM4t1rygnAa3dgAY7g=', 'x-amz-request-id': 'QFTHWP6AXN4ZXVKG', 'Date': 'Tue, 01 Jun 2021 15:27:37 GMT', 'x-amz-bucket-region': 'ap-south-1', 'Content-Type': 'application/xml', 'Server': 'AmazonS3'}
+2021-06-01 20:57:36  botocore.parsers  DEBUG : Response body:
+b''
+2021-06-01 20:57:36  botocore.hooks  DEBUG : Event needs-retry.s3.HeadBucket: calling handler <botocore.retryhandler.RetryHandler object at 0x0000000011DE2FC8>
+2021-06-01 20:57:36  botocore.retryhandler  DEBUG : No retry needed.
+2021-06-01 20:57:36  botocore.hooks  DEBUG : Event needs-retry.s3.HeadBucket: calling handler <bound method S3RegionRedirector.redirect_from_error of <botocore.utils.S3RegionRedirector object at 0x0000000011DE2CC8>>
+2021-06-01 20:57:36  s3transfer.utils  DEBUG : Acquiring 0
+2021-06-01 20:57:36  s3transfer.tasks  DEBUG : UploadSubmissionTask(transfer_id=0, {'transfer_future': <s3transfer.futures.TransferFuture object at 0x0000000011E48348>}) about to wait for the following futures []
+2021-06-01 20:57:36  s3transfer.tasks  DEBUG : UploadSubmissionTask(transfer_id=0, {'transfer_future': <s3transfer.futures.TransferFuture object at 0x0000000011E48348>}) done waiting for dependent futures
+2021-06-01 20:57:36  s3transfer.tasks  DEBUG : Executing task UploadSubmissionTask(transfer_id=0, {'transfer_future': <s3transfer.futures.TransferFuture object at 0x0000000011E48348>}) with kwargs {'client': <botocore.client.S3 object at 0x0000000011AB9E48>, 'config': <boto3.s3.transfer.TransferConfig object at 0x0000000011E36748>, 'osutil': <s3transfer.utils.OSUtils object at 0x0000000011E36A08>, 'request_executor': <s3transfer.futures.BoundedExecutor object at 0x0000000011E3A288>, 'transfer_future': <s3transfer.futures.TransferFuture object at 0x0000000011E48348>}
+2021-06-01 20:57:36  s3transfer.futures  DEBUG : Submitting task PutObjectTask(transfer_id=0, {'bucket': 'orcl-tbls-ext-2021-06-01', 'key': 'TAB2.zip', 'extra_args': {}}) to executor <s3transfer.futures.BoundedExecutor object at 0x0000000011E3A288> for transfer request: 0.
+2021-06-01 20:57:36  s3transfer.utils  DEBUG : Acquiring 0
+2021-06-01 20:57:36  s3transfer.tasks  DEBUG : PutObjectTask(transfer_id=0, {'bucket': 'orcl-tbls-ext-2021-06-01', 'key': 'TAB2.zip', 'extra_args': {}}) about to wait for the following futures []
+2021-06-01 20:57:36  s3transfer.tasks  DEBUG : PutObjectTask(transfer_id=0, {'bucket': 'orcl-tbls-ext-2021-06-01', 'key': 'TAB2.zip', 'extra_args': {}}) done waiting for dependent futures
+2021-06-01 20:57:36  s3transfer.utils  DEBUG : Releasing acquire 0/None
+2021-06-01 20:57:36  s3transfer.tasks  DEBUG : Executing task PutObjectTask(transfer_id=0, {'bucket': 'orcl-tbls-ext-2021-06-01', 'key': 'TAB2.zip', 'extra_args': {}}) with kwargs {'client': <botocore.client.S3 object at 0x0000000011AB9E48>, 'fileobj': <s3transfer.utils.ReadFileChunk object at 0x0000000011E2A808>, 'bucket': 'orcl-tbls-ext-2021-06-01', 'key': 'TAB2.zip', 'extra_args': {}}
+2021-06-01 20:57:36  botocore.hooks  DEBUG : Event before-parameter-build.s3.PutObject: calling handler <function validate_ascii_metadata at 0x000000000B9BD1F8>
+2021-06-01 20:57:36  botocore.hooks  DEBUG : Event before-parameter-build.s3.PutObject: calling handler <function sse_md5 at 0x000000000B9B75E8>
+2021-06-01 20:57:36  botocore.hooks  DEBUG : Event before-parameter-build.s3.PutObject: calling handler <function convert_body_to_file_like_object at 0x000000000B9BDAF8>
+2021-06-01 20:57:36  botocore.hooks  DEBUG : Event before-parameter-build.s3.PutObject: calling handler <function validate_bucket_name at 0x000000000B9B7558>
+2021-06-01 20:57:36  botocore.hooks  DEBUG : Event before-parameter-build.s3.PutObject: calling handler <bound method S3RegionRedirector.redirect_from_cache of <botocore.utils.S3RegionRedirector object at 0x0000000011DE2CC8>>
+2021-06-01 20:57:36  botocore.hooks  DEBUG : Event before-parameter-build.s3.PutObject: calling handler <bound method S3ArnParamHandler.handle_arn of <botocore.utils.S3ArnParamHandler object at 0x0000000011DD5148>>
+2021-06-01 20:57:36  botocore.hooks  DEBUG : Event before-parameter-build.s3.PutObject: calling handler <function generate_idempotent_uuid at 0x000000000B9B73A8>
+2021-06-01 20:57:36  botocore.hooks  DEBUG : Event before-call.s3.PutObject: calling handler <function conditionally_calculate_md5 at 0x000000000B80ED38>
+2021-06-01 20:57:36  botocore.hooks  DEBUG : Event before-call.s3.PutObject: calling handler <function add_expect_header at 0x000000000B9B78B8>
+2021-06-01 20:57:36  botocore.handlers  DEBUG : Adding expect 100 continue header to request.
+2021-06-01 20:57:36  botocore.hooks  DEBUG : Event before-call.s3.PutObject: calling handler <bound method S3RegionRedirector.set_request_url of <botocore.utils.S3RegionRedirector object at 0x0000000011DE2CC8>>
+2021-06-01 20:57:36  botocore.hooks  DEBUG : Event before-call.s3.PutObject: calling handler <function inject_api_version_header_if_needed at 0x000000000B9BDC18>
+2021-06-01 20:57:36  botocore.endpoint  DEBUG : Making request for OperationModel(name=PutObject) with params: {'url_path': '/orcl-tbls-ext-2021-06-01/TAB2.zip', 'query_string': {}, 'method': 'PUT', 'headers': {'User-Agent': 'Boto3/1.17.62 Python/3.7.4 Windows/7 Botocore/1.20.62', 'Content-MD5': 'gK4OKeSDAP8DpAmdnmafvw==', 'Expect': '100-continue'}, 'body': <s3transfer.utils.ReadFileChunk object at 0x0000000011E2A808>, 'url': 'https://s3.ap-south-1.amazonaws.com/orcl-tbls-ext-2021-06-01/TAB2.zip', 'context': {'client_region': 'ap-south-1', 'client_config': <botocore.config.Config object at 0x0000000011DD0688>, 'has_streaming_input': True, 'auth_type': None, 'signing': {'bucket': 'orcl-tbls-ext-2021-06-01'}}}
+2021-06-01 20:57:36  botocore.hooks  DEBUG : Event request-created.s3.PutObject: calling handler <function signal_not_transferring at 0x0000000011B78828>
+2021-06-01 20:57:36  botocore.hooks  DEBUG : Event request-created.s3.PutObject: calling handler <bound method RequestSigner.handler of <botocore.signers.RequestSigner object at 0x0000000011DD0648>>
+2021-06-01 20:57:36  botocore.hooks  DEBUG : Event choose-signer.s3.PutObject: calling handler <function set_operation_specific_signer at 0x000000000B9B7288>
+2021-06-01 20:57:36  botocore.hooks  DEBUG : Event before-sign.s3.PutObject: calling handler <bound method S3EndpointSetter.set_endpoint of <botocore.utils.S3EndpointSetter object at 0x000000000BBF2088>>
+2021-06-01 20:57:36  botocore.utils  DEBUG : Checking for DNS compatible bucket for: https://s3.ap-south-1.amazonaws.com/orcl-tbls-ext-2021-06-01/TAB2.zip
+2021-06-01 20:57:36  botocore.utils  DEBUG : URI updated to: https://orcl-tbls-ext-2021-06-01.s3.ap-south-1.amazonaws.com/TAB2.zip
+2021-06-01 20:57:36  botocore.auth  DEBUG : Calculating signature using v4 auth.
+2021-06-01 20:57:36  botocore.auth  DEBUG : CanonicalRequest:
+PUT
+/TAB2.zip
+
+content-md5:gK4OKeSDAP8DpAmdnmafvw==
+host:orcl-tbls-ext-2021-06-01.s3.ap-south-1.amazonaws.com
+x-amz-content-sha256:UNSIGNED-PAYLOAD
+x-amz-date:20210601T152736Z
+
+content-md5;host;x-amz-content-sha256;x-amz-date
+UNSIGNED-PAYLOAD
+2021-06-01 20:57:36  botocore.auth  DEBUG : StringToSign:
+AWS4-HMAC-SHA256
+20210601T152736Z
+20210601/ap-south-1/s3/aws4_request
+9e5bd3645747342b79f56ef0d93a76bf3fb134db0fc75e49cc1292ff1921a1ba
+2021-06-01 20:57:36  botocore.auth  DEBUG : Signature:
+445c01c8767f818a0b186b35dba0a25b597764d641f998506d376552acf87384
+2021-06-01 20:57:36  botocore.hooks  DEBUG : Event request-created.s3.PutObject: calling handler <function signal_transferring at 0x0000000011B85948>
+2021-06-01 20:57:36  botocore.endpoint  DEBUG : Sending http request: <AWSPreparedRequest stream_output=False, method=PUT, url=https://orcl-tbls-ext-2021-06-01.s3.ap-south-1.amazonaws.com/TAB2.zip, headers={'User-Agent': b'Boto3/1.17.62 Python/3.7.4 Windows/7 Botocore/1.20.62', 'Content-MD5': b'gK4OKeSDAP8DpAmdnmafvw==', 'Expect': b'100-continue', 'X-Amz-Date': b'20210601T152736Z', 'X-Amz-Content-SHA256': b'UNSIGNED-PAYLOAD', 'Authorization': b'AWS4-HMAC-SHA256 Credential=AKIARVFIS5JY6QTR7PJQ/20210601/ap-south-1/s3/aws4_request, SignedHeaders=content-md5;host;x-amz-content-sha256;x-amz-date, Signature=445c01c8767f818a0b186b35dba0a25b597764d641f998506d376552acf87384', 'Content-Length': '147'}>
+2021-06-01 20:57:36  botocore.httpsession  DEBUG : Certificate path: C:\Users\Airflow\AppData\Local\Programs\Python\Python37\lib\site-packages\certifi\cacert.pem
+2021-06-01 20:57:36  botocore.awsrequest  DEBUG : Waiting for 100 Continue response.
+2021-06-01 20:57:37  botocore.awsrequest  DEBUG : 100 Continue response seen, now sending request body.
+2021-06-01 20:57:37  urllib3.connectionpool  DEBUG : https://orcl-tbls-ext-2021-06-01.s3.ap-south-1.amazonaws.com:443 "PUT /TAB2.zip HTTP/1.1" 200 0
+2021-06-01 20:57:37  botocore.parsers  DEBUG : Response headers: {'x-amz-id-2': 'dvSL6BvY8v2ms5RSm4JGhh/veMMVdeUvXC9Ls8our6Yq9qNYPeY+caH59ztQeQ7WCUBfNBRaah0=', 'x-amz-request-id': 'KWPXTQAACKKZ7C8J', 'Date': 'Tue, 01 Jun 2021 15:27:38 GMT', 'ETag': '"80ae0e29e48300ff03a4099d9e669fbf"', 'Content-Length': '0', 'Server': 'AmazonS3'}
+2021-06-01 20:57:37  botocore.parsers  DEBUG : Response body:
+b''
+2021-06-01 20:57:37  botocore.hooks  DEBUG : Event needs-retry.s3.PutObject: calling handler <botocore.retryhandler.RetryHandler object at 0x0000000011DE2FC8>
+2021-06-01 20:57:37  botocore.retryhandler  DEBUG : No retry needed.
+2021-06-01 20:57:37  botocore.hooks  DEBUG : Event needs-retry.s3.PutObject: calling handler <bound method S3RegionRedirector.redirect_from_error of <botocore.utils.S3RegionRedirector object at 0x0000000011DE2CC8>>
+2021-06-01 20:57:37  s3transfer.utils  DEBUG : Releasing acquire 0/None
+2021-06-01 20:57:37  AwsS3Conn.S3Connect  INFO : D:\Orcl-To-S3\Orcl_to_S3_batch_2021-06-01\TAB2.zip has been transferred to 
+2021-06-01 20:57:37  botocore.hooks  DEBUG : Event before-parameter-build.s3.HeadBucket: calling handler <function validate_bucket_name at 0x000000000B9B7558>
+2021-06-01 20:57:37  botocore.hooks  DEBUG : Event before-parameter-build.s3.HeadBucket: calling handler <bound method S3RegionRedirector.redirect_from_cache of <botocore.utils.S3RegionRedirector object at 0x0000000011DE2CC8>>
+2021-06-01 20:57:37  botocore.hooks  DEBUG : Event before-parameter-build.s3.HeadBucket: calling handler <bound method S3ArnParamHandler.handle_arn of <botocore.utils.S3ArnParamHandler object at 0x0000000011DD5148>>
+2021-06-01 20:57:37  botocore.hooks  DEBUG : Event before-parameter-build.s3.HeadBucket: calling handler <function generate_idempotent_uuid at 0x000000000B9B73A8>
+2021-06-01 20:57:37  botocore.hooks  DEBUG : Event before-call.s3.HeadBucket: calling handler <function add_expect_header at 0x000000000B9B78B8>
+2021-06-01 20:57:37  botocore.hooks  DEBUG : Event before-call.s3.HeadBucket: calling handler <bound method S3RegionRedirector.set_request_url of <botocore.utils.S3RegionRedirector object at 0x0000000011DE2CC8>>
+2021-06-01 20:57:37  botocore.hooks  DEBUG : Event before-call.s3.HeadBucket: calling handler <function inject_api_version_header_if_needed at 0x000000000B9BDC18>
+2021-06-01 20:57:37  botocore.endpoint  DEBUG : Making request for OperationModel(name=HeadBucket) with params: {'url_path': '/orcl-tbls-ext-2021-06-01', 'query_string': {}, 'method': 'HEAD', 'headers': {'User-Agent': 'Boto3/1.17.62 Python/3.7.4 Windows/7 Botocore/1.20.62'}, 'body': b'', 'url': 'https://s3.ap-south-1.amazonaws.com/orcl-tbls-ext-2021-06-01', 'context': {'client_region': 'ap-south-1', 'client_config': <botocore.config.Config object at 0x0000000011DD0688>, 'has_streaming_input': False, 'auth_type': None, 'signing': {'bucket': 'orcl-tbls-ext-2021-06-01'}}}
+2021-06-01 20:57:37  botocore.hooks  DEBUG : Event request-created.s3.HeadBucket: calling handler <function signal_not_transferring at 0x0000000011B78828>
+2021-06-01 20:57:37  botocore.hooks  DEBUG : Event request-created.s3.HeadBucket: calling handler <bound method RequestSigner.handler of <botocore.signers.RequestSigner object at 0x0000000011DD0648>>
+2021-06-01 20:57:37  botocore.hooks  DEBUG : Event choose-signer.s3.HeadBucket: calling handler <function set_operation_specific_signer at 0x000000000B9B7288>
+2021-06-01 20:57:37  botocore.hooks  DEBUG : Event before-sign.s3.HeadBucket: calling handler <bound method S3EndpointSetter.set_endpoint of <botocore.utils.S3EndpointSetter object at 0x000000000BBF2088>>
+2021-06-01 20:57:37  botocore.utils  DEBUG : Checking for DNS compatible bucket for: https://s3.ap-south-1.amazonaws.com/orcl-tbls-ext-2021-06-01
+2021-06-01 20:57:37  botocore.utils  DEBUG : URI updated to: https://orcl-tbls-ext-2021-06-01.s3.ap-south-1.amazonaws.com/
+2021-06-01 20:57:37  botocore.auth  DEBUG : Calculating signature using v4 auth.
+2021-06-01 20:57:37  botocore.auth  DEBUG : CanonicalRequest:
+HEAD
+/
+
+host:orcl-tbls-ext-2021-06-01.s3.ap-south-1.amazonaws.com
+x-amz-content-sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+x-amz-date:20210601T152737Z
+
+host;x-amz-content-sha256;x-amz-date
+e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+2021-06-01 20:57:37  botocore.auth  DEBUG : StringToSign:
+AWS4-HMAC-SHA256
+20210601T152737Z
+20210601/ap-south-1/s3/aws4_request
+e832f6adf40649d98159f6ae1a7c870ed58b33ca59aec458e4531842e50c366b
+2021-06-01 20:57:37  botocore.auth  DEBUG : Signature:
+de0144821b0d48a0675d6c9c165cf2ad7a0799048c03115b03dc83262c30039a
+2021-06-01 20:57:37  botocore.hooks  DEBUG : Event request-created.s3.HeadBucket: calling handler <function signal_transferring at 0x0000000011B85948>
+2021-06-01 20:57:37  botocore.endpoint  DEBUG : Sending http request: <AWSPreparedRequest stream_output=False, method=HEAD, url=https://orcl-tbls-ext-2021-06-01.s3.ap-south-1.amazonaws.com/, headers={'User-Agent': b'Boto3/1.17.62 Python/3.7.4 Windows/7 Botocore/1.20.62', 'X-Amz-Date': b'20210601T152737Z', 'X-Amz-Content-SHA256': b'e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855', 'Authorization': b'AWS4-HMAC-SHA256 Credential=AKIARVFIS5JY6QTR7PJQ/20210601/ap-south-1/s3/aws4_request, SignedHeaders=host;x-amz-content-sha256;x-amz-date, Signature=de0144821b0d48a0675d6c9c165cf2ad7a0799048c03115b03dc83262c30039a'}>
+2021-06-01 20:57:37  botocore.httpsession  DEBUG : Certificate path: C:\Users\Airflow\AppData\Local\Programs\Python\Python37\lib\site-packages\certifi\cacert.pem
+2021-06-01 20:57:37  urllib3.connectionpool  DEBUG : https://orcl-tbls-ext-2021-06-01.s3.ap-south-1.amazonaws.com:443 "HEAD / HTTP/1.1" 200 0
+2021-06-01 20:57:37  botocore.parsers  DEBUG : Response headers: {'x-amz-id-2': 'x0gI3RlgfmE+VqXo9VId7kNl0Iw/vhJek6i9N0TSWHLCfmpRvTtqhIDS2iDnGFvtZdkuyDXLNto=', 'x-amz-request-id': 'KWPS4PRKC6W17ZGZ', 'Date': 'Tue, 01 Jun 2021 15:27:38 GMT', 'x-amz-bucket-region': 'ap-south-1', 'Content-Type': 'application/xml', 'Server': 'AmazonS3'}
+2021-06-01 20:57:37  botocore.parsers  DEBUG : Response body:
+b''
+2021-06-01 20:57:37  botocore.hooks  DEBUG : Event needs-retry.s3.HeadBucket: calling handler <botocore.retryhandler.RetryHandler object at 0x0000000011DE2FC8>
+2021-06-01 20:57:37  botocore.retryhandler  DEBUG : No retry needed.
+2021-06-01 20:57:37  botocore.hooks  DEBUG : Event needs-retry.s3.HeadBucket: calling handler <bound method S3RegionRedirector.redirect_from_error of <botocore.utils.S3RegionRedirector object at 0x0000000011DE2CC8>>
+2021-06-01 20:57:37  s3transfer.utils  DEBUG : Acquiring 0
+2021-06-01 20:57:37  s3transfer.tasks  DEBUG : UploadSubmissionTask(transfer_id=0, {'transfer_future': <s3transfer.futures.TransferFuture object at 0x0000000011E3AB08>}) about to wait for the following futures []
+2021-06-01 20:57:37  s3transfer.tasks  DEBUG : UploadSubmissionTask(transfer_id=0, {'transfer_future': <s3transfer.futures.TransferFuture object at 0x0000000011E3AB08>}) done waiting for dependent futures
+2021-06-01 20:57:37  s3transfer.tasks  DEBUG : Executing task UploadSubmissionTask(transfer_id=0, {'transfer_future': <s3transfer.futures.TransferFuture object at 0x0000000011E3AB08>}) with kwargs {'client': <botocore.client.S3 object at 0x0000000011AB9E48>, 'config': <boto3.s3.transfer.TransferConfig object at 0x0000000011DF8D88>, 'osutil': <s3transfer.utils.OSUtils object at 0x0000000011DF8A48>, 'request_executor': <s3transfer.futures.BoundedExecutor object at 0x0000000011E2AA48>, 'transfer_future': <s3transfer.futures.TransferFuture object at 0x0000000011E3AB08>}
+2021-06-01 20:57:37  s3transfer.futures  DEBUG : Submitting task PutObjectTask(transfer_id=0, {'bucket': 'orcl-tbls-ext-2021-06-01', 'key': 'COUNTRIES.zip', 'extra_args': {}}) to executor <s3transfer.futures.BoundedExecutor object at 0x0000000011E2AA48> for transfer request: 0.
+2021-06-01 20:57:37  s3transfer.utils  DEBUG : Acquiring 0
+2021-06-01 20:57:37  s3transfer.tasks  DEBUG : PutObjectTask(transfer_id=0, {'bucket': 'orcl-tbls-ext-2021-06-01', 'key': 'COUNTRIES.zip', 'extra_args': {}}) about to wait for the following futures []
+2021-06-01 20:57:37  s3transfer.tasks  DEBUG : PutObjectTask(transfer_id=0, {'bucket': 'orcl-tbls-ext-2021-06-01', 'key': 'COUNTRIES.zip', 'extra_args': {}}) done waiting for dependent futures
+2021-06-01 20:57:37  s3transfer.tasks  DEBUG : Executing task PutObjectTask(transfer_id=0, {'bucket': 'orcl-tbls-ext-2021-06-01', 'key': 'COUNTRIES.zip', 'extra_args': {}}) with kwargs {'client': <botocore.client.S3 object at 0x0000000011AB9E48>, 'fileobj': <s3transfer.utils.ReadFileChunk object at 0x0000000011E48188>, 'bucket': 'orcl-tbls-ext-2021-06-01', 'key': 'COUNTRIES.zip', 'extra_args': {}}
+2021-06-01 20:57:37  botocore.hooks  DEBUG : Event before-parameter-build.s3.PutObject: calling handler <function validate_ascii_metadata at 0x000000000B9BD1F8>
+2021-06-01 20:57:37  botocore.hooks  DEBUG : Event before-parameter-build.s3.PutObject: calling handler <function sse_md5 at 0x000000000B9B75E8>
+2021-06-01 20:57:37  botocore.hooks  DEBUG : Event before-parameter-build.s3.PutObject: calling handler <function convert_body_to_file_like_object at 0x000000000B9BDAF8>
+2021-06-01 20:57:37  botocore.hooks  DEBUG : Event before-parameter-build.s3.PutObject: calling handler <function validate_bucket_name at 0x000000000B9B7558>
+2021-06-01 20:57:37  botocore.hooks  DEBUG : Event before-parameter-build.s3.PutObject: calling handler <bound method S3RegionRedirector.redirect_from_cache of <botocore.utils.S3RegionRedirector object at 0x0000000011DE2CC8>>
+2021-06-01 20:57:37  botocore.hooks  DEBUG : Event before-parameter-build.s3.PutObject: calling handler <bound method S3ArnParamHandler.handle_arn of <botocore.utils.S3ArnParamHandler object at 0x0000000011DD5148>>
+2021-06-01 20:57:37  botocore.hooks  DEBUG : Event before-parameter-build.s3.PutObject: calling handler <function generate_idempotent_uuid at 0x000000000B9B73A8>
+2021-06-01 20:57:37  botocore.hooks  DEBUG : Event before-call.s3.PutObject: calling handler <function conditionally_calculate_md5 at 0x000000000B80ED38>
+2021-06-01 20:57:37  s3transfer.utils  DEBUG : Releasing acquire 0/None
+2021-06-01 20:57:37  botocore.hooks  DEBUG : Event before-call.s3.PutObject: calling handler <function add_expect_header at 0x000000000B9B78B8>
+2021-06-01 20:57:37  botocore.handlers  DEBUG : Adding expect 100 continue header to request.
+2021-06-01 20:57:37  botocore.hooks  DEBUG : Event before-call.s3.PutObject: calling handler <bound method S3RegionRedirector.set_request_url of <botocore.utils.S3RegionRedirector object at 0x0000000011DE2CC8>>
+2021-06-01 20:57:37  botocore.hooks  DEBUG : Event before-call.s3.PutObject: calling handler <function inject_api_version_header_if_needed at 0x000000000B9BDC18>
+2021-06-01 20:57:37  botocore.endpoint  DEBUG : Making request for OperationModel(name=PutObject) with params: {'url_path': '/orcl-tbls-ext-2021-06-01/COUNTRIES.zip', 'query_string': {}, 'method': 'PUT', 'headers': {'User-Agent': 'Boto3/1.17.62 Python/3.7.4 Windows/7 Botocore/1.20.62', 'Content-MD5': 'Jwlk1xH1oRhGIC2mLYXfZA==', 'Expect': '100-continue'}, 'body': <s3transfer.utils.ReadFileChunk object at 0x0000000011E48188>, 'url': 'https://s3.ap-south-1.amazonaws.com/orcl-tbls-ext-2021-06-01/COUNTRIES.zip', 'context': {'client_region': 'ap-south-1', 'client_config': <botocore.config.Config object at 0x0000000011DD0688>, 'has_streaming_input': True, 'auth_type': None, 'signing': {'bucket': 'orcl-tbls-ext-2021-06-01'}}}
+2021-06-01 20:57:37  botocore.hooks  DEBUG : Event request-created.s3.PutObject: calling handler <function signal_not_transferring at 0x0000000011B78828>
+2021-06-01 20:57:37  botocore.hooks  DEBUG : Event request-created.s3.PutObject: calling handler <bound method RequestSigner.handler of <botocore.signers.RequestSigner object at 0x0000000011DD0648>>
+2021-06-01 20:57:37  botocore.hooks  DEBUG : Event choose-signer.s3.PutObject: calling handler <function set_operation_specific_signer at 0x000000000B9B7288>
+2021-06-01 20:57:37  botocore.hooks  DEBUG : Event before-sign.s3.PutObject: calling handler <bound method S3EndpointSetter.set_endpoint of <botocore.utils.S3EndpointSetter object at 0x000000000BBF2088>>
+2021-06-01 20:57:37  botocore.utils  DEBUG : Checking for DNS compatible bucket for: https://s3.ap-south-1.amazonaws.com/orcl-tbls-ext-2021-06-01/COUNTRIES.zip
+2021-06-01 20:57:37  botocore.utils  DEBUG : URI updated to: https://orcl-tbls-ext-2021-06-01.s3.ap-south-1.amazonaws.com/COUNTRIES.zip
+2021-06-01 20:57:37  botocore.auth  DEBUG : Calculating signature using v4 auth.
+2021-06-01 20:57:37  botocore.auth  DEBUG : CanonicalRequest:
+PUT
+/COUNTRIES.zip
+
+content-md5:Jwlk1xH1oRhGIC2mLYXfZA==
+host:orcl-tbls-ext-2021-06-01.s3.ap-south-1.amazonaws.com
+x-amz-content-sha256:UNSIGNED-PAYLOAD
+x-amz-date:20210601T152737Z
+
+content-md5;host;x-amz-content-sha256;x-amz-date
+UNSIGNED-PAYLOAD
+2021-06-01 20:57:37  botocore.auth  DEBUG : StringToSign:
+AWS4-HMAC-SHA256
+20210601T152737Z
+20210601/ap-south-1/s3/aws4_request
+834f85f416b0ab818efcf920e064fcb9a62cee9766615f0938ddf37fc91d2dab
+2021-06-01 20:57:37  botocore.auth  DEBUG : Signature:
+1b88de893be6eb71d08f2bdbb7dae7ebf31148ecada28861315165271e88b5bf
+2021-06-01 20:57:37  botocore.hooks  DEBUG : Event request-created.s3.PutObject: calling handler <function signal_transferring at 0x0000000011B85948>
+2021-06-01 20:57:37  botocore.endpoint  DEBUG : Sending http request: <AWSPreparedRequest stream_output=False, method=PUT, url=https://orcl-tbls-ext-2021-06-01.s3.ap-south-1.amazonaws.com/COUNTRIES.zip, headers={'User-Agent': b'Boto3/1.17.62 Python/3.7.4 Windows/7 Botocore/1.20.62', 'Content-MD5': b'Jwlk1xH1oRhGIC2mLYXfZA==', 'Expect': b'100-continue', 'X-Amz-Date': b'20210601T152737Z', 'X-Amz-Content-SHA256': b'UNSIGNED-PAYLOAD', 'Authorization': b'AWS4-HMAC-SHA256 Credential=AKIARVFIS5JY6QTR7PJQ/20210601/ap-south-1/s3/aws4_request, SignedHeaders=content-md5;host;x-amz-content-sha256;x-amz-date, Signature=1b88de893be6eb71d08f2bdbb7dae7ebf31148ecada28861315165271e88b5bf', 'Content-Length': '427'}>
+2021-06-01 20:57:37  botocore.httpsession  DEBUG : Certificate path: C:\Users\Airflow\AppData\Local\Programs\Python\Python37\lib\site-packages\certifi\cacert.pem
+2021-06-01 20:57:37  botocore.awsrequest  DEBUG : Waiting for 100 Continue response.
+2021-06-01 20:57:37  botocore.awsrequest  DEBUG : 100 Continue response seen, now sending request body.
+2021-06-01 20:57:37  urllib3.connectionpool  DEBUG : https://orcl-tbls-ext-2021-06-01.s3.ap-south-1.amazonaws.com:443 "PUT /COUNTRIES.zip HTTP/1.1" 200 0
+2021-06-01 20:57:37  botocore.parsers  DEBUG : Response headers: {'x-amz-id-2': '6+BMhE19YNDsGupKx9zhGxt7v49EG6G0bHsClO0iPINJNJ8HAI4DDck4pz9076xPT2Dlere8dqg=', 'x-amz-request-id': 'KWPM6D60YYYP25Y6', 'Date': 'Tue, 01 Jun 2021 15:27:38 GMT', 'ETag': '"270964d711f5a11846202da62d85df64"', 'Content-Length': '0', 'Server': 'AmazonS3'}
+2021-06-01 20:57:37  botocore.parsers  DEBUG : Response body:
+b''
+2021-06-01 20:57:37  botocore.hooks  DEBUG : Event needs-retry.s3.PutObject: calling handler <botocore.retryhandler.RetryHandler object at 0x0000000011DE2FC8>
+2021-06-01 20:57:37  botocore.retryhandler  DEBUG : No retry needed.
+2021-06-01 20:57:37  botocore.hooks  DEBUG : Event needs-retry.s3.PutObject: calling handler <bound method S3RegionRedirector.redirect_from_error of <botocore.utils.S3RegionRedirector object at 0x0000000011DE2CC8>>
+2021-06-01 20:57:37  s3transfer.utils  DEBUG : Releasing acquire 0/None
+2021-06-01 20:57:37  AwsS3Conn.S3Connect  INFO : D:\Orcl-To-S3\Orcl_to_S3_batch_2021-06-01\COUNTRIES.zip has been transferred to 
